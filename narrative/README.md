@@ -8,7 +8,7 @@
 
 セルフパブリッシャー（個人作家）のためのTumblrテーマです。
 
-[デモサイトを見る](http://dendenlp.tumblr.com/)
+[デモサイトを見る](http://lp-narrative.tumblr.com/)
 
 ## Description <small>これは何？</small>
 
