@@ -368,7 +368,7 @@
   <td>著者仮名名</td><td>AuthorNameKana 01〜02</td><td>著者の名前の仮名表記です。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>著者説明</td><td>AuthorDescription 01〜02</td><td>著者の略歴などの文章を入力します。改行には<code>&lt;br&gt;</code>を入力してください。</td>
+  <td>著者説明</td><td>AuthorDescription 01〜02</td><td>著者の略歴などの文章を入力します。<strong>HTMLタグは使えません</strong></td>
 </tr>
 <tr>
   <td>著者URL</td><td>AuthorURL 01〜02</td><td>著者のウェブサイトやブログなどのURLを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
@@ -395,7 +395,7 @@
   <td>協力者の役割</td><td>ContributorRole 01〜02</td><td>協力者が作品に果たした役割を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>協力者説明</td><td>ContributorDescription 01〜02</td><td>協力者の略歴などの文章を入力します。改行には<code>&lt;br&gt;</code>を入力してください。</td>
+  <td>協力者説明</td><td>ContributorDescription 01〜02</td><td>協力者の略歴などの文章を入力します。<strong>HTMLタグは使えません</strong></td>
 </tr>
 <tr>
   <td>協力者URL</td><td>ContributorURL 01〜02</td><td>協力者のウェブサイトやブログなどのURLを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
