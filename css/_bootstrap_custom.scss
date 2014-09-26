@@ -1,0 +1,118 @@
+@import "bootstrap";
+
+$section-padding-vert: $line-height-computed;
+
+// override
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+}
+
+.btn {
+  border-width: 2px;
+}
+
+.btn-container {
+  margin-top: $line-height-computed;
+}
+
+.label {
+  padding-bottom: .2em;
+}
+
+// helper
+
+.inline-block {
+  display: inline-block;
+}
+
+.type-small {
+  font-size: 75%;
+}
+
+.dd-container {
+  max-width: 760px;
+  margin-top: $line-height-computed;
+  margin-bottom: $line-height-computed;
+}
+
+// etc
+#fb-like-btn {
+  position: relative;
+  top: -5px;
+}
+
+hr.context-break {
+  $context-break-color: $gray-light;
+  color: $context-break-color;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  background: $body-bg;
+  background-image: -webkit-linear-gradient(left, lighten($context-break-color, 60%), $context-break-color, lighten($context-break-color, 60%));
+  background-image: -moz-linear-gradient(left, lighten($context-break-color, 60%), $context-break-color, lighten($context-break-color, 60%));
+  background-image: -ms-linear-gradient(left, lighten($context-break-color, 60%), $context-break-color, lighten($context-break-color, 60%));
+  background-image: -o-linear-gradient(left, lighten($context-break-color, 60%), $context-break-color, lighten($context-break-color, 60%));
+  text-align: center;
+  &:after {
+    content: '\000a7';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background: $body-bg;
+    font-size: 18px;
+    font-family: serif;
+  }
+}
+
+.bubble {
+    position: relative;
+    margin: auto;
+    margin-bottom: 35px;
+    text-align: center;
+    max-width: 36em;
+    padding: 1em 3em;
+    background: $brand-primary;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #FFF;
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-top: 15px solid #ccc;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  bottom: -14px;
+  left: 15px;
+  border-color: $brand-primary transparent;
+}
+
+.separator-for-col-sm-6 {
+  clear: both;
+}
+
+@font-face {
+  font-family: "densho-chan";
+  src: url("../fonts/den2font.otf");
+  font-style: normal;
+}
+i.logo {font-family: "densho-chan";
+  font-style: normal;
+}
+i.logo:before { 
+  content: "\e000";
+}
+
+#logo {
+  font-size: 200px;
+}
+
+// BiB/i
+span.bibi-holder { display: inline-block; width: 500px; max-width:100%; height: 500px; }
+span.bibi-holder > iframe { display: inline-block; width: 100%; height: 100%; }

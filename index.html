@@ -1,79 +1,129 @@
 <!DOCTYPE html>
-<html>
-
+<html prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="でんでんランディングページ : でんでんランディングページ">
+    <meta name="description" content="本の宣伝ページが簡単に作れちゃうTumblrテーマです。">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <script src="ttp://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="ttp://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- OGP -->
+    <meta property="og:title" content="でんでんランディングページ">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="でんでんランディングページ">
+    <meta property="og:description" content="本の宣伝ページが簡単に作れちゃうTumblrテーマです。">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
 
     <title>でんでんランディングページ</title>
   </head>
 
-  <body>
+  <body lang="ja">
+    <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/denshoch/LandingPages">View on GitHub</a>
+    <header id="header">
+      <h1 class="sr-only">でんでんランディングページ</h1>
+      <div id="header-inner">
+        <div class="container">
+          <p class="h1 text-center catchprase">教えて？<br>あなたの本のこと……</p>
+          <p class="h1 text-center"><i id="logo" class="logo"></i></p>
+          <p class="h3 text-center"><span class="inline-block">でんでん</span><span class="inline-block">ランディングページ</span></p>
+          <p class="text-center text-primary">Tumblrで本の宣伝ページが簡単に作れちゃう!!</p>
+        </div>
+      </div>
+    </header>
 
-          <h1 id="project_title">でんでんランディングページ</h1>
-          <h2 id="project_tagline">でんでんランディングページ</h2>
+         <div id="social" class="section social">
+        <div class="container">
+          <ul class="list-inline text-center social-bottuns">
+            <li id="tweet-btn">
+              <a href="https://twitter.com/share" data-url="{BlogURL}" class="twitter-share-button">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </li>
+            <li id="fb-like-btn">
+              <div class="fb-like" data-url="http://lp.denshochan.com/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+            </li>
+            <li id="hb-btn">
+              <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+            </li>
+            <li id="g-plusone-btn">
+              <div class="g-plusone" data-size="medium"></div>
+              <script type="text/javascript">
+                window.___gcfg = {lang: 'ja'};
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/denshoch/LandingPages/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/denshoch/LandingPages/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+                (function() {
+                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                  po.src = 'https://apis.google.com/js/plusone.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+              </script>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<section id="marketing">
+  <div class="container">
+    <header class="page-header">
+      <h2 class="text-center">Title</h2>
+      <p class="text-muted text-center">あなたの作品の魅力を存分に知ってもらいましょう！</p>
+    </header>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="media">
+          <div class="pull-left text-center">
+            <div class="marketing-icon"><i class="fa fa-mobile"></i></div>
+          </div>
+        
+          <div class="media-body">
+            <h4 class="media-heading">レスポンシブデザイン</h4>
+            <p>スマートフォンでも読みやすい、デバイスごとに最適化されたレイアウトで、どんな環境でも負担を感じることなくページを閲覧できます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="media">
+          <div class="pull-left text-center">
+            <div class="marketing-icon"><i class="fa fa-share-alt"></i></div>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">ソーシャルメディア対応</h4>
+            <p>FacebookやGoogle+で使われるOGPと、Twitterで使われるTwitter Cardに対応。ページがシェアされた時の表示を魅力的なものにします。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="media">
+          <div class="pull-left text-center">
+            <div class="marketing-icon"><i class="fa fa-search"></i></div>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">検索エンジン最適化</h4>
+            <p>Google, Microsoft, Yahoo!など大手検索エンジンが採用する構造化データの仕様 <a href="http://schema.org/">schema.org</a>に対応。あなたの本の情報を検索エンジンに正確に伝えます。</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+    <footer id="footer">
+      <div class="container dd-container text-center">
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <p>Copyright © 2014 <a href="http://densho.hatenablog.com">電書ちゃんねる</a></p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">でんでんランディングページ maintained by <a href="https://github.com/denshoch">denshoch</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+      </div>
+    </footer>
     
-
   </body>
 </html>

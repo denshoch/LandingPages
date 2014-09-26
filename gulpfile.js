@@ -9,6 +9,19 @@ var config = {
     }
 }
 
+gulp.task('base', function () {
+    return gulp.src('css/styles.scss')
+        .pipe(sass({
+          sourcemap: true,
+          sourcemapPath: '../css',
+          loadPath: [
+            config.bowerDir + '/bootstrap-sass-official/assets/stylesheets'
+          ]
+        }))
+        .on('error', function (err) { console.log(err.message); })
+        .pipe(gulp.dest('css'));
+});
+
 gulp.task('narrative', function () {
     return gulp.src('narrative/1.0/css/styles.scss')
         .pipe(sass({
@@ -23,5 +36,6 @@ gulp.task('narrative', function () {
 });
 
 gulp.task('default', function () {
+    gulp.run('base');
     gulp.run('narrative');
 });

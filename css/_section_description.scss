@@ -1,0 +1,14 @@
+.description-body {
+  max-width: 42em;
+  margin: auto;
+  padding-bottom: 30px;
+  //text-shadow: -2px -2px 3px rgba(0,0,0,0.2);
+  text-align: justify;
+}
+
+@media (max-width: $screen-xs-max){
+  .description-body {
+    padding-bottom: 0;
+    text-align: center;
+  }
+}

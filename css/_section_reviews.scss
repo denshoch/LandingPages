@@ -1,0 +1,74 @@
+.review-container {
+  margin: $line-height-computed * 1.5 auto;
+  max-width: 36em;
+  .review-title {
+    @extend .h3;
+    margin-top: 0;
+    margin-bottom: $line-height-computed;
+    color: $brand-primary;
+    text-align: center;
+  }
+  .bubble {
+    margin-bottom: 25px;
+    font-size: 16px;
+    blockquote {
+      margin: 0;
+      padding: 0 0 0 10px;
+      border: none;
+      text-align: justify;
+      font-size: inherit;
+      &:before {
+        content: "\f10d";
+        font-size: 20px;
+        font-family: FontAwesome;
+        position: absolute;
+        top: 8px;
+        left: 20px;
+        color: inherit;
+      }
+      footer {
+        margin-top: .5em;
+        color: inherit;
+      }
+    }
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+  .bubble:after {
+    left: 45px;
+  }
+  .reviewer-container {
+    margin-left: 30px;
+  }
+  .reviewer-icon-placeholder {
+    width: 48px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 48px;
+    color: $brand-primary;
+    vertical-align: bottom;
+  }
+  .reviewer-name {
+    margin-top: 24px;
+    line-height: 1.1;
+    font-size: 16px;
+    font-weight: bold;
+    color: $brand-primary;
+    .reviewer-role {
+      @extend .small;
+      font-size: 75%;
+      font-weight: normal;
+      color: $gray-light;
+    }
+    a {
+      color: inherit;
+      text-decoration: underline;
+      &:hover,
+      &:active {
+        color: $brand-primary;
+      }
+    }
+  }
+}
