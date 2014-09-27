@@ -961,7 +961,7 @@ hr {
   clip: auto; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .section-title, .h3, .review-container .review-title, .h4, .h5, .h6 {
+.h1, .h2, .h3, .review-container .review-title, .h4, .section-title, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -988,22 +988,22 @@ h1, h2, h3, h4, h5, h6,
   .h1 small,
   .h1 .small,
   .h1 .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .h1 .reviewer-role, .h2 small, .section-title small,
+  .review-container .reviewer-name .h1 .reviewer-role, .h2 small,
   .h2 .small,
-  .section-title .small,
   .h2 .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .h2 .reviewer-role,
-  .section-title .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .section-title .reviewer-role, .h3 small, .review-container .review-title small,
+  .review-container .reviewer-name .h2 .reviewer-role, .h3 small, .review-container .review-title small,
   .h3 .small,
   .review-container .review-title .small,
   .h3 .review-container .reviewer-name .reviewer-role,
   .review-container .reviewer-name .h3 .reviewer-role,
   .review-container .review-title .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .review-title .reviewer-role, .h4 small,
+  .review-container .reviewer-name .review-title .reviewer-role, .h4 small, .section-title small,
   .h4 .small,
+  .section-title .small,
   .h4 .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .h4 .reviewer-role, .h5 small,
+  .review-container .reviewer-name .h4 .reviewer-role,
+  .section-title .review-container .reviewer-name .reviewer-role,
+  .review-container .reviewer-name .section-title .reviewer-role, .h5 small,
   .h5 .small,
   .h5 .review-container .reviewer-name .reviewer-role,
   .review-container .reviewer-name .h5 .reviewer-role, .h6 small,
@@ -1015,7 +1015,7 @@ h1, h2, h3, h4, h5, h6,
     color: #777777; }
 
 h1, .h1,
-h2, .h2, .section-title,
+h2, .h2,
 h3, .h3, .review-container .review-title {
   margin-top: 20px;
   margin-bottom: 10px; }
@@ -1029,13 +1029,10 @@ h3, .h3, .review-container .review-title {
   h2 small,
   h2 .small,
   h2 .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name h2 .reviewer-role, .h2 small, .section-title small,
+  .review-container .reviewer-name h2 .reviewer-role, .h2 small,
   .h2 .small,
-  .section-title .small,
   .h2 .review-container .reviewer-name .reviewer-role,
   .review-container .reviewer-name .h2 .reviewer-role,
-  .section-title .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .section-title .reviewer-role,
   h3 small,
   h3 .small,
   h3 .review-container .reviewer-name .reviewer-role,
@@ -1048,7 +1045,7 @@ h3, .h3, .review-container .review-title {
   .review-container .reviewer-name .review-title .reviewer-role {
     font-size: 65%; }
 
-h4, .h4,
+h4, .h4, .section-title,
 h5, .h5,
 h6, .h6 {
   margin-top: 10px;
@@ -1056,10 +1053,13 @@ h6, .h6 {
   h4 small,
   h4 .small,
   h4 .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name h4 .reviewer-role, .h4 small,
+  .review-container .reviewer-name h4 .reviewer-role, .h4 small, .section-title small,
   .h4 .small,
+  .section-title .small,
   .h4 .review-container .reviewer-name .reviewer-role,
   .review-container .reviewer-name .h4 .reviewer-role,
+  .section-title .review-container .reviewer-name .reviewer-role,
+  .review-container .reviewer-name .section-title .reviewer-role,
   h5 small,
   h5 .small,
   h5 .review-container .reviewer-name .reviewer-role,
@@ -1079,13 +1079,13 @@ h6, .h6 {
 h1, .h1 {
   font-size: 36px; }
 
-h2, .h2, .section-title {
+h2, .h2 {
   font-size: 30px; }
 
 h3, .h3, .review-container .review-title {
   font-size: 24px; }
 
-h4, .h4 {
+h4, .h4, .section-title {
   font-size: 18px; }
 
 h5, .h5 {
@@ -1147,10 +1147,10 @@ mark,
   color: #777777; }
 
 .text-primary {
-  color: #0ca80b; }
+  color: #428bca; }
 
 a.text-primary:hover {
-  color: #097808; }
+  color: #3071a9; }
 
 .text-success {
   color: #3c763d; }
@@ -1180,10 +1180,10 @@ a.text-danger:hover {
   color: #fff; }
 
 .bg-primary {
-  background-color: #0ca80b; }
+  background-color: #428bca; }
 
 a.bg-primary:hover {
-  background-color: #097808; }
+  background-color: #3071a9; }
 
 .bg-success {
   background-color: #dff0d8; }
@@ -5367,7 +5367,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .section-title, .h3, .review-container .review-title, .h4, .h5, .h6 {
+.h1, .h2, .h3, .review-container .review-title, .h4, .section-title, .h5, .h6 {
   font-weight: bold; }
 
 .btn {
@@ -5423,7 +5423,7 @@ hr.context-break {
   text-align: center;
   max-width: 36em;
   padding: 1em 3em;
-  background: #0ca80b;
+  background: #428bca;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -5437,32 +5437,10 @@ hr.context-break {
   border-left: 10px solid transparent;
   bottom: -14px;
   left: 15px;
-  border-color: #0ca80b transparent; }
+  border-color: #428bca transparent; }
 
 .separator-for-col-sm-6 {
   clear: both; }
-
-@font-face {
-  font-family: "densho-chan";
-  src: url("../fonts/den2font.otf");
-  font-style: normal; }
-i.logo {
-  font-family: "densho-chan";
-  font-style: normal; }
-
-i.logo:before {
-  content: "\e000"; }
-
-#logo {
-  font-size: 200px; }
-
-.marketing-icon {
-  font-size: 80px;
-  margin: 0;
-  width: 96px;
-  height: 96px;
-  line-height: 96px;
-  color: #0ca80b; }
 
 span.bibi-holder {
   display: inline-block;
@@ -5491,12 +5469,12 @@ span.bibi-holder > iframe {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 460px;
+    height: 500px;
     margin: 0;
     padding: 0;
     background-color: #333333; }
   #header #header-inner {
-    min-height: 460px;
+    min-height: 500px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), color-stop(1, rgba(0, 0, 0, 0.5)));
     background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
     background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
@@ -5505,7 +5483,7 @@ span.bibi-holder > iframe {
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)); }
   #header #catchprase-container {
     position: relative;
-    height: 460px; }
+    height: 500px; }
   #header #catchprase-container-inner {
     position: absolute;
     bottom: 0;
@@ -5585,30 +5563,26 @@ span.bibi-holder > iframe {
       padding-right: 2px;
       font-size: 12px;
       font-weight: bold;
-      color: #0ca80b; }
+      color: #428bca; }
 
 #cover-image {
-  margin-top: -420px;
+  margin-top: -460px;
   max-width: 100%;
-  max-height: 460px;
+  max-height: 500px;
   z-index: 2;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25); }
 
 #social {
-  padding: 20px 0;
-  margin: 0 -20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background: #eeeeee; }
+  padding: 20px 0; }
   #social .social-bottuns {
     margin-bottom: 0; }
 
 @media (max-width: 767px) {
   #header:before {
-    height: 460px; }
+    height: 160px; }
   #header #header-inner {
-    min-height: 460px;
+    min-height: 160px;
     text-align: center; }
   #header #catchprase-container {
     position: relative;
@@ -5645,10 +5619,13 @@ span.bibi-holder > iframe {
     margin-bottom: 20px;
     height: auto; }
 
-  .catchprase {
-    margin-top: 20px;
-    font-size: 24px;
-    line-height: 1.1; } }
+  #social {
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    background: #eeeeee; } }
 section, .section, .section-inverse {
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -5656,7 +5633,7 @@ section, .section, .section-inverse {
 .section-title {
   margin-bottom: 20px;
   font-weight: bold;
-  color: #0ca80b; }
+  color: #c8c8c8; }
 
 .section-lead {
   margin-bottom: 30px;
@@ -5664,10 +5641,10 @@ section, .section, .section-inverse {
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: -1px;
-  color: #0ca80b; }
+  color: #428bca; }
 
 .section-inverse {
-  background: #0ca80b;
+  background: #428bca;
   color: #FFF; }
   .section-inverse a {
     color: inherit; }
@@ -5725,7 +5702,7 @@ section, .section, .section-inverse {
 .character-desc {
   max-width: 20em;
   margin: auto;
-  border-top: 1px solid #0ca80b;
+  border-top: 1px solid #428bca;
   padding: 9px 1em 0;
   text-align: justify; }
 
@@ -5737,7 +5714,7 @@ section, .section, .section-inverse {
   padding: .25em 1em;
   margin-bottom: 40px;
   background: #fff;
-  color: #0ca80b; }
+  color: #428bca; }
 
 .price {
   display: inline-block;
@@ -5754,7 +5731,7 @@ section, .section, .section-inverse {
   .review-container .review-title {
     margin-top: 0;
     margin-bottom: 20px;
-    color: #0ca80b;
+    color: #428bca;
     text-align: center; }
   .review-container .bubble {
     margin-bottom: 25px;
@@ -5788,14 +5765,14 @@ section, .section, .section-inverse {
     font-size: 40px;
     text-align: center;
     line-height: 48px;
-    color: #0ca80b;
+    color: #428bca;
     vertical-align: bottom; }
   .review-container .reviewer-name {
     margin-top: 24px;
     line-height: 1.1;
     font-size: 16px;
     font-weight: bold;
-    color: #0ca80b; }
+    color: #428bca; }
     .review-container .reviewer-name .reviewer-role {
       font-size: 75%;
       font-weight: normal;
@@ -5804,7 +5781,7 @@ section, .section, .section-inverse {
       color: inherit;
       text-decoration: underline; }
       .review-container .reviewer-name a:hover, .review-container .reviewer-name a:active {
-        color: #0ca80b; }
+        color: #428bca; }
 
 .thumbnail {
   margin-bottom: 10px; }
@@ -5831,14 +5808,14 @@ section, .section, .section-inverse {
   font-weight: bold; }
 
 .role {
-  background-color: #0ca80b;
+  background-color: #428bca;
   display: inline-block;
   margin-bottom: 4px;
   padding: .3em .6em;
   font-size: 12px;
   font-weight: normal; }
   .role[href]:hover, .role[href]:focus {
-    background-color: #097808; }
+    background-color: #3071a9; }
 
 .author-image {
   width: 100px; }
@@ -5867,7 +5844,7 @@ section, .section, .section-inverse {
 #bio a .fa-stack {
   color: #c8c8c8; }
   #bio a .fa-stack:hover, #bio a .fa-stack:focus {
-    color: #0ca80b; }
+    color: #428bca; }
 
 #footer {
   position: relative;

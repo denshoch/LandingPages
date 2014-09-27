@@ -1,14 +1,14 @@
 // customize bootstrap variables here:
-@import "variables";
-@import "bootstrap_custom";
-@import "header";
-@import "section";
-@import "section_description";
-@import "section_characters";
-@import "section_preview";
-@import "section_details";
-@import "section_acquisition";
-@import "section_reviews";
-@import "section_related_works";
-@import "section_biographies";
-@import "footer";
+@import "./variables.scss";
+@import "./bootstrap_custom.scss";
+@import "./header.scss";
+@import "./section.scss";
+@import "./section_description.scss";
+@import "./section_characters.scss";
+@import "./section_preview.scss";
+@import "./section_details.scss";
+@import "./section_acquisition.scss";
+@import "./section_reviews.scss";
+@import "./section_related_works.scss";
+@import "./section_biographies.scss";
+@import "./footer.scss";
