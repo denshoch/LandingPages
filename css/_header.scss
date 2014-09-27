@@ -1,5 +1,5 @@
-$header-height-lg: 460px;
-$header-height-xs: 460px;
+$header-height-lg: 440px;
+$header-height-xs: 320px;
 $header-shadow-opacity: 0.5;
 $cover-image-height: 400px;
 
@@ -22,7 +22,7 @@ $cover-image-height: 400px;
     height: $header-height-lg;
     margin: 0;
     padding: 0;
-    background-color: $gray-dark;
+    background-color: darken($gray-light, 5%);
   }
   #header-inner {
     min-height: $header-height-lg;

@@ -114,6 +114,12 @@ i.logo:before {
   font-size: 200px;
 }
 
+@media (max-width: $screen-xs-max){
+  #logo {
+    font-size: 100px;
+  }
+}
+
 .marketing-icon {
   font-size: 80px;
   margin: 0;
@@ -122,6 +128,14 @@ i.logo:before {
   line-height: 96px;
   color: $brand-primary;
 }
+
+#header:before {
+  //background-image: url('../images/bg.jpg');
+  //-webkit-filter: blur(4px);
+  //filter: blur(4px);
+}
+
+
 
 // BiB/i
 span.bibi-holder { display: inline-block; width: 500px; max-width:100%; height: 500px; }

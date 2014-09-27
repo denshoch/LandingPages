@@ -961,7 +961,7 @@ hr {
   clip: auto; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .review-container .review-title, .h4, .section-title, .h5, .h6 {
+.h1, .h2, .section-title, .h3, .review-container .review-title, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -988,22 +988,22 @@ h1, h2, h3, h4, h5, h6,
   .h1 small,
   .h1 .small,
   .h1 .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .h1 .reviewer-role, .h2 small,
+  .review-container .reviewer-name .h1 .reviewer-role, .h2 small, .section-title small,
   .h2 .small,
+  .section-title .small,
   .h2 .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .h2 .reviewer-role, .h3 small, .review-container .review-title small,
+  .review-container .reviewer-name .h2 .reviewer-role,
+  .section-title .review-container .reviewer-name .reviewer-role,
+  .review-container .reviewer-name .section-title .reviewer-role, .h3 small, .review-container .review-title small,
   .h3 .small,
   .review-container .review-title .small,
   .h3 .review-container .reviewer-name .reviewer-role,
   .review-container .reviewer-name .h3 .reviewer-role,
   .review-container .review-title .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .review-title .reviewer-role, .h4 small, .section-title small,
+  .review-container .reviewer-name .review-title .reviewer-role, .h4 small,
   .h4 .small,
-  .section-title .small,
   .h4 .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .h4 .reviewer-role,
-  .section-title .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .section-title .reviewer-role, .h5 small,
+  .review-container .reviewer-name .h4 .reviewer-role, .h5 small,
   .h5 .small,
   .h5 .review-container .reviewer-name .reviewer-role,
   .review-container .reviewer-name .h5 .reviewer-role, .h6 small,
@@ -1015,7 +1015,7 @@ h1, h2, h3, h4, h5, h6,
     color: #777777; }
 
 h1, .h1,
-h2, .h2,
+h2, .h2, .section-title,
 h3, .h3, .review-container .review-title {
   margin-top: 20px;
   margin-bottom: 10px; }
@@ -1029,10 +1029,13 @@ h3, .h3, .review-container .review-title {
   h2 small,
   h2 .small,
   h2 .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name h2 .reviewer-role, .h2 small,
+  .review-container .reviewer-name h2 .reviewer-role, .h2 small, .section-title small,
   .h2 .small,
+  .section-title .small,
   .h2 .review-container .reviewer-name .reviewer-role,
   .review-container .reviewer-name .h2 .reviewer-role,
+  .section-title .review-container .reviewer-name .reviewer-role,
+  .review-container .reviewer-name .section-title .reviewer-role,
   h3 small,
   h3 .small,
   h3 .review-container .reviewer-name .reviewer-role,
@@ -1045,7 +1048,7 @@ h3, .h3, .review-container .review-title {
   .review-container .reviewer-name .review-title .reviewer-role {
     font-size: 65%; }
 
-h4, .h4, .section-title,
+h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 10px;
@@ -1053,13 +1056,10 @@ h6, .h6 {
   h4 small,
   h4 .small,
   h4 .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name h4 .reviewer-role, .h4 small, .section-title small,
+  .review-container .reviewer-name h4 .reviewer-role, .h4 small,
   .h4 .small,
-  .section-title .small,
   .h4 .review-container .reviewer-name .reviewer-role,
   .review-container .reviewer-name .h4 .reviewer-role,
-  .section-title .review-container .reviewer-name .reviewer-role,
-  .review-container .reviewer-name .section-title .reviewer-role,
   h5 small,
   h5 .small,
   h5 .review-container .reviewer-name .reviewer-role,
@@ -1079,13 +1079,13 @@ h6, .h6 {
 h1, .h1 {
   font-size: 36px; }
 
-h2, .h2 {
+h2, .h2, .section-title {
   font-size: 30px; }
 
 h3, .h3, .review-container .review-title {
   font-size: 24px; }
 
-h4, .h4, .section-title {
+h4, .h4 {
   font-size: 18px; }
 
 h5, .h5 {
@@ -5367,7 +5367,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .review-container .review-title, .h4, .section-title, .h5, .h6 {
+.h1, .h2, .section-title, .h3, .review-container .review-title, .h4, .h5, .h6 {
   font-weight: bold; }
 
 .btn {
@@ -5442,6 +5442,31 @@ hr.context-break {
 .separator-for-col-sm-6 {
   clear: both; }
 
+@font-face {
+  font-family: "densho-chan";
+  src: url("../fonts/den2font.otf");
+  font-style: normal; }
+i.logo {
+  font-family: "densho-chan";
+  font-style: normal; }
+
+i.logo:before {
+  content: "\e000"; }
+
+#logo {
+  font-size: 200px; }
+
+@media (max-width: 767px) {
+  #logo {
+    font-size: 100px; } }
+.marketing-icon {
+  font-size: 80px;
+  margin: 0;
+  width: 96px;
+  height: 96px;
+  line-height: 96px;
+  color: #428bca; }
+
 span.bibi-holder {
   display: inline-block;
   width: 500px;
@@ -5469,12 +5494,12 @@ span.bibi-holder > iframe {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 500px;
+    height: 440px;
     margin: 0;
     padding: 0;
-    background-color: #333333; }
+    background-color: #6a6a6a; }
   #header #header-inner {
-    min-height: 500px;
+    min-height: 440px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), color-stop(1, rgba(0, 0, 0, 0.5)));
     background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
     background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
@@ -5483,7 +5508,7 @@ span.bibi-holder > iframe {
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)); }
   #header #catchprase-container {
     position: relative;
-    height: 500px; }
+    height: 440px; }
   #header #catchprase-container-inner {
     position: absolute;
     bottom: 0;
@@ -5566,23 +5591,27 @@ span.bibi-holder > iframe {
       color: #428bca; }
 
 #cover-image {
-  margin-top: -460px;
+  margin-top: -400px;
   max-width: 100%;
-  max-height: 500px;
+  max-height: 440px;
   z-index: 2;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25); }
 
 #social {
-  padding: 20px 0; }
+  padding: 20px 0;
+  margin: 0 -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #eeeeee; }
   #social .social-bottuns {
     margin-bottom: 0; }
 
 @media (max-width: 767px) {
   #header:before {
-    height: 160px; }
+    height: 320px; }
   #header #header-inner {
-    min-height: 160px;
+    min-height: 320px;
     text-align: center; }
   #header #catchprase-container {
     position: relative;
@@ -5619,13 +5648,10 @@ span.bibi-holder > iframe {
     margin-bottom: 20px;
     height: auto; }
 
-  #social {
-    margin: 0 -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-top: 1px solid #c8c8c8;
-    border-bottom: 1px solid #c8c8c8;
-    background: #eeeeee; } }
+  .catchprase {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 1.1; } }
 section, .section, .section-inverse {
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -5633,7 +5659,7 @@ section, .section, .section-inverse {
 .section-title {
   margin-bottom: 20px;
   font-weight: bold;
-  color: #c8c8c8; }
+  color: #428bca; }
 
 .section-lead {
   margin-bottom: 30px;
