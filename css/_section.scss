@@ -4,10 +4,11 @@ section, .section, .section-inverse {
 }
 
 .section-title {
-  @extend .h4;
+  @extend .h2;
   margin-bottom: $line-height-computed;
   font-weight: bold;
-  color: darken($gray-lighter, 15%);
+  //color: darken($gray-lighter, 15%);
+  color: $brand-primary;
 }
 
 

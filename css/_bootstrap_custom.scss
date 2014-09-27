@@ -97,6 +97,7 @@ hr.context-break {
   clear: both;
 }
 
+
 @font-face {
   font-family: "densho-chan";
   src: url("../fonts/den2font.otf");
@@ -111,6 +112,15 @@ i.logo:before {
 
 #logo {
   font-size: 200px;
+}
+
+.marketing-icon {
+  font-size: 80px;
+  margin: 0;
+  width: 96px;
+  height: 96px;
+  line-height: 96px;
+  color: $brand-primary;
 }
 
 // BiB/i
