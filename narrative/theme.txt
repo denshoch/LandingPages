@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
   <head>
     <!--
       Theme Narrative (Den-Den Landing Page)
@@ -30,6 +30,8 @@
       <meta name="text:Catchphrase Main" content="キャッチフレーズ メイン">
       <meta name="text:Catchphrase Sub" content="キャッチフレーズ サブ">
       <meta name="text:Keywords" content="">
+      <meta name="text:FacebookAdmins" content="">
+      <meta name="text:FacebookAppID" content="">
 
       <meta name="if:ShowSectionDescription" content="1">
       <meta name="text:SectionDescription Heading" content="STORY">
@@ -238,6 +240,17 @@
     {block:IfKeywords}
       <meta name="keywords" content="{text:Keywords}">
     {/block:IfKeywords}
+
+    <!-- Facebook specific-->
+    {block:IfFacebookAdmins}
+      <meta property="fb:admins" content="{text:FacebookAdmins}">
+    {/block:IfFacebookAdmins}
+
+    {block:IfFacebookAppID}
+      <meta property="fb:app_id" content="{text:FacebookAppID}">
+  {/block:IfFacebookAdmins}
+    {/block:IfFacebookAppID}
+
 
     <!-- OGP -->
     <meta property="og:title" content="{Title} {text:BookSubtitle} - {text:AuthorName 01} {block:IfAuthorName02}…etc.{/block:IfAuthorName02}">

@@ -105,6 +105,15 @@
   <td>キーワード</td><td>Keywords</td><td>検索用のキーワードです。キーワードをカンマ`,`で区切って記述します。ページの見た目には影響しません。</td>
 </tr>
 <tr>
+  <td>Facebook  fb:admins</td><td>FacebookAdmins</td><td>Facebook の AdminIDを取得している場合には、入力してください。</td>
+</tr>
+<tr>
+  <td>Facebook  fb:app_id</td><td>FacebookAppID</td><td>FacebookのApp IDを取得している場合には、入力してください。</td>
+</tr>
+<tr>
+  <td>GoogleアナリティクスID</td><td>GoogleAnalyticsID</td><td>GoogleアナリティクスIDを入力すると、アクセス解析ができるようになります。ページの見た目には影響しません <strong>必要ない場合は空欄にしてください。</strong></td>
+</tr>
+<tr>
   <td>GoogleアナリティクスID</td><td>GoogleAnalyticsID</td><td>GoogleアナリティクスIDを入力すると、アクセス解析ができるようになります。ページの見た目には影響しません <strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
