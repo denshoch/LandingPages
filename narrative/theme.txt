@@ -3,7 +3,7 @@
   <head>
     <!--
       Theme Narrative (Den-Den Landing Page)
-      version: 1.0
+      version: 1.0.1
       by @lost_and_found from Densho Channel
       mail: <info@denshochan.com>
       Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -1056,7 +1056,7 @@
                       {/block:IfAuthorFacebook01}
                       {block:IfAuthorGooglePlus01}
                         <li>
-                          <a href="http://plus.google.com/+{text:AuthorGooglePlus 01}" title="Google Plus">
+                          <a href="http://plus.google.com/{text:AuthorGooglePlus 01}" title="Google Plus">
                             <span class="fa-stack">
                               <i class="fa fa-circle fa-stack-2x"></i>
                               <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -1117,7 +1117,7 @@
                       {/block:IfAuthorFacebook02}
                       {block:IfAuthorGooglePlus02}
                         <li>
-                          <a href="http://plus.google.com/+{text:AuthorGooglePlus 02}" title="Google Plus">
+                          <a href="http://plus.google.com/{text:AuthorGooglePlus 02}" title="Google Plus">
                             <span class="fa-stack">
                               <i class="fa fa-circle fa-stack-2x"></i>
                               <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -1178,7 +1178,7 @@
                       {/block:IfContributorFacebook01}
                       {block:IfContributorGooglePlus01}
                         <li>
-                          <a href="http://plus.google.com/+{text:ContributorGooglePlus 01}" title="Google Plus">
+                          <a href="http://plus.google.com/{text:ContributorGooglePlus 01}" title="Google Plus">
                             <span class="fa-stack">
                               <i class="fa fa-circle fa-stack-2x"></i>
                               <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -1239,7 +1239,7 @@
                       {/block:IfContributorFacebook02}
                       {block:IfContributorGooglePlus02}
                         <li>
-                          <a href="http://plus.google.com/+{text:ContributorGooglePlus 02}" title="Google Plus">
+                          <a href="http://plus.google.com/{text:ContributorGooglePlus 02}" title="Google Plus">
                             <span class="fa-stack">
                               <i class="fa fa-circle fa-stack-2x"></i>
                               <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>

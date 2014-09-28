@@ -1,6 +1,8 @@
 # Narrative (Den-Den Landing Page)
 
-でんでんランディングページ
+でんでんランディングページ テーマ：Narrative
+
+バージョン1.0.1
 
 ## Overview <small>概要</small>
 
@@ -380,7 +382,7 @@
   <td>著者Facebookアカウント</td><td>AuthorFacebook 01〜02</td><td>著者のFacebookアカウント名を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>著者Google+アカウント</td><td>AuthorGooglePlus 01〜02</td><td>著者のGoogle+アカウント名から<strong>+</strong>を除いた文字列を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>著者Google+アカウント</td><td>AuthorGooglePlus 01〜02</td><td>著者のGoogle+アカウント名（<code>http://plus.google.com/</code>より後ろの部分）を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
   <td>協力者画像</td><td>ContributorImage 01〜02</td><td>協力者の画像です。<strong>128px以上の正方形</strong>の画像を推奨します。<strong>必要ない場合は空欄にしてください。</strong></td>
@@ -407,7 +409,7 @@
   <td>協力者Facebookアカウント</td><td>ContributorFacebook 01〜02</td><td>協力者のFacebookアカウント名を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>協力者Google+アカウント</td><td>ContributorGooglePlus 01〜02</td><td>協力者のGoogle+アカウント名から<strong>+</strong>を除いた文字列を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>協力者Google+アカウント</td><td>ContributorGooglePlus 01〜02</td><td>協力者のGoogle+アカウント名（<code>http://plus.google.com/</code>より後ろの部分）を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 </table>
 
@@ -446,3 +448,13 @@
 また、このテーマは、[@sanographix](https://github.com/sanographix) さんの同人音楽CD特設サイト向けTumblrテーマ [Tokusetsu 2](http://sanographix.github.io/tumblr/tokusetsu2/) を参考にさせて頂きました。
 
 この場を借りて皆さんにお礼申し上げます。
+
+## History 変更履歴
+
+- 1.0.1
+  - 2014.9.29
+
+    - 著者・協力者のGooglePlusアカウントの指定方法を変更
+- 1.0
+  - 2014.9.27
+    - リリース
