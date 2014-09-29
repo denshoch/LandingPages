@@ -374,7 +374,7 @@
     </style>
 
   </head>
-  <body class="{select:Layout}">
+  <body>
 
     {block:IndexPage}
       <div id="fb-root"></div>
