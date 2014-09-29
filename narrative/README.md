@@ -2,7 +2,7 @@
 
 でんでんランディングページ テーマ：Narrative
 
-バージョン1.0.1
+バージョン1.0.2
 
 ## Overview <small>概要</small>
 
@@ -90,7 +90,7 @@
   <td>キーワード</td><td>Keywords</td><td>検索用のキーワードです。キーワードをカンマ`,`で区切って記述します。ページの見た目には影響しません。</td>
 </tr>
 <tr>
-  <td>FacebookページURL</td><td>FacebookPageURL</td><td>Facebookページを持っている場合は、ページのURLを入力してください。ランディングページの下部に「いいねbox」が表示されるようになります。別途、後述する fb:app_id の指定も必要です。</td>
+  <td>FacebookページURL</td><td>FacebookPageURL</td><td>Facebookページを持っている場合は、ページのURLを入力してください。ランディングページの下部に「<a href="https://developers.facebook.com/docs/plugins/like-box-for-pages">Like Box</a>」が表示されるようになります。別途、後述する FacebookのApp ID の指定も必要です。</td>
 </tr>
 <tr>
   <td>Facebook fb:app_id</td><td>FacebookAppID</td><td>FacebookのApp IDを取得している場合には、入力してください。</td>
@@ -177,7 +177,7 @@
   <td>カラム数</td><td>ColumnCount Characters</td><td>大きな画面で表示した場合に、何名のキャラクターを1列に表示するのか指定します。推奨値は、キャラクターが1名の場合:<code>1</code>、キャラクターが2名の場合:<code>2</code>、キャラクターが3名の場合: <code>3</code>、キャラクターが4名の場合:<code>2</code>または<code>4</code>です。</td>
 </tr>
 <tr>
-  <td>キャラクター画像</td><td>CharacterImage 01〜04</td><td>キャラクターの画像です。<strong>128px以上の正方形</strong>の画像を推奨します。指定しない場合はこのテーマが提供する代替画像が表示されます。</td>
+  <td>キャラクター画像</td><td>CharacterImage 01〜04</td><td>キャラクターの画像です。<strong>128px以上の正方形</strong>の画像を推奨します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
   <td>キャラクター名</td><td>CharacterName 01〜04</td><td>キャラクターの名前です。名前を設定しないキャラクターはページに表示されないので注意してください。</td>
