@@ -50,6 +50,11 @@ section, .section, .section-inverse {
   }
 }
 
+.section-dark {
+  @extend .section-inverse;
+  background: $gray-dark;
+}
+
 @media (max-width: $screen-xs-max){
   section, .section, .section-inverse {
     padding-top: $line-height-computed / 2;

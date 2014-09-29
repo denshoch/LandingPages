@@ -3,7 +3,7 @@
   <head>
     <!--
       Theme Narrative (Den-Den Landing Page)
-      version: 1.0.2
+      version: 1.0.3
       by @lost_and_found from Densho Channel
       mail: <info@denshochan.com>
       Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -30,6 +30,13 @@
       <meta name="text:Catchphrase Main" content="キャッチフレーズ メイン">
       <meta name="text:Catchphrase Sub" content="キャッチフレーズ サブ">
       <meta name="text:Keywords" content="">
+
+      <meta name="if:ShowSectionMovie" content="0">
+      <meta name="text:SectionMovie Heading" content="MOVIE">
+      <meta name="text:SectionMovie Lead" content="">
+      <meta name="text:SectionMovie EmbedCode" content="">
+      <meta name="select:SectionMovie AspectRatio" content="embed-responsive-16by9" title="16:9">
+      <meta name="select:SectionMovie AspectRatio" content="embed-responsive-4by3" title="4:3">
 
       <meta name="if:ShowSectionDescription" content="1">
       <meta name="text:SectionDescription Heading" content="STORY">
@@ -549,6 +556,23 @@
         </div>
       </section>
       {/block:IfShowSectionDescription}
+
+      <!-- セクション：動画 -->
+      {block:IfShowSectionMovie}
+      <section id="movie" class="section-dark">
+        <div class="container dd-container">
+          <h2 class="section-title text-center">{text:SectionMovie Heading}</h2>
+          {block:IfSectionMovieLead}
+            <p class="section-lead text-center">{text:SectionMovie Lead}</p>
+          {/block:IfSectionMovieLead}
+          {block:IfSectionMovieEmbedCode}
+          <div class="embed-responsive {select:SectionMovie AspectRatio}">
+            {text:SectionMovie EmbedCode}
+          </div>
+          {/block:IfSectionMovieEmbedCode}
+        </div>
+      </section>
+      {/block:IfShowSectionMovie}
 
       <!-- セクション：登場人物紹介 -->
       {block:IfShowSectionCharacters}

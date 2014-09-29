@@ -5635,7 +5635,7 @@ span.bibi-holder > iframe {
     border-top: 1px solid #c8c8c8;
     border-bottom: 1px solid #c8c8c8;
     background: #eeeeee; } }
-section, .section, .section-inverse {
+section, .section, .section-inverse, .section-dark {
   padding-top: 20px;
   padding-bottom: 20px; }
 
@@ -5652,40 +5652,43 @@ section, .section, .section-inverse {
   letter-spacing: -1px;
   color: #428bca; }
 
-.section-inverse {
+.section-inverse, .section-dark {
   background: #428bca;
   color: #FFF; }
-  .section-inverse a {
+  .section-inverse a, .section-dark a {
     color: inherit; }
-  .section-inverse .section-title {
+  .section-inverse .section-title, .section-dark .section-title {
     color: inherit; }
-  .section-inverse .section-lead {
+  .section-inverse .section-lead, .section-dark .section-lead {
     color: inherit; }
-  .section-inverse .btn-default {
+  .section-inverse .btn-default, .section-dark .btn-default {
     color: #FFF;
     border-color: #FFF;
     background: transparent; }
-    .section-inverse .btn-default:hover, .section-inverse .btn-default:focus {
+    .section-inverse .btn-default:hover, .section-dark .btn-default:hover, .section-inverse .btn-default:focus, .section-dark .btn-default:focus {
       background: rgba(0, 0, 0, 0.6); }
-  .section-inverse .btn-primary {
+  .section-inverse .btn-primary, .section-dark .btn-primary {
     color: white;
     background-color: #3c3c3c;
     border-color: white; }
-    .section-inverse .btn-primary:hover, .section-inverse .btn-primary:focus, .section-inverse .btn-primary:active, .section-inverse .btn-primary.active, .open > .section-inverse .btn-primary.dropdown-toggle {
+    .section-inverse .btn-primary:hover, .section-dark .btn-primary:hover, .section-inverse .btn-primary:focus, .section-dark .btn-primary:focus, .section-inverse .btn-primary:active, .section-dark .btn-primary:active, .section-inverse .btn-primary.active, .section-dark .btn-primary.active, .open > .section-inverse .btn-primary.dropdown-toggle, .open > .section-dark .btn-primary.dropdown-toggle {
       color: white;
       background-color: #222222;
       border-color: #e0e0e0; }
-    .section-inverse .btn-primary:active, .section-inverse .btn-primary.active, .open > .section-inverse .btn-primary.dropdown-toggle {
+    .section-inverse .btn-primary:active, .section-dark .btn-primary:active, .section-inverse .btn-primary.active, .section-dark .btn-primary.active, .open > .section-inverse .btn-primary.dropdown-toggle, .open > .section-dark .btn-primary.dropdown-toggle {
       background-image: none; }
-    .section-inverse .btn-primary.disabled, .section-inverse .btn-primary.disabled:hover, .section-inverse .btn-primary.disabled:focus, .section-inverse .btn-primary.disabled:active, .section-inverse .btn-primary.disabled.active, .section-inverse .btn-primary[disabled], .section-inverse .btn-primary[disabled]:hover, .section-inverse .btn-primary[disabled]:focus, .section-inverse .btn-primary[disabled]:active, .section-inverse .btn-primary[disabled].active, fieldset[disabled] .section-inverse .btn-primary, fieldset[disabled] .section-inverse .btn-primary:hover, fieldset[disabled] .section-inverse .btn-primary:focus, fieldset[disabled] .section-inverse .btn-primary:active, fieldset[disabled] .section-inverse .btn-primary.active {
+    .section-inverse .btn-primary.disabled, .section-dark .btn-primary.disabled, .section-inverse .btn-primary.disabled:hover, .section-dark .btn-primary.disabled:hover, .section-inverse .btn-primary.disabled:focus, .section-dark .btn-primary.disabled:focus, .section-inverse .btn-primary.disabled:active, .section-dark .btn-primary.disabled:active, .section-inverse .btn-primary.disabled.active, .section-dark .btn-primary.disabled.active, .section-inverse .btn-primary[disabled], .section-dark .btn-primary[disabled], .section-inverse .btn-primary[disabled]:hover, .section-dark .btn-primary[disabled]:hover, .section-inverse .btn-primary[disabled]:focus, .section-dark .btn-primary[disabled]:focus, .section-inverse .btn-primary[disabled]:active, .section-dark .btn-primary[disabled]:active, .section-inverse .btn-primary[disabled].active, .section-dark .btn-primary[disabled].active, fieldset[disabled] .section-inverse .btn-primary, fieldset[disabled] .section-dark .btn-primary, fieldset[disabled] .section-inverse .btn-primary:hover, fieldset[disabled] .section-dark .btn-primary:hover, fieldset[disabled] .section-inverse .btn-primary:focus, fieldset[disabled] .section-dark .btn-primary:focus, fieldset[disabled] .section-inverse .btn-primary:active, fieldset[disabled] .section-dark .btn-primary:active, fieldset[disabled] .section-inverse .btn-primary.active, fieldset[disabled] .section-dark .btn-primary.active {
       background-color: #3c3c3c;
       border-color: white; }
-    .section-inverse .btn-primary .badge {
+    .section-inverse .btn-primary .badge, .section-dark .btn-primary .badge {
       color: #3c3c3c;
       background-color: white; }
 
+.section-dark {
+  background: #333333; }
+
 @media (max-width: 767px) {
-  section, .section, .section-inverse {
+  section, .section, .section-inverse, .section-dark {
     padding-top: 10px;
     padding-bottom: 10px; }
 
