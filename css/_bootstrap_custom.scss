@@ -135,7 +135,13 @@ i.logo:before {
   //filter: blur(4px);
 }
 
-
+// Facebook Page
+#fb-like-box-container {
+  margin-top: 0;
+}
+#fb-like-box-container .fb_iframe_widget,
+#fb-like-box-container .fb_iframe_widget span,
+#fb-like-box-container .fb_iframe_widget iframe[style]{ width: 100%!important; }
 
 // BiB/i
 span.bibi-holder { display: inline-block; width: 500px; max-width:100%; height: 500px; }

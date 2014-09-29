@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
   <head>
     <!--
       Theme Narrative (Den-Den Landing Page)
-      version: 1.0.1
+      version: 1.0.2
       by @lost_and_found from Densho Channel
       mail: <info@denshochan.com>
       Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -30,8 +30,6 @@
       <meta name="text:Catchphrase Main" content="キャッチフレーズ メイン">
       <meta name="text:Catchphrase Sub" content="キャッチフレーズ サブ">
       <meta name="text:Keywords" content="">
-      <meta name="text:FacebookAdmins" content="">
-      <meta name="text:FacebookAppID" content="">
 
       <meta name="if:ShowSectionDescription" content="1">
       <meta name="text:SectionDescription Heading" content="STORY">
@@ -218,6 +216,10 @@
       <meta name="text:CopyrightHolder" content="">
       <meta name="text:FooterText" content="">
 
+      <!-- Facebook Page -->
+      <meta name="text:FacebookPageURL" content="">
+      <meta name="text:FacebookAppID" content="">
+
       <!-- Google Analytics -->
       <meta name="text:GoogleAnalyticsID" content="">
 
@@ -241,15 +243,10 @@
       <meta name="keywords" content="{text:Keywords}">
     {/block:IfKeywords}
 
-    <!-- Facebook specific-->
-    {block:IfFacebookAdmins}
-      <meta property="fb:admins" content="{text:FacebookAdmins}">
-    {/block:IfFacebookAdmins}
-
+    <!-- Facebook page-->
     {block:IfFacebookAppID}
       <meta property="fb:app_id" content="{text:FacebookAppID}">
     {/block:IfFacebookAppID}
-
 
     <!-- OGP -->
     <meta property="og:title" content="{Title} {text:BookSubtitle} - {text:AuthorName 01} {block:IfAuthorName02}…etc.{/block:IfAuthorName02}">
@@ -266,13 +263,12 @@
     <meta name="twitter:card" content="player">
     <meta name="twitter:player" content="{text:TwitterPlayerURL}">
     <meta name="twitter:player:width" content="520" />
-		<meta name="twitter:player:height" content="560" />
+    <meta name="twitter:player:height" content="560" />
     {/block:IfTwitterPlayerURL}
 
     {block:IfNotTwitterPlayerURL}
     <meta name="twitter:card" content="summary_large_image">
     {/block:IfNotTwitterPlayerURL}
-
 
     {block:IfAuthorTwitter01}
       <meta name="twitter:site" content="@{text:AuthorTwitter 01}">
@@ -377,26 +373,19 @@
   <body>
 
     {block:IndexPage}
-      <div id="fb-root"></div>
-      <script>
-        {block:IfFacebookAppID}
-          window.fbAsyncInit = function() {
-            FB.init({
-              appId      : '{text:FacebookAppID}',
-              xfbml      : true,
-              version    : 'v2.1'
-            });
-          };
-        {/block:IfFacebookAppID}
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
+        {block:IfFacebookAppID}
+        js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId={text:FacebookAppID}&version=v2.0";
+        {/block:IfFacebookAppID}
+        {block:IfNotFacebookAppID}
         js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+        {/block:IfNotFacebookAppID}
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
     {/block:IndexPage}
 
     <header id="header">
@@ -1286,6 +1275,12 @@
       </section>
       {/block:IfShowSectionBiographies}
 
+      {block:IfFacebookPageURL}
+      <div id="fb-like-box-container" class="container dd-container">
+        <div class="fb-like-box" data-href="{text:FacebookPageURL}" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+      </div>
+      {/block:IfFacebookPageURL}
+
       {block:IfEnableSchemaOrg}
         <!-- Schema.org JSON-LD -->
         <script type="application/ld+json">
@@ -1336,16 +1331,16 @@
 
     <!-- Google Analytics -->
     {block:IfGoogleAnalyticsID}
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '{text:GoogleAnalyticsID}']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{text:GoogleAnalyticsID}', 'auto');
+  ga('send', 'pageview');
+
+</script>
     {/block:IfGoogleAnalyticsID}
 
   </body>
