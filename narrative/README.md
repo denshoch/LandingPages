@@ -93,9 +93,6 @@
   <td>FacebookページURL</td><td>FacebookPageURL</td><td>Facebookページを持っている場合は、ページのURLを入力してください。ランディングページの下部に「いいねbox」が表示されるようになります。別途、後述する fb:app_id の指定も必要です。</td>
 </tr>
 <tr>
-  <td>Facebook fb:admins</td><td>FacebookAdmins</td><td>Facebook の AdminIDを取得している場合には、入力してください。</td>
-</tr>
-<tr>
   <td>Facebook fb:app_id</td><td>FacebookAppID</td><td>FacebookのApp IDを取得している場合には、入力してください。</td>
 </tr>
 <tr>
