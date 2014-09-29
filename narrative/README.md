@@ -2,7 +2,7 @@
 
 でんでんランディングページ テーマ：Narrative
 
-バージョン1.0.2
+バージョン1.0.3
 
 ## Overview <small>概要</small>
 
@@ -155,6 +155,29 @@
 </tr>
 <tr>
   <td>リード文</td><td>SectionDescription Lead</td><td>リード文です。読者の興味を引く短い文章を入力します。改行には<code>&lt;br&gt;</code>を入力してください。<strong>必要ない場合は空欄にしてください。</strong></td>
+</tr>
+</table>
+
+#### テーマオプション：動画セクションに関する設定
+
+<table>
+<tr>
+  <th>概要</th><th>オプション名</th><th>説明</th>
+</tr>
+<tr>
+  <td>セクションの表示／非表示</td><td>ShowSectionMovie</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+</tr>
+<tr>
+  <td>見出し</td><td>SectionMovie Heading</td><td>見出しです。</td>
+</tr>
+<tr>
+  <td>リード文</td><td>SectionMovie Lead</td><td>リード文です。読者の興味を引く短い文章を入力します。改行には<code>&lt;br&gt;</code>を入力してください。<strong>必要ない場合は空欄にしてください。</strong></td>
+</tr>
+<tr>
+  <td>アスペクト比</td><td>SectionMovie AspectRatio</td><td>動画の縦横比です。<code>16:9</code>または<code>4:3</code>のいずれかを選びます。</td>
+</tr>
+<tr>
+  <td>動画埋め込みコード</td><td>SectionMovie EmbedCode</td><td>ページにYouTubeなどの動画を埋め込むことができます。埋め込むコードを貼り付けてください。</td>
 </tr>
 </table>
 
@@ -448,9 +471,12 @@
 
 ## History 変更履歴
 
+- 1.0.3
+  - 2014.9.29
+    - 動画の埋め込みを実装
 - 1.0.2
   - 2014.9.29
-    - Facebookページの表示機能を追加
+    - Facebookページの表示を可能に
 - 1.0.1
   - 2014.9.29
     - 著者・協力者のGooglePlusアカウントの指定方法を変更
