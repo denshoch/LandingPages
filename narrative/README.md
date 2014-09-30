@@ -2,7 +2,7 @@
 
 でんでんランディングページ テーマ：Narrative
 
-バージョン1.0.3
+バージョン1.0.4
 
 ## Overview <small>概要</small>
 
@@ -77,7 +77,6 @@
 </table>
 
 #### テーマオプション：全体に関する設定
-
 
 <table>
 <tr>
@@ -432,6 +431,24 @@
 </tr>
 </table>
 
+#### テーマオプション：コンタクトフォームに関する設定
+
+<table>
+<tr>
+  <th>概要</th><th>オプション名</th><th>説明</th>
+</tr>
+<tr>
+  <td>セクションの表示／非表示</td><td>ShowSectionContact</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+</tr>
+<tr>
+  <td>見出し</td><td>SectionContact Heading</td><td>見出しです。</td>
+</tr>
+<tr>
+  <td>フォーム埋め込みコード</td><td>SectionContact EmbedCode</td><td>
+  <a href="http://www.wufoo.com/">Wufoo</a> などフォーム作成サービスの埋め込みコードを貼り付けます。Wufooの場合、JavaScriptバージョンよりもiframeバージョンのコードの方が、Tumblrでの表示が安定しているようです。
+</tr>
+</table>
+
 #### テーマオプション：フッタに関する設定
 
 <table>
@@ -471,6 +488,9 @@
 
 ## History 変更履歴
 
+- 1.0.4
+  - 2014.9.30
+    - コンタクトフォームの埋め込みを実装
 - 1.0.3
   - 2014.9.29
     - 動画の埋め込みを実装
