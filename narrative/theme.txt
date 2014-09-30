@@ -3,7 +3,7 @@
   <head>
     <!--
       Theme Narrative (Den-Den Landing Page)
-      version: 1.0.5
+      version: 1.0.6
       by @lost_and_found from Densho Channel
       mail: <info@denshochan.com>
       Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -34,7 +34,7 @@
       <!-- 動画 -->
       <meta name="if:ShowSectionMovie" content="0">
       <meta name="text:SectionMovie Heading" content="MOVIE">
-      <meta name="text:SectionMovie Lead" content="">
+      <meta name="text:SectionMovie Lead" content="動画：リード文">
       <meta name="text:SectionMovie EmbedCode" content="">
       <meta name="select:SectionMovie AspectRatio" content="embed-responsive-16by9" title="16:9">
       <meta name="select:SectionMovie AspectRatio" content="embed-responsive-4by3" title="4:3">
@@ -42,39 +42,41 @@
       <!-- オーディオ -->
       <meta name="if:ShowSectionAudio" content="0">
       <meta name="text:SectionAudio Heading" content="AUDIO">
-      <meta name="text:SectionAudio Lead" content="">
+      <meta name="text:SectionAudio Lead" content="オーディオ：リード文">
       <meta name="text:SectionAudio EmbedCode" content="">
 
+      <!-- 内容紹介 -->
       <meta name="if:ShowSectionDescription" content="1">
       <meta name="text:SectionDescription Heading" content="STORY">
-      <meta name="text:SectionDescription Lead" content="Lorem ipsum">
+      <meta name="text:SectionDescription Lead" content="内容紹介：リード文">
 
+      <!-- キャラクター紹介 -->
       <meta name="if:ShowSectionCharacters" content="1">
       <meta name="text:SectionCharacters Heading" content="CHARACTERS">
-      <meta name="text:SectionCharacters Lead" content="Dolor sit amet">
+      <meta name="text:SectionCharacters Lead" content="キャラクター紹介：リード文">
 
-      <!-- 一列に表示する登場人物の数1〜4 -->
+      <!-- 一列に表示するキャラクターの数1〜4 -->
       <meta name="select:ColumnCount Characters" content="col-sm-12" title="1">
       <meta name="select:ColumnCount Characters" content="col-sm-6" title="2">
       <meta name="select:ColumnCount Characters" content="col-sm-4" title="3">
       <meta name="select:ColumnCount Characters" content="col-sm-3" title="4">
 
-      <!-- 登場人物01  -->
+      <!-- キャラクター 01  -->
       <meta name="image:CharacterImage 01" content="">
       <meta name="text:CharacterName 01" content="">
       <meta name="text:CharacterDesc 01" content="">
 
-      <!-- 登場人物02  -->
+      <!-- キャラクター 02  -->
       <meta name="image:CharacterImage 02" content="">
       <meta name="text:CharacterName 02" content="">
       <meta name="text:CharacterDesc 02" content="">
 
-      <!-- 登場人物03  -->
+      <!-- キャラクター 03  -->
       <meta name="image:CharacterImage 03" content="">
       <meta name="text:CharacterName 03" content="">
       <meta name="text:CharacterDesc 03" content="">
 
-      <!-- 登場人物04  -->
+      <!-- キャラクター 04  -->
       <meta name="image:CharacterImage 04" content="">
       <meta name="text:CharacterName 04" content="">
       <meta name="text:CharacterDesc 04" content="">
@@ -82,14 +84,14 @@
       <!-- 試し読み -->
       <meta name="if:ShowSectionPreview" content="1">
       <meta name="text:SectionPreview Heading" content="PREVIEW">
-      <meta name="text:SectionPreview Lead" content="Consectetur adipisicing elit">
+      <meta name="text:SectionPreview Lead" content="試し読み：リード文">
       <meta name="text:PreviewEmbedCode" content="">
       <meta name="text:PreviewLink" content="">
 
       <!-- 詳細情報 -->
       <meta name="if:ShowSectionDetails" content="1">
       <meta name="text:SectionDetails Heading" content="DETAILS">
-      <meta name="text:SectionDetails Lead" content="Sed do eiusmod tempor">
+      <meta name="text:SectionDetails Lead" content="商品詳細：リード文">
       <meta name="text:SectionDetails DatePublished" content="1900-01-01">
       <meta name="text:SectionDetails PublisherName" content="">
       <meta name="text:SectionDetails PublisherURL" content="">
@@ -100,7 +102,7 @@
       <!-- レビュー -->
       <meta name="if:ShowSectionReviews" content="1">
       <meta name="text:SectionReviews Heading" content="REVIEWS">
-      <meta name="text:SectionReviews Lead" content="Incididunt ut labore">
+      <meta name="text:SectionReviews Lead" content="レビュー／推薦文：リード文">
 
       <meta name="text:ReviewTitle 01" content="">
       <meta name="text:ReviewComment 01" content="">
@@ -132,7 +134,7 @@
       <!-- 販売／ダウンロードリンク -->
       <meta name="if:ShowSectionAcquisition" content="1">
       <meta name="text:SectionAcquisition Heading" content="GET IT NOW!">
-      <meta name="text:SectionAcquisition Lead" content="Et dolore magna aliqua">
+      <meta name="text:SectionAcquisition Lead" content="購入／ダウンロード：リード文">
       <meta name="text:SectionAcquisition Note" content="">
 
       <meta name="text:AcquisitionLinkLabel 01" content="">
@@ -156,7 +158,7 @@
       <!-- 関連リンク -->
       <meta name="if:ShowSectionRelatedWorks" content="1">
       <meta name="text:SectionRelatedWorks Heading" content="RELATED WORKS">
-      <meta name="text:SectionRelatedWorks Lead" content="Ut enim ad minim veniam">
+      <meta name="text:SectionRelatedWorks Lead" content="関連商品：リード文">
 
       <!-- 一列に表示する作品の数0〜4 -->
       <meta name="select:ColumnCount RelatedWorks" content="col-sm-12" title="1">
@@ -183,7 +185,7 @@
       <!-- 著者紹介 -->
       <meta name="if:ShowSectionBiographies" content="1">
       <meta name="text:SectionBiographies Heading" content="CREATED BY">
-      <meta name="text:SectionBiographies Lead" content="Quis nostrud exercitation">
+      <meta name="text:SectionBiographies Lead" content="著者紹介：リード文">
 
       <!-- 著者01 -->
       <meta name="image:AuthorImage 01" content="">
