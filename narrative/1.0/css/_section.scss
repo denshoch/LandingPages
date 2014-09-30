@@ -52,7 +52,7 @@ section, .section, .section-inverse {
 
 .section-dark {
   @extend .section-inverse;
-  background: $gray-dark;
+  background: $gray;
 }
 
 @media (max-width: $screen-xs-max){
