@@ -180,6 +180,26 @@
 </tr>
 </table>
 
+#### テーマオプション：オーディオセクションに関する設定
+
+<table>
+<tr>
+  <th>概要</th><th>オプション名</th><th>説明</th>
+</tr>
+<tr>
+  <td>セクションの表示／非表示</td><td>ShowSectionAudio</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+</tr>
+<tr>
+  <td>見出し</td><td>SectionAudio Heading</td><td>見出しです。</td>
+</tr>
+<tr>
+  <td>リード文</td><td>SectionAudio Lead</td><td>リード文です。読者の興味を引く短い文章を入力します。改行には<code>&lt;br&gt;</code>を入力してください。<strong>必要ない場合は空欄にしてください。</strong></td>
+</tr>
+<tr>
+  <td>動画埋め込みコード</td><td>SectionAudio EmbedCode</td><td>ページに<a href="https://soundcloud.com/">SoundCloud</a>などのオーディオを埋め込むことができます。埋め込むコードを貼り付けてください。</td>
+</tr>
+</table>
+
 #### テーマオプション：キャラクター紹介セクションに関する設定
 
 <table>

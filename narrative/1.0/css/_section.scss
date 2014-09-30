@@ -55,6 +55,10 @@ section, .section, .section-inverse {
   background: $gray;
 }
 
+.section-light {
+  background: $gray-lighter;
+}
+
 @media (max-width: $screen-xs-max){
   section, .section, .section-inverse {
     padding-top: $line-height-computed / 2;

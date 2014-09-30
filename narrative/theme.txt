@@ -31,12 +31,19 @@
       <meta name="text:Catchphrase Sub" content="キャッチフレーズ サブ">
       <meta name="text:Keywords" content="">
 
+      <!-- 動画 -->
       <meta name="if:ShowSectionMovie" content="0">
       <meta name="text:SectionMovie Heading" content="MOVIE">
       <meta name="text:SectionMovie Lead" content="">
       <meta name="text:SectionMovie EmbedCode" content="">
       <meta name="select:SectionMovie AspectRatio" content="embed-responsive-16by9" title="16:9">
       <meta name="select:SectionMovie AspectRatio" content="embed-responsive-4by3" title="4:3">
+
+      <!-- オーディオ -->
+      <meta name="if:ShowSectionAudio" content="0">
+      <meta name="text:SectionAudio Heading" content="AUDIO">
+      <meta name="text:SectionAudio Lead" content="">
+      <meta name="text:SectionAudio EmbedCode" content="">
 
       <meta name="if:ShowSectionDescription" content="1">
       <meta name="text:SectionDescription Heading" content="STORY">
@@ -579,6 +586,23 @@
         </div>
       </section>
       {/block:IfShowSectionMovie}
+
+      <!-- セクション：オーディオ -->
+      {block:IfShowSectionAudio}
+      <section id="movie" class="section-light">
+        <div class="container dd-container">
+          <h2 class="section-title text-center">{text:SectionAudio Heading}</h2>
+          {block:IfSectionAudioLead}
+            <p class="section-lead text-center">{text:SectionAudio Lead}</p>
+          {/block:IfSectionAudioLead}
+          {block:IfSectionAudioEmbedCode}
+          <div class="audio-container">
+            {text:SectionAudio EmbedCode}
+          </div>
+          {/block:IfSectionAudioEmbedCode}
+        </div>
+      </section>
+      {/block:IfShowSectionAudio}
 
       <!-- セクション：登場人物紹介 -->
       {block:IfShowSectionCharacters}
@@ -1307,6 +1331,8 @@
 
 
       {block:IfShowSectionContact}
+      <hr class="context-break">
+
       <section id="contact">
         <div class="container dd-container">
           <h2 class="h4 section-title text-center">{text:SectionContact Heading}</h2>

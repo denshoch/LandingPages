@@ -5687,6 +5687,9 @@ section, .section, .section-inverse, .section-dark {
 .section-dark {
   background: #555555; }
 
+.section-light {
+  background: #eeeeee; }
+
 @media (max-width: 767px) {
   section, .section, .section-inverse, .section-dark {
     padding-top: 10px;
