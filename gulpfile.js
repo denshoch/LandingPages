@@ -37,5 +37,4 @@ gulp.task('narrative', function () {
 
 gulp.task('default', function () {
     gulp.run('base');
-    gulp.run('narrative');
 });
