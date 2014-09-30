@@ -3,7 +3,7 @@
   <head>
     <!--
       Theme Narrative (Den-Den Landing Page)
-      version: 1.0.4
+      version: 1.0.5
       by @lost_and_found from Densho Channel
       mail: <info@denshochan.com>
       Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -226,7 +226,7 @@
       <meta name="text:ContributorTwitter 02" content="">
       <meta name="text:ContributorFacebook 02" content="">
       <meta name="text:ContributorGooglePlus 02" content="">
-      
+
       <!-- Facebook Page -->
       <meta name="text:FacebookPageURL" content="">
       <meta name="text:FacebookAppID" content="">
