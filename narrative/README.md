@@ -2,7 +2,7 @@
 
 でんでんランディングページ テーマ：Narrative
 
-バージョン1.0.6
+バージョン1.0.7
 
 ## Overview <small>概要</small>
 
@@ -128,6 +128,9 @@
 </tr>
 <tr>
   <td>シリーズタイトル</td><td>BookCollectionTitle</td><td>本のシリーズ名などを表すタイトルです。<strong>必要ない場合は空欄にしてください。</strong></td>
+</tr>
+<tr>
+  <td>ヘッダレイアウト Reverse</td><td>HeaderColumnLayout Reverse</td><td>有効にするとヘッダのキャッチフレーズと表紙の位置が入れ替わります。</td>
 </tr>
 <tr>
   <td>ヘッダ画像効果 Blur</td><td>HeaderImageEffect Blur</td><td>ヘッダ画像を少しぼかします。キャッチフレーズなどの文字が読みにくい場合に有効にします。</td>
@@ -508,6 +511,9 @@
 
 ## History 変更履歴
 
+- 1.0.7
+  - 2014.10.1
+    - ヘッダのレイアウト反転スイッチを追加
 - 1.0.6
   - 2014.9.30
     - リード文のサンプルを日本語に

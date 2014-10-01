@@ -3,7 +3,7 @@
   <head>
     <!--
       Theme Narrative (Den-Den Landing Page)
-      version: 1.0.6
+      version: 1.0.7
       by @lost_and_found from Densho Channel
       mail: <info@denshochan.com>
       Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -16,6 +16,7 @@
 
       <meta name="color:PrimaryColor" content="#0088aa">
       <meta name="image:CoverImage" content="">
+      <meta name="if:HeaderColumnLayout Reverse" content="0">
       <meta name="if:HeaderImageEffect Blur" content="0">
       <meta name="if:HeaderImageEffect Darken" content="0">
       <meta name="if:HeaderTextEffect Shadow" content="0">
@@ -415,7 +416,12 @@
       <div id="header-inner">
         <div class="container">
           <div class="rows">
+            {block:IfHeaderColumnLayoutReverse}
+            <div id="catchprase-container" class="col-sm-push-5 col-sm-7 text-right">
+            {/block:IfHeaderColumnLayoutReverse}
+            {block:IfNotHeaderColumnLayoutReverse}
             <div id="catchprase-container" class="col-sm-7">
+            {/block:IfNotHeaderColumnLayoutReverse}
               <div id="catchprase-container-inner">
                 <p class="catchprase">
                   {text:Catchphrase Main}
@@ -476,7 +482,12 @@
     <div id="header-bottom">
       <div class="rows">
         <div class="container">
+          {block:IfHeaderColumnLayoutReverse}
+          <div id="cover-image-container" class="col-sm-5">
+          {/block:IfHeaderColumnLayoutReverse}
+          {block:IfNotHeaderColumnLayoutReverse}
           <div id="cover-image-container" class="col-sm-push-7 col-sm-5">
+          {/block:IfNotHeaderColumnLayoutReverse}
             <img id="cover-image" class="img-thumbnail" src="{image:CoverImage}" alt="">
             <div class="visible-xs">
               {block:IfBookCollectionTitle}
@@ -525,7 +536,12 @@
               </div>
             </div>
           </div>
+          {block:IfHeaderColumnLayoutReverse}
+          <div id="social" class="col-sm-7">
+          {/block:IfHeaderColumnLayoutReverse}
+          {block:IfNotHeaderColumnLayoutReverse}
           <div id="social" class="col-sm-pull-5 col-sm-7">
+          {/block:IfNotHeaderColumnLayoutReverse}
             <ul class="list-inline text-center social-bottuns">
               <li id="tweet-btn">
                 <a href="https://twitter.com/share" data-url="{BlogURL}" class="twitter-share-button">Tweet</a>
