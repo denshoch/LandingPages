@@ -19,7 +19,7 @@
 - スマートフォンでも読みやすい（レスポンシブデザイン）
 - TwitterやFacebookで共有されやすい（OGP/Twitter Card対応）
 - 検索エンジンに最適化している（schema.org対応）
-- 電子書籍の試し読みが簡単に埋め込める（[EPUBtoTwitter](http://www.iineshoten.com/e2t/)と連携が必要です）
+- 電子書籍の試し読みが簡単に埋め込める（[EPUB to Twitter](http://www.iineshoten.com/e2t/)と連携が必要です）
 
 ## Warning <small>注意事項</small>
 
@@ -40,7 +40,7 @@
 
 1. Tumblrのダッシュボード画面で作成したブログが選択して、`カスタマイズ`を押します。
 2. テーマの編集画面で`HTMLを編集`を選びます。
-3. `HTMLを編集`の画面に表示されたHTMLコードを削除して、代わりに[こちらの](http://denshoch.github.io/LandingPages/narrative/theme.txt) の内容を貼り付けて保存してください。
+3. `HTMLを編集`の画面に表示されたHTMLコードを削除して、代わりに[こちら](http://denshoch.github.io/LandingPages/narrative/theme.txt) の内容を貼り付けて保存してください。
 
 ## Customize <small>カスタマイズ</small>
 
@@ -150,7 +150,7 @@
   <th>概要</th><th>オプション名</th><th>説明</th>
 </tr>
 <tr>
-  <td>セクションの表示／非表示</td><td>ShowSectionDescription</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+  <td>セクションの表示／非表示</td><td>ShowSectionDescription</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
 </tr>
 <tr>
   <td>見出し</td><td>SectionDescription Heading</td><td>見出しです。</td>
@@ -167,7 +167,7 @@
   <th>概要</th><th>オプション名</th><th>説明</th>
 </tr>
 <tr>
-  <td>セクションの表示／非表示</td><td>ShowSectionMovie</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+  <td>セクションの表示／非表示</td><td>ShowSectionMovie</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
 </tr>
 <tr>
   <td>見出し</td><td>SectionMovie Heading</td><td>見出しです。</td>
@@ -190,7 +190,7 @@
   <th>概要</th><th>オプション名</th><th>説明</th>
 </tr>
 <tr>
-  <td>セクションの表示／非表示</td><td>ShowSectionAudio</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+  <td>セクションの表示／非表示</td><td>ShowSectionAudio</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
 </tr>
 <tr>
   <td>見出し</td><td>SectionAudio Heading</td><td>見出しです。</td>
@@ -210,7 +210,7 @@
   <th>概要</th><th>オプション名</th><th>説明</th>
 </tr>
 <tr>
-  <td>セクションの表示／非表示</td><td>ShowSectionCharacters</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+  <td>セクションの表示／非表示</td><td>ShowSectionCharacters</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
 </tr>
 <tr>
   <td>見出し</td><td>SectionCharacters Heading</td><td>見出しです。</td>
@@ -239,7 +239,7 @@
   <th>概要</th><th>オプション名</th><th>説明</th>
 </tr>
 <tr>
-  <td>セクションの表示／非表示</td><td>ShowSectionPreview</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+  <td>セクションの表示／非表示</td><td>ShowSectionPreview</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
 </tr>
 <tr>
   <td>見出し</td><td>SectionPreview Heading</td><td>見出しです。</td>
@@ -254,7 +254,7 @@
   <td>試し読みリンク</td><td>PreviewLink</td><td>試し読みのリンクボタンを設置します。試し読みページや試し読みファイルがある場合に、URLを指定します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>Twitter埋め込みURL</td><td>TwitterPlayerURL</td><td>EPUB2Twitterを利用して試し読みを埋め込む場合、この項目に試し読みのURLを指定すると、ツイートにEPUBのビューワを埋め込むことができます。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>Twitter埋め込みURL</td><td>TwitterPlayerURL</td><td>EPUB to Twitterを利用して試し読みを埋め込む場合、この項目に試し読みのURLを指定すると、ツイートにEPUBのビューワを埋め込むことができます。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 </table>
 
@@ -265,7 +265,7 @@
   <th>概要</th><th>オプション名</th><th>説明</th>
 </tr>
 <tr>
-  <td>セクションの表示／非表示</td><td>ShowSectionDetails</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+  <td>セクションの表示／非表示</td><td>ShowSectionDetails</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
 </tr>
 <tr>
   <td>見出し</td><td>SectionDetails Heading</td><td>見出しです。</td>
@@ -303,7 +303,7 @@
   <th>概要</th><th>オプション名</th><th>説明</th>
 </tr>
 <tr>
-  <td>セクションの表示／非表示</td><td>ShowSectionReviews</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+  <td>セクションの表示／非表示</td><td>ShowSectionReviews</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
 </tr>
 <tr>
   <td>見出し</td><td>SectionReviews Heading</td><td>見出しです。</td>
@@ -341,7 +341,7 @@
   <th>概要</th><th>オプション名</th><th>説明</th>
 </tr>
 <tr>
-  <td>セクションの表示／非表示</td><td>ShowSectionAcquisition</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+  <td>セクションの表示／非表示</td><td>ShowSectionAcquisition</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
 </tr>
 <tr>
   <td>見出し</td><td>SectionAcquisition Heading</td><td>見出しです。</td>
@@ -364,7 +364,7 @@
   <th>概要</th><th>オプション名</th><th>説明</th>
 </tr>
 <tr>
-  <td>セクションの表示／非表示</td><td>ShowSectionRelatedWorks</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+  <td>セクションの表示／非表示</td><td>ShowSectionRelatedWorks</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
 </tr>
 <tr>
   <td>見出し</td><td>SectionRelatedWorks Heading</td><td>見出しです。</td>
@@ -393,7 +393,7 @@
   <th>概要</th><th>オプション名</th><th>説明</th>
 </tr>
 <tr>
-  <td>セクションの表示／非表示</td><td>ShowSectionBiographies</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+  <td>セクションの表示／非表示</td><td>ShowSectionBiographies</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
 </tr>
 <tr>
   <td>見出し</td><td>SectionBiographies Heading</td><td>見出しです。</td>
@@ -461,7 +461,7 @@
   <th>概要</th><th>オプション名</th><th>説明</th>
 </tr>
 <tr>
-  <td>セクションの表示／非表示</td><td>ShowSectionContact</td><td>このセクションの表示／非表示にするスイッチです。無効にするとこのセクションはページに表示されません。</td>
+  <td>セクションの表示／非表示</td><td>ShowSectionContact</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
 </tr>
 <tr>
   <td>見出し</td><td>SectionContact Heading</td><td>見出しです。</td>
@@ -501,9 +501,9 @@
 
 ## Credits <small>謝辞</small>
 
-- [@fujinyo](https://twitter.com/fujinyo)（[言い値書店](http://www.iineshoten.com/), [EPUB2Twitter](http://www.iineshoten.com/e2t/)）
+- [@fujinyo](https://twitter.com/fujinyo)（[言い値書店](http://www.iineshoten.com/), [EPUB to Twitter](http://www.iineshoten.com/e2t/)）
 - [@satorumurmur](https://twitter.com/satorumurmur) ([BiB/i](http://sarasa.la/bib/i/))
-- [ヘリベマルヲ](https://plus.google.com/+%E3%83%98%E3%83%AA%E3%83%99%E3%83%9E%E3%83%AB%E3%83%B2)（『ガラスの泡』）
+- [ヘリベマルヲ](https://plus.google.com/+%E3%83%98%E3%83%AA%E3%83%99%E3%83%9E%E3%83%AB%E3%83%B2)（『[ガラスの泡](http://the-glass-bubble.tumblr.com/)』）
 
 また、このテーマは、[@sanographix](https://github.com/sanographix) さんの同人音楽CD特設サイト向けTumblrテーマ [Tokusetsu 2](http://sanographix.github.io/tumblr/tokusetsu2/) を参考にさせて頂きました。
 
