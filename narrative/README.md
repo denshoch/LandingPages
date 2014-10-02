@@ -4,6 +4,8 @@
 
 バージョン: 1.0.8
 
+![スクリーンショット](../images/sc_narrative.png)
+
 ## Overview <small>概要</small>
 
 **A Tumblr theme for self-publishers**
