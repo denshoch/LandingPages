@@ -3,7 +3,7 @@
   <head>
     <!--
       Theme Narrative (Den-Den Landing Page)
-      version: 1.0.7
+      version: 1.0.8
       by @lost_and_found from Densho Channel
       mail: <info@denshochan.com>
       Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -99,6 +99,12 @@
       <meta name="text:SectionDetails ISBN" content="">
       <meta name="if:Format Ebook" content="1">
       <meta name="text:SectionDetails FormatDesc" content="">
+
+      <!-- 自由記述 -->
+      <meta name="if:ShowSectionFreeWriting" content="1">
+      <meta name="text:SectionFreeWriting Heading" content="FREE WRITING">
+      <meta name="text:SectionFreeWriting Lead" content="自由記述：リード文">
+      <meta name="text:SectionFreeWriting Body" content="自由に文章を書けます。">
 
       <!-- レビュー -->
       <meta name="if:ShowSectionReviews" content="1">
@@ -794,6 +800,27 @@
         </div>
       </section>
       {/block:IfShowSectionDetails}
+
+      <!-- セクション：自由記述 -->
+      {block:IfShowSectionFreeWriting}
+      <section id="free-writing" class="section">
+        <div class="container dd-container">
+          <h2 class="h4 section-title text-center">{text:SectionFreeWriting Heading}</h2>
+
+          {block:IfSectionFreeWritingLead}
+            <p class="h1 text-center section-lead">{text:SectionFreeWriting Lead}</p>
+          {/block:IfSectionFreeWritingLead}
+
+          <div class="free-writing-body-container">
+          {block:IfSectionFreeWritingBody}
+            {text:SectionFreeWriting Body}
+          {/block:IfSectionFreeWritingBody}
+          </div>
+        </div>
+      </section>
+
+      <hr class="context-break">
+      {/block:IfShowSectionFreeWriting}
 
       <!-- セクション：レビュー -->
       {block:IfShowSectionReviews}

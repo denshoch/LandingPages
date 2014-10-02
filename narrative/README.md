@@ -2,7 +2,7 @@
 
 でんでんランディングページ テーマ：Narrative
 
-バージョン1.0.7
+バージョン: 1.0.8
 
 ## Overview <small>概要</small>
 
@@ -296,6 +296,26 @@
 </tr>
 </table>
 
+#### テーマオプション：自由記述セクションに関する設定
+
+<table>
+<tr>
+  <th>概要</th><th>オプション名</th><th>説明</th>
+</tr>
+<tr>
+  <td>セクションの表示／非表示</td><td>ShowSectionFreeWriting</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
+</tr>
+<tr>
+  <td>見出し</td><td>SectionFreeWriting Heading</td><td>見出しです。</td>
+</tr>
+<tr>
+  <td>リード文</td><td>SectionFreeWriting Lead</td><td>リード文です。読者の興味を引く短い文章を入力します。改行には<code>&lt;br&gt;</code>を入力してください。<strong>必要ない場合は空欄にしてください。</strong></td>
+</tr>
+<tr>
+  <td>自由記述 本文</td><td>SectionFreeWriting Body</td><td>内容は特に定めていません。自由に文章を書けます。読者へのメッセージなどを書くとよいでしょう。<strong>HTMLが使えます</strong>。</td>
+</tr>
+</table>
+
 #### テーマオプション：レビューセクションに関する設定
 
 <table>
@@ -511,6 +531,9 @@
 
 ## History 変更履歴
 
+- 1.0.8
+  - 2014.10.2
+    - 自由記述欄を追加
 - 1.0.7
   - 2014.10.1
     - ヘッダのレイアウト反転スイッチを追加

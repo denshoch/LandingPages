@@ -5740,6 +5740,19 @@ section, .section, .section-inverse, .section-dark {
 .note {
   margin-bottom: 40px; }
 
+.free-writing-body-container {
+  max-width: 35em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify; }
+  .free-writing-body-container p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5; }
+
 .review-container {
   margin: 30px auto;
   max-width: 36em; }
