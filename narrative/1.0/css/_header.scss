@@ -160,6 +160,16 @@ $cover-image-height: 500px;
   }
 }
 
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  #header {
+    #catchprase-container-inner {
+      .catchprase {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
 @media (max-width: $screen-xs-max){
   #header {
     &:before {

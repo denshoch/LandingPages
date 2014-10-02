@@ -5587,6 +5587,9 @@ span.bibi-holder > iframe {
   #social .social-bottuns {
     margin-bottom: 0; }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  #header #catchprase-container-inner .catchprase {
+    font-size: 36px; } }
 @media (max-width: 767px) {
   #header:before {
     height: 160px; }
