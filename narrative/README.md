@@ -42,6 +42,13 @@
 2. テーマの編集画面で`HTMLを編集`を選びます。
 3. `HTMLを編集`の画面に表示されたHTMLコードを削除して、代わりに[こちら](http://denshoch.github.io/LandingPages/narrative/theme.txt) の内容を貼り付けて保存してください。
 
+## Update <small>アップデート</small>
+
+`HTMLを編集`の画面に[上述のリンク先](http://denshoch.github.io/LandingPages/narrative/theme.txt) の内容を貼り付け直すだけで最新のものになります。
+
+- Tumblrで設定したオプションの値はアップデート後も引き継がれます。
+- `HTMLを編集`で直接HTMLを書き換えてた内容は、**アップデート時に失われてしまいます**。HTMLを直接編集するカスタマイズはおすすめしません。それでもアップデートする場合には、現在のHTMLの内容をテキストファイルに保存するバックアップを行ないましょう。
+
 ## Customize <small>カスタマイズ</small>
 
 1. `詳細設定`画面で
