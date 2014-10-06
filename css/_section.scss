@@ -33,8 +33,11 @@ section, .section, .section-inverse {
     &:hover,
     &:active {
       color: inherit;
-      text-decoration: underline;
+      text-decoration: none;
     }
+  }
+  .btn {
+    text-decoration: none;
   }
   .section-title {
     color: inherit;
