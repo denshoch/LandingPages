@@ -5710,16 +5710,19 @@ section, .section, .section-inverse, .section-dark {
   .section-lead {
     margin-bottom: 20px;
     font-size: 32px; } }
-.description-body {
-  max-width: 42em;
-  margin: auto;
-  padding-bottom: 30px;
+.description-body, .free-writing-body-container {
+  max-width: 36em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: justify; }
+  .description-body p, .free-writing-body-container p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5; }
 
-@media (max-width: 767px) {
-  .description-body {
-    padding-bottom: 0;
-    text-align: center; } }
 .character-container {
   margin-bottom: 20px; }
 
@@ -5748,19 +5751,6 @@ section, .section, .section-inverse, .section-dark {
 
 .note {
   margin-bottom: 40px; }
-
-.free-writing-body-container {
-  max-width: 35em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1em;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: justify; }
-  .free-writing-body-container p {
-    margin-bottom: 24px;
-    font-size: 16px;
-    line-height: 1.5; }
 
 .review-container {
   margin: 30px auto;
