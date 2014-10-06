@@ -3,7 +3,7 @@
   <head>
     <!--
       Theme Narrative (Den-Den Landing Page)
-      version: 1.0.8
+      version: 1.0.9
       by @lost_and_found from Densho Channel
       mail: <info@denshochan.com>
       Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -1438,7 +1438,7 @@
 
         <p>{block:IfFooterText}{text:FooterText}{/block:IfFooterText}</p>
 
-        <div><small>Theme designed by <a href="http://densho.hatenablog.com/">Densho Channel</a>.</small></div>
+        <div><small><a href="http://lp.denshochan.com/">Theme</a> designed by <a href="http://densho.hatenablog.com/">Densho Channel</a>.</small></div>
       </div>
     </footer>
 
