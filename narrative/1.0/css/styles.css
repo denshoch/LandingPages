@@ -5659,7 +5659,13 @@ section, .section, .section-inverse, .section-dark {
   background: #428bca;
   color: #FFF; }
   .section-inverse a, .section-dark a {
-    color: inherit; }
+    color: inherit;
+    text-decoration: underline; }
+    .section-inverse a:hover, .section-dark a:hover, .section-inverse a:active, .section-dark a:active {
+      color: inherit;
+      text-decoration: none; }
+  .section-inverse .btn, .section-dark .btn {
+    text-decoration: none; }
   .section-inverse .section-title, .section-dark .section-title {
     color: inherit; }
   .section-inverse .section-lead, .section-dark .section-lead {
