@@ -52,7 +52,7 @@
       <meta name="text:SectionDescription Lead" content="内容紹介：リード文">
 
       <!-- 特徴紹介 -->
-      <meta name="if:ShowSectionFeatures" content="1">
+      <meta name="if:ShowSectionFeatures" content="0">
       <meta name="text:SectionFeatures Heading" content="FEATURES">
       <meta name="text:SectionFeatures Lead" content="本書の特徴：リード文">
 
