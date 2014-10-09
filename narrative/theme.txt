@@ -51,6 +51,29 @@
       <meta name="text:SectionDescription Heading" content="STORY">
       <meta name="text:SectionDescription Lead" content="内容紹介：リード文">
 
+      <!-- 特徴紹介 -->
+      <meta name="if:ShowSectionFeatures" content="1">
+      <meta name="text:SectionFeatures Heading" content="FEATURES">
+      <meta name="text:SectionFeatures Lead" content="本書の特徴：リード文">
+
+      <!-- 本書の特徴 01 -->
+      <meta name="image:FeatureImage 01" content="">
+      <meta name="text:FeaturePlaceholder 01" content="1">
+      <meta name="text:FeatureHeading 01" content="特徴 01">
+      <meta name="text:FeatureDesc 01" content="特徴の説明 01">
+
+      <!-- 本書の特徴 02 -->
+      <meta name="image:FeatureImage 02" content="">
+      <meta name="text:FeaturePlaceholder 02" content="2">
+      <meta name="text:FeatureHeading 02" content="特徴 02">
+      <meta name="text:FeatureDesc 02" content="特徴の説明 02">
+
+      <!-- 本書の特徴 03 -->
+      <meta name="image:FeatureImage 03" content="">
+      <meta name="text:FeaturePlaceholder 03" content="3">
+      <meta name="text:FeatureHeading 03" content="特徴 03">
+      <meta name="text:FeatureDesc 03" content="特徴の説明 03">
+
       <!-- キャラクター紹介 -->
       <meta name="if:ShowSectionCharacters" content="1">
       <meta name="text:SectionCharacters Heading" content="CHARACTERS">
@@ -364,6 +387,10 @@
         background: {color:PrimaryColor};
       }
 
+      .feature-image-placeholder {
+        color: {color:PrimaryColor};
+      }
+
       .character-desc {
         border-color: {color:PrimaryColor};
       }
@@ -628,8 +655,79 @@
       </section>
       {/block:IfShowSectionAudio}
 
+      <!-- セクション：特徴紹介 -->
+      {block:IfShowSectionFeatures}
+      <section id="features">
+        <div class="container dd-container-wide">
+          <h2 class="h4 section-title text-center">{text:SectionFeatures Heading}</h2>
+          {block:IfSectionFeaturesLead}
+            <p class="h1 text-center section-lead">{text:SectionFeatures Lead}</p>
+          {/block:IfSectionFeaturesLead}
+        
+        <div class="row">
+          <div class="col-md-4">
+            <div class="media">
+              <div class="pull-left text-center">
+                {block:IfFeatureImage01Image}<img class="media-object" style="width:64px" src="{image:FeatureImage 01}" alt="">{/block:IfFeatureImage01Image}
+                {block:IfNotFeatureImage01Image}
+                  <div class="feature-image-placeholder">{text:FeaturePlaceholder 01}</div>
+                {/block:IfNotFeatureImage01Image}
+              </div>
+
+              <div class="media-body">
+                <h4 class="media-heading feature-heading">{text:FeatureHeading 01}</h4>
+                <div class="feature-description">
+                  <p>{text:FeatureDesc 01}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="media">
+              <div class="pull-left text-center">
+                {block:IfFeatureImage02Image}<img class="media-object" style="width:64px" src="{image:FeatureImage 02}" alt="">{/block:IfFeatureImage02Image}
+                {block:IfNotFeatureImage02Image}
+                  <div class="feature-image-placeholder">{text:FeaturePlaceholder 02}</div>
+                {/block:IfNotFeatureImage02Image}
+              </div>
+
+              <div class="media-body">
+                <h4 class="media-heading feature-heading">{text:FeatureHeading 02}</h4>
+                <div class="feature-description">
+                  <p>{text:FeatureDesc 02}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="media">
+              <div class="pull-left text-center">
+                {block:IfFeatureImage03Image}<img class="media-object" style="width:64px" src="{image:FeatureImage 03}" alt="">{/block:IfFeatureImage03Image}
+                {block:IfNotFeatureImage03Image}
+                  <div class="feature-image-placeholder">{text:FeaturePlaceholder 03}</div>
+                {/block:IfNotFeatureImage03Image}
+              </div>
+
+              <div class="media-body">
+                <h4 class="media-heading feature-heading">{text:FeatureHeading 03}</h4>
+                <div class="feature-description">
+                  <p>{text:FeatureDesc 03}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      {/block:IfShowSectionFeatures}
+
       <!-- セクション：登場人物紹介 -->
       {block:IfShowSectionCharacters}
+        {block:IfShowSectionFeatures}
+          <hr class="context-break">
+        {/block:IfShowSectionFeatures}
       <section id="characters">
         <div class="container dd-container">
           <h2 class="h4 section-title text-center">{text:SectionCharacters Heading}</h2>
@@ -686,6 +784,11 @@
         {block:IfShowSectionCharacters}
         <hr class="context-break">
         {/block:IfShowSectionCharacters}
+        {block:IfNotShowSectionCharacters}
+          {block:IfShowSectionFeatures}
+          <hr class="context-break">
+          {/block:IfShowSectionFeatures}
+        {/block:IfNotShowSectionCharacters}
 
       <section id="preview">
         <div class="container dd-container">
@@ -819,7 +922,9 @@
         </div>
       </section>
 
-      <hr class="context-break">
+        {block:IfShowSectionReviews}
+          <hr class="context-break">
+        {/block:IfShowSectionReviews}
       {/block:IfShowSectionFreeWriting}
 
       <!-- セクション：レビュー -->

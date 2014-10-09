@@ -212,6 +212,39 @@
 </tr>
 </table>
 
+#### テーマオプション：特徴紹介セクションに関する設定
+
+このセクションでは本の紹介を３つの特徴で説明し、閲覧者に読むことで得られるメリットを提示します。**特徴は必ず３つ用意してください**。
+
+<table>
+<tr>
+  <th>概要</th><th>オプション名</th><th>説明</th>
+</tr>
+<tr>
+  <td>セクションの表示／非表示</td><td>ShowSectionFeatures</td><td>このセクションの表示／非表示を制御するスイッチです。無効にするとこのセクションはページに表示されません。</td>
+</tr>
+<tr>
+  <td>見出し</td><td>SectionFeatures Heading</td><td>見出しです。</td>
+</tr>
+<tr>
+  <td>リード文</td><td>SectionFeatures Lead</td><td>リード文です。読者の興味を引く短い文章を入力します。改行には<code>&lt;br&gt;</code>を入力してください。<strong>必要ない場合は空欄にしてください。</strong></td>
+</tr>
+<tr>
+  <td>特徴：画像</td><td>FeatureImage 01〜03</td><td>本の特徴を表した画像です。<strong>64px以上の正方形</strong>の画像を推奨します。<strong>必要ない場合は空欄にしてください。</strong></td>
+</tr>
+<tr>
+  <td>特徴：代替テキスト</td><td>FeaturePlaceholder 01〜03</td><td>特徴を表す画像が用意できない場合には、代わりにテキストで表現しましょう。デフォルトで<code>1</code>〜<code>3</code>の文字が割り当てられています。<br>
+  <code>&lt;i class="fa fa-camera-retro"&gt;&lt;/i&gt;</code>のように<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>のアイコンコードを貼り付ける使い方もあります。
+</td>
+</tr>
+<tr>
+  <td>特徴：見出し</td><td>FeatureHeading 01〜03</td><td>特徴を説明した見出しです。改行には<code>&lt;br&gt;</code>を入力してください。</td>
+</tr>
+<tr>
+  <td>特徴：説明</td><td>FeatureDesc 01〜03</td><td>特徴の説明した文章です。改行には<code>&lt;br&gt;</code>を入力してください。</td>
+</tr>
+</table>
+
 #### テーマオプション：キャラクター紹介セクションに関する設定
 
 <table>
@@ -541,8 +574,9 @@
 ## History 変更履歴
 
 - 1.0.9
-  - 2014.10.6
-    - フッターの内容を微修正
+  - 2014.10.9
+    - 特徴紹介セクションを追加
+    - フッターの内容テキストを微修正
 - 1.0.8
   - 2014.10.2
     - 自由記述欄を追加

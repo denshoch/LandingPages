@@ -5391,6 +5391,14 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 20px;
   margin-bottom: 20px; }
 
+.dd-container-wide {
+  max-width: 960px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+@media (max-width: 991px) {
+  .dd-container-wide {
+    max-width: 760px; } }
 #fb-like-btn {
   position: relative;
   top: -5px; }
@@ -5722,6 +5730,20 @@ section, .section, .section-inverse, .section-dark {
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 1.5; }
+
+#features {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.feature-image-placeholder {
+  width: 64px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: bold; }
+
+.feature-description {
+  text-align: justify; }
 
 .character-container {
   margin-bottom: 20px; }

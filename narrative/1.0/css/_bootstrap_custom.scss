@@ -37,6 +37,18 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: $line-height-computed;
 }
 
+.dd-container-wide {
+  max-width: 960px;
+  margin-top: $line-height-computed;
+  margin-bottom: $line-height-computed;
+}
+
+@media (max-width: $screen-sm-max) {
+  .dd-container-wide {
+    max-width: 760px;
+  }
+}
+
 // etc
 #fb-like-btn {
   position: relative;
