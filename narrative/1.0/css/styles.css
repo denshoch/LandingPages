@@ -5536,7 +5536,8 @@ span.bibi-holder > iframe {
       font-weight: normal;
       font-size: 12px; }
     #header #catchprase-container-inner .creators-list {
-      margin-top: 10px; }
+      margin-top: 10px;
+      margin-left: -2px; }
       #header #catchprase-container-inner .creators-list > li {
         padding-left: 2px;
         padding-right: 2px;

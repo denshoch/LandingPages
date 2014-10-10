@@ -80,6 +80,7 @@ $cover-image-height: 500px;
     }
     .creators-list {
       margin-top: $line-height-computed / 2;
+      margin-left: -2px;
       //font-style: italic;
       &>li {
         padding-left: 2px;
