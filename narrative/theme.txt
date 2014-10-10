@@ -1091,7 +1091,7 @@
 
       <!-- セクション：電子書籍とのつきあい方 -->
       {block:IfShowSectionHowToRead}
-      <section id="how-to-read" class="section-dark">
+      <section id="how-to-read" class="section-light">
         <div class="container dd-container">
           <h2 class="h4 section-title text-center">HOW TO READ EBOOKS</h2>
           <p class="h1 text-center section-lead"><span class="inline-block">電子書籍との</span><span class="inline-block">つきあい方</span></p>
@@ -1105,7 +1105,7 @@
             
             <p>はじめて電子書籍に触れる人の、よくある疑問に答えます。</p>
             
-            <p class="text-center"><a class="btn btn-default btn-lg" href="http://lp.denshochan.com/how-to-read-ebooks.html" target="_blank"><i class="fa fa-external-link"></i> 電子書籍とのつきあい方</a></p>
+            <p class="text-center"><a class="btn btn-info btn-lg" href="http://lp.denshochan.com/how-to-read-ebooks.html" target="_blank"><i class="fa fa-external-link"></i> 電子書籍とのつきあい方</a></p>
           </div>
         </div>
       </section>
