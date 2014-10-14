@@ -2,7 +2,7 @@
 
 でんでんランディングページ テーマ：Narrative
 
-バージョン: 1.0.10
+バージョン: 1.0.11
 
 ![スクリーンショット](../images/sc_narrative.png)
 
@@ -325,6 +325,15 @@
   <td>出版者URL</td><td>SectionDetails PublisherURL</td><td>出版者／出版社のウェブサイトなどのURLです。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
+  <td>価格の表示／非表示</td><td>ShowPrice</td><td>価格情報を表示する／表示しないを選択するスイッチです。</td>
+</tr>
+<tr>
+  <td>価格情報</td><td>Price</td><td>価格情報（円）です。表示するには前述の<code>ShowPrice</code>が有効になっている必要があります。空欄の場合は<strong>無料</strong>と表示されます。</td>
+</tr>
+<tr>
+  <td>出版者URL</td><td>SectionDetails PublisherURL</td><td>出版者／出版社のウェブサイトなどのURLです。<strong>必要ない場合は空欄にしてください。</strong></td>
+</tr>
+<tr>
   <td>ISBN</td><td>SectionDetails ISBN</td><td>ISBN番号がある場合にはここに記述してください。<strong>HTMLタグは使えません</strong>。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
@@ -584,6 +593,9 @@
 
 ## History 変更履歴
 
+- 1.0.10
+  - 2014.10.14
+    - 価格の表示オプションを追加
 - 1.0.10
   - 2014.10.10
     - 電子書籍とのつきあい方セクションを追加

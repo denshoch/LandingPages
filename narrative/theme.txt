@@ -3,7 +3,7 @@
   <head>
     <!--
       Theme Narrative (Den-Den Landing Page)
-      version: 1.0.10
+      version: 1.0.11
       by @lost_and_found from Densho Channel
       mail: <info@denshochan.com>
       Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -27,6 +27,7 @@
       <meta name="text:BookCollectionTitle" content="シリーズタイトル">
       <meta name="select:BookLanguage" content="ja" title="Japanese">
       <meta name="select:BookLanguage" content="en" title="English">
+      <meta name="if:ShowPrice" content="1">
       <meta name="text:Price" content="">
       <meta name="text:Catchphrase Main" content="キャッチフレーズ メイン">
       <meta name="text:Catchphrase Sub" content="キャッチフレーズ サブ">
@@ -666,7 +667,7 @@
           {block:IfSectionFeaturesLead}
             <p class="h1 text-center section-lead">{text:SectionFeatures Lead}</p>
           {/block:IfSectionFeaturesLead}
-        
+
         <div class="row">
           <div class="col-md-4">
             <div class="media">
@@ -879,6 +880,7 @@
                 {/block:IfNotSectionDetailsPublisherURL}
               </tr>
             {/block:IfSectionDetailsPublisherName}
+            {block:IfShowPrice}
               <tr>
                 <th>販売価格</th>
                 <td>
@@ -889,6 +891,7 @@
                   <p><a class="btn btn-default btn-sm" href="#acquisition">この本を入手</a></p>
                 </td>
               </tr>
+            {/block:IfShowPrice}
             {block:IfSectionDetailsISBN}
               <tr>
                 <th>ISBN</th>
@@ -1095,16 +1098,16 @@
         <div class="container dd-container">
           <h2 class="h4 section-title text-center">HOW TO READ EBOOKS</h2>
           <p class="h1 text-center section-lead"><span class="inline-block">電子書籍との</span><span class="inline-block">つきあい方</span></p>
-          <div class="free-writing-body-container"> 
+          <div class="free-writing-body-container">
 
             <ul>
               <li>専用端末がないと読めない？</li>
               <li>端末が壊れたら買った本は無駄になる？</li>
               <li>何に気をつければいいの？</li>
             </ul>
-            
+
             <p>はじめて電子書籍に触れる人の、よくある疑問に答えます。</p>
-            
+
             <p class="text-center"><a class="btn btn-info btn-lg" href="http://lp.denshochan.com/how-to-read-ebooks.html" target="_blank"><i class="fa fa-external-link"></i> 電子書籍とのつきあい方</a></p>
           </div>
         </div>
@@ -1121,12 +1124,14 @@
             <p class="h1 text-center section-lead">{text:SectionAcquisition Lead}</p>
           {/block:IfSectionAcquisitionLead}
 
-          {block:IfPrice}
-            <p class="text-center">販売価格 <span class="price">{text:Price}</span> 円</p>
-          {/block:IfPrice}
-          {block:IfNotPrice}
-            <p class="text-center">販売価格 <span class="price">無料</span></p>
-          {/block:IfNotPrice}
+          {block:IfShowPrice}
+            {block:IfPrice}
+              <p class="text-center">販売価格 <span class="price">{text:Price}</span> 円</p>
+            {/block:IfPrice}
+            {block:IfNotPrice}
+              <p class="text-center">販売価格 <span class="price">無料</span></p>
+            {/block:IfNotPrice}
+          {/block:IfShowPrice}
 
           {block:IfSectionAcquisitionNote}
             <p class="text-center small">{text:SectionAcquisition Note}</p>
