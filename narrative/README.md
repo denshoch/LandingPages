@@ -432,6 +432,9 @@
   <td>リード文</td><td>SectionAcquisition Lead</td><td>リード文です。読者の興味を引く短い文章を入力します。改行には<code>&lt;br&gt;</code>を入力してください。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
+  <td>注意書き</td><td>SectionAcquisition Note</td><td>購入／ダウンロードに関する注意書きを記述できます。<strong>必要ない場合は空欄にしてください。</strong></td>
+</tr>
+<tr>
   <td>リンクラベル</td><td>AcquisitionLinkLabel 01〜06</td><td>リンクボタンに表示するテキストです。このテキストがないボタンは表示されません。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
