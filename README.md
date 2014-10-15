@@ -25,6 +25,6 @@
 ## Setup
 
 ```
-$ npm install --save-dev gulp gulp-ruby-sass bower
+$ npm install --save-dev gulp gulp-ruby-sass gulp-ejs bower
 $ bower install bootstrap-sass-official
 ```
