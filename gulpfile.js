@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
+var ejs  = require('gulp-ejs');
 
 // Bower
 var config = {
@@ -23,7 +24,7 @@ gulp.task('base', function () {
 });
 
 gulp.task('narrative', function () {
-    return gulp.src('narrative/1.0/css/styles.scss')
+    gulp.src('narrative/' + config.versions.narrative + '/css/styles.scss')
         .pipe(sass({
           sourcemap: true,
           sourcemapPath: '../css',
@@ -33,6 +34,12 @@ gulp.task('narrative', function () {
         }))
         .on('error', function (err) { console.log(err.message); })
         .pipe(gulp.dest('narrative/' + config.versions.narrative + '/css'));
+    gulp.src('narrative/' + config.versions.narrative + '/ejs/*.ejs')
+        .pipe(ejs({
+        msg: 'Hello Gulp!'
+    },{ext: '.txt'}))
+        .on('error', function (err) { console.log(err.message); })
+        .pipe(gulp.dest("./narrative"));
 });
 
 gulp.task('default', function () {

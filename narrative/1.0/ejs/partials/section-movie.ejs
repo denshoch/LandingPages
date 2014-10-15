@@ -1,0 +1,16 @@
+      <!-- セクション：動画 -->
+      {block:IfShowSectionMovie}
+      <section id="movie" class="section-dark">
+        <div class="container dd-container">
+          <h2 class="section-title text-center">{text:SectionMovie Heading}</h2>
+          {block:IfSectionMovieLead}
+            <p class="section-lead text-center">{text:SectionMovie Lead}</p>
+          {/block:IfSectionMovieLead}
+          {block:IfSectionMovieEmbedCode}
+          <div class="embed-responsive {select:SectionMovie AspectRatio}">
+            {text:SectionMovie EmbedCode}
+          </div>
+          {/block:IfSectionMovieEmbedCode}
+        </div>
+      </section>
+      {/block:IfShowSectionMovie}

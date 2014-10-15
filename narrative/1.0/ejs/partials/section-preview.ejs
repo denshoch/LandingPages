@@ -1,0 +1,34 @@
+      <!-- セクション：試し読み -->
+      {block:IfShowSectionPreview}
+        {block:IfShowSectionCharacters}
+        <hr class="context-break">
+        {/block:IfShowSectionCharacters}
+        {block:IfNotShowSectionCharacters}
+          {block:IfShowSectionFeatures}
+          <hr class="context-break">
+          {/block:IfShowSectionFeatures}
+        {/block:IfNotShowSectionCharacters}
+
+      <section id="preview">
+        <div class="container dd-container">
+          <h2 class="h4 section-title text-center">{text:SectionPreview Heading}</h2>
+
+          {block:IfSectionPreviewLead}
+            <p class="h1 text-center section-lead">{text:SectionPreview Lead}</p>
+          {/block:IfSectionPreviewLead}
+
+          {block:IfPreviewEmbedCode}
+            <div class="preview-container center-block text-center">
+              {text:PreviewEmbedCode}
+            </div>
+          {/block:IfPreviewEmbedCode}
+
+          {block:IfPreviewLink}
+            <div class="btn-container">
+              <p class="text-center"><a class="btn btn-success btn-lg" href="{text:IfPreviewLink}">試し読みを開く</a></p>
+            </div>
+          {/block:IfPreviewLink}
+
+        </div>
+      </section>
+      {/block:IfShowSectionPreview}

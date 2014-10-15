@@ -1,0 +1,63 @@
+      <!-- セクション：関連コンテンツ -->
+      {block:IfShowSectionRelatedWorks}
+      <section id="related-contents" title="Related works">
+        <div class="container dd-container">
+
+          <h2 class="h4 section-title text-center">{text:SectionRelatedWorks Heading}</h2>
+
+          {block:IfSectionRelatedWorksLead}
+            <p class="h1 text-center section-lead">{text:SectionRelatedWorks Lead}</p>
+          {/block:IfSectionRelatedWorksLead}
+
+          <div class="row">
+
+            {block:IfRelatedWorkTitle01}
+            <div class="{select:ColumnCount RelatedWorks}">
+              <div class="thumbnail text-center">
+                <a class="target" href="{text:RelatedWorkURL 01}" title="{text:RelatedWorkTitle 01}"><div class="thumbnail-container" style="background-image:url({image:RelatedWorkImage 01})"></div></a>
+                <div class="caption">
+                  <a class="thumbnail-title" href="{text:RelatedWorkURL 01}">{text:RelatedWorkTitle 01}</a>
+                </div>
+              </div>
+            </div>
+            {/block:IfRelatedWorkTitle01}
+
+            {block:IfRelatedWorkTitle02}
+            <div class="{select:ColumnCount RelatedWorks}">
+              <div class="thumbnail text-center">
+                <a href="{text:RelatedWorkURL 02}" title="{text:RelatedWorkTitle 02}"><div class="thumbnail-container" style="background-image:url({image:RelatedWorkImage 02})"></div></a>
+                <div class="caption">
+                  <a class="thumbnail-title" href="{text:RelatedWorkURL 02}">{text:RelatedWorkTitle 02}</a>
+                </div>
+              </div>
+            </div>
+            {/block:IfRelatedWorkTitle02}
+
+            {block:IfRelatedWorkTitle03}
+            <div class="{select:ColumnCount RelatedWorks}">
+              <div class="thumbnail text-center">
+                <a href="{text:RelatedWorkURL 03}" title="{text:RelatedWorkTitle 03}"><div class="thumbnail-container" style="background-image:url({image:RelatedWorkImage 03})"></div></a>
+                <div class="caption">
+                  <a class="thumbnail-title" href="{text:RelatedWorkURL 03}">{text:RelatedWorkTitle 03}</a>
+                </div>
+              </div>
+            </div>
+            {/block:IfRelatedWorkTitle03}
+
+            {block:IfRelatedWorkTitle04}
+            <div class="{select:ColumnCount RelatedWorks}">
+              <div class="thumbnail text-center">
+                <a href="{text:RelatedWorkURL 04}" title="{text:RelatedWorkTitle 04}"><div class="thumbnail-container" style="background-image:url({image:RelatedWorkImage 04})"></div></a>
+                <div class="caption">
+                  <a class="thumbnail-title" href="{text:RelatedWorkURL 04}">{text:RelatedWorkTitle 04}</a>
+                </div>
+              </div>
+            </div>
+            {/block:IfRelatedWorkTitle04}
+
+          </div>
+        </div>
+      </section>
+
+      <hr class="context-break">
+      {/block:IfShowSectionRelatedWorks}

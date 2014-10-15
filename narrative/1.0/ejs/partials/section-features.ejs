@@ -1,0 +1,67 @@
+      <!-- セクション：特徴紹介 -->
+      {block:IfShowSectionFeatures}
+      <section id="features">
+        <div class="container dd-container-wide">
+          <h2 class="h4 section-title text-center">{text:SectionFeatures Heading}</h2>
+          {block:IfSectionFeaturesLead}
+            <p class="h1 text-center section-lead">{text:SectionFeatures Lead}</p>
+          {/block:IfSectionFeaturesLead}
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="media">
+              <div class="pull-left text-center">
+                {block:IfFeatureImage01Image}<img class="media-object" style="width:64px" src="{image:FeatureImage 01}" alt="">{/block:IfFeatureImage01Image}
+                {block:IfNotFeatureImage01Image}
+                  <div class="feature-image-placeholder">{text:FeaturePlaceholder 01}</div>
+                {/block:IfNotFeatureImage01Image}
+              </div>
+
+              <div class="media-body">
+                <h4 class="media-heading feature-heading">{text:FeatureHeading 01}</h4>
+                <div class="feature-description">
+                  <p>{text:FeatureDesc 01}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="media">
+              <div class="pull-left text-center">
+                {block:IfFeatureImage02Image}<img class="media-object" style="width:64px" src="{image:FeatureImage 02}" alt="">{/block:IfFeatureImage02Image}
+                {block:IfNotFeatureImage02Image}
+                  <div class="feature-image-placeholder">{text:FeaturePlaceholder 02}</div>
+                {/block:IfNotFeatureImage02Image}
+              </div>
+
+              <div class="media-body">
+                <h4 class="media-heading feature-heading">{text:FeatureHeading 02}</h4>
+                <div class="feature-description">
+                  <p>{text:FeatureDesc 02}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="media">
+              <div class="pull-left text-center">
+                {block:IfFeatureImage03Image}<img class="media-object" style="width:64px" src="{image:FeatureImage 03}" alt="">{/block:IfFeatureImage03Image}
+                {block:IfNotFeatureImage03Image}
+                  <div class="feature-image-placeholder">{text:FeaturePlaceholder 03}</div>
+                {/block:IfNotFeatureImage03Image}
+              </div>
+
+              <div class="media-body">
+                <h4 class="media-heading feature-heading">{text:FeatureHeading 03}</h4>
+                <div class="feature-description">
+                  <p>{text:FeatureDesc 03}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      {/block:IfShowSectionFeatures}

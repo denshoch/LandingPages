@@ -1,0 +1,91 @@
+      <!-- セクション：詳細情報 -->
+      {block:IfShowSectionDetails}
+      <section id="info" class="section-inverse">
+        <div class="container dd-container">
+
+          <h2 class="h4 section-title text-center">{text:SectionDetails Heading}</h2>
+
+          {block:IfSectionDetailsLead}
+            <p class="h1 text-center section-lead">{text:SectionDetails Lead}</p>
+          {/block:IfSectionDetailsLead}
+
+          <table class="table table-condenced">
+            <tr>
+              <th>タイトル</th>
+              <td>
+                {block:IfBookCollectionTitle}
+                  {text:BookCollectionTitle}<br>
+                {/block:IfBookCollectionTitle}
+                {text:BookTitle}<br>
+                {block:IfBookSubtitle}
+                  {text:BookSubtitle}<br>
+                {/block:IfBookSubtitle}
+              </td>
+            </tr>
+            {block:IfAuthorName01}
+              <tr>
+                <th>著者</th>
+                <td>
+                  <ul class="list-unstyled">
+                    {block:IfAuthorName01}
+                      <li>{text:AuthorName 01}</li>
+                    {/block:IfAuthorName01}
+                    {block:IfAuthorName02}
+                      <li>{text:AuthorName 02}</li>
+                    {/block:IfAuthorName02}
+                    {block:IfContributorName01}
+                      <li>{text:ContributorName 01}</li>
+                    {/block:IfContributorName01}
+                    {block:IfContributorName02}
+                      <li>{text:ContributorName 02}</li>
+                    {/block:IfContributorName02}
+                  </ul>
+                </td>
+              </tr>
+            {/block:IfAuthorName01}
+            {block:IfSectionDetailsDatePublished}
+              <tr>
+                <th>発行日</th>
+                <td>{text:SectionDetails DatePublished}</td>
+              </tr>
+            {/block:IfSectionDetailsDatePublished}
+            {block:IfSectionDetailsPublisherName}
+              <tr>
+                <th>発行者</th>
+                {block:IfSectionDetailsPublisherURL}
+                  <td><a href="{text:SectionDetails PublisherURL}">{text:SectionDetails PublisherName}</a></td>
+                {/block:IfSectionDetailsPublisherURL}
+                {block:IfNotSectionDetailsPublisherURL}
+                  <td>{text:SectionDetails PublisherName}</td>
+                {/block:IfNotSectionDetailsPublisherURL}
+              </tr>
+            {/block:IfSectionDetailsPublisherName}
+            {block:IfShowPrice}
+              <tr>
+                <th>販売価格</th>
+                <td>
+                  <p>
+                    {block:IfPrice}{text:Price} 円{/block:IfPrice}
+                    {block:IfNotPrice}無料{/block:IfNotPrice}
+                  </p>
+                  <p><a class="btn btn-default btn-sm" href="#acquisition">この本を入手</a></p>
+                </td>
+              </tr>
+            {/block:IfShowPrice}
+            {block:IfSectionDetailsISBN}
+              <tr>
+                <th>ISBN</th>
+                <td>{text:SectionDetails ISBN}</td>
+              </tr>
+            {/block:IfSectionDetailsISBN}
+            {block:IfSectionDetailsFormatDesc}
+            <tr>
+              <th>フォーマット</th>
+              <td>{text:SectionDetails FormatDesc}</td>
+            </tr>
+            {/block:IfSectionDetailsFormatDesc}
+          </table>
+
+        </div>
+      </section>
+      {/block:IfShowSectionDetails}

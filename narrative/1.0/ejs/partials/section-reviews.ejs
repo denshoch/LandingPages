@@ -1,0 +1,158 @@
+      <!-- セクション：レビュー -->
+      {block:IfShowSectionReviews}
+      <section id="reviews" class="section">
+        <div class="container dd-container">
+
+          <h2 class="h4 section-title text-center">{text:SectionReviews Heading}</h2>
+
+          {block:IfSectionReviewsLead}
+            <p class="h1 text-center section-lead">{text:SectionReviews Lead}</p>
+          {/block:IfSectionReviewsLead}
+
+          {block:IfReviewComment01}
+          <div class="review-container">
+            {block:IfReviewTitle01}
+            <p class="review-title">{text:ReviewTitle 01}</p>
+            {/block:IfReviewTitle01}
+            <div class="bubble">
+              <blockquote>
+                {text:ReviewComment 01}
+                {block:IfReviewAttributionTitle01}
+                <footer>
+                  {block:IfReviewAttributionURL01}
+                  <a href="{text:ReviewAttributionURL 01}">{text:ReviewAttributionTitle 01}</a>
+                  {/block:IfReviewAttributionURL01}
+                  {block:IfNotReviewAttributionURL01}
+                  {text:ReviewAttributionTitle 01}
+                  {/block:IfNotReviewAttributionURL01}
+                </footer>
+                {/block:IfReviewAttributionTitle01}
+              </blockquote>
+            </div>
+            <div class="media reviewer-container">
+              <div class="pull-left">
+                {block:IfReviewerImage01Image}
+                <img class="media-object img-circle" style="width:48px" src="{image:ReviewerImage 01}" alt="">
+                {/block:IfReviewerImage01Image}
+                {block:IfNotReviewerImage01Image}
+                <div class="reviewer-icon-placeholder">
+                  <i class="fa fa-user"></i>
+                </div>
+                {/block:IfNotReviewerImage01Image}
+              </div>
+              <div class="media-body">
+                <div class="reviewer-name">
+                  {block:IfReviewerURL01}
+                  <a href="{text:ReviewerURL 01}">{text:ReviewerName 01}</a>
+                  {/block:IfReviewerURL01}
+
+                  {block:IfNotReviewerURL01}
+                  {text:ReviewerName 01}
+                  {/block:IfNotReviewerURL01}
+                  {block:IfReviewerRole01}<span class="reviewer-role">{text:ReviewerRole 01}</span>{/block:IfReviewerRole01}
+                </div>
+              </div>
+            </div>
+          </div>
+          {/block:IfReviewComment01}
+
+          {block:IfReviewComment02}
+          <hr class="context-break">
+
+          <div class="review-container">
+            {block:IfReviewTitle02}
+            <p class="review-title">{text:ReviewTitle 02}</p>
+            {/block:IfReviewTitle02}
+            <div class="bubble">
+              <blockquote>
+                {text:ReviewComment 02}
+                {block:IfReviewAttributionTitle02}
+                <footer>
+                  {block:IfReviewAttributionURL02}
+                  <a href="{text:ReviewAttributionURL 02}">{text:ReviewAttributionTitle 02}</a>
+                  {/block:IfReviewAttributionURL02}
+                  {block:IfNotReviewAttributionURL02}
+                  {text:ReviewAttributionTitle 02}
+                  {/block:IfNotReviewAttributionURL02}
+                </footer>
+                {/block:IfReviewAttributionTitle02}
+              </blockquote>
+            </div>
+            <div class="media reviewer-container">
+              <div class="pull-left">
+                {block:IfReviewerImage02Image}
+                <img class="media-object img-circle" style="width:48px" src="{image:ReviewerImage 02}" alt="">
+                {/block:IfReviewerImage02Image}
+                {block:IfNotReviewerImage02Image}
+                <div class="reviewer-icon-placeholder">
+                  <i class="fa fa-user"></i>
+                </div>
+                {/block:IfNotReviewerImage02Image}
+              </div>
+              <div class="media-body">
+                <div class="reviewer-name">
+                  {block:IfReviewerURL02}
+                  <a href="{text:ReviewerURL 02}">{text:ReviewerName 02}</a>
+                  {/block:IfReviewerURL02}
+
+                  {block:IfNotReviewerURL02}
+                  {text:ReviewerName 02}
+                  {/block:IfNotReviewerURL02}
+                  {block:IfReviewerRole02}<span class="reviewer-role">{text:ReviewerRole 02}</span>{/block:IfReviewerRole02}
+                </div>
+              </div>
+            </div>
+          </div>
+          {/block:IfReviewComment02}
+
+          {block:IfReviewComment03}
+          <hr class="context-break">
+
+          <div class="review-container">
+            {block:IfReviewTitle03}
+            <p class="review-title">{text:ReviewTitle 03}</p>
+            {/block:IfReviewTitle03}
+            <div class="bubble">
+              <blockquote>
+                {text:ReviewComment 03}
+                {block:IfReviewAttributionTitle03}
+                <footer>
+                  {block:IfReviewAttributionURL03}
+                  <a href="{text:ReviewAttributionURL 03}">{text:ReviewAttributionTitle 03}</a>
+                  {/block:IfReviewAttributionURL03}
+                  {block:IfNotReviewAttributionURL03}
+                  {text:ReviewAttributionTitle 03}
+                  {/block:IfNotReviewAttributionURL03}
+                </footer>
+                {/block:IfReviewAttributionTitle03}
+              </blockquote>
+            </div>
+            <div class="media reviewer-container">
+              <div class="pull-left">
+                {block:IfReviewerImage03Image}
+                <img class="media-object img-circle" style="width:48px" src="{image:ReviewerImage 03}" alt="">
+                {/block:IfReviewerImage03Image}
+                {block:IfNotReviewerImage03Image}
+                <div class="reviewer-icon-placeholder">
+                  <i class="fa fa-user"></i>
+                </div>
+                {/block:IfNotReviewerImage03Image}
+              </div>
+              <div class="media-body">
+                <div class="reviewer-name">
+                  {block:IfReviewerURL03}
+                  <a href="{text:ReviewerURL 03}">{text:ReviewerName 03}</a>
+                  {/block:IfReviewerURL03}
+
+                  {block:IfNotReviewerURL03}
+                  {text:ReviewerName 03}
+                  {/block:IfNotReviewerURL03}
+                  {block:IfReviewerRole03}<span class="reviewer-role">{text:ReviewerRole 03}</span>{/block:IfReviewerRole03}
+                </div>
+              </div>
+            </div>
+          </div>
+          {/block:IfReviewComment03}
+        </div>
+      </section>
+      {/block:IfShowSectionReviews}

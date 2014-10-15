@@ -1,0 +1,55 @@
+      <!-- セクション：登場人物紹介 -->
+      {block:IfShowSectionCharacters}
+        {block:IfShowSectionFeatures}
+          <hr class="context-break">
+        {/block:IfShowSectionFeatures}
+      <section id="characters">
+        <div class="container dd-container">
+          <h2 class="h4 section-title text-center">{text:SectionCharacters Heading}</h2>
+          {block:IfSectionCharactersLead}
+            <p class="h1 text-center section-lead">{text:SectionCharacters Lead}</p>
+          {/block:IfSectionCharactersLead}
+          <div class="row">
+            {block:IfCharacterName01}
+            <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+              {block:IfCharacterImage01Image}<img class="img-thumbnail" style="width:128px" src="{image:CharacterImage 01}" alt="">{/block:IfCharacterImage01Image}
+
+              <div class="h5 character-name">{text:CharacterName 01}</div>
+              <div class="character-desc">
+                {text:CharacterDesc 01}
+              </div>
+            </div>
+            {/block:IfCharacterName01}
+            {block:IfCharacterName02}
+            <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+              {block:IfCharacterImage02Image}<img class="img-thumbnail" style="width:128px" src="{image:CharacterImage 02}" alt="">{/block:IfCharacterImage02Image}
+              <div class="h5 character-name">{text:CharacterName 02}</div>
+              <div class="character-desc">
+                {text:CharacterDesc 02}
+              </div>
+            </div>
+            {/block:IfCharacterName02}
+            {block:IfCharacterName03}
+            <div class="separator-for-{select:ColumnCount Characters}"></div>
+            <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+              {block:IfCharacterImage03Image}<img class="img-thumbnail" style="width:128px" src="{image:CharacterImage 03}" alt="">{/block:IfCharacterImage03Image}
+              <div class="h5 character-name">{text:CharacterName 03}</div>
+              <div class="character-desc">
+                {text:CharacterDesc 03}
+              </div>
+            </div>
+            {/block:IfCharacterName03}
+            {block:IfCharacterName04}
+            <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+              {block:IfCharacterImage04Image}<img class="img-thumbnail" style="width:128px" src="{image:CharacterImage 04}" alt="">{block:IfCharacterImage04Image}
+              <div class="h5 character-name">{text:CharacterName 04}</div>
+              <div class="character-desc">
+                {text:CharacterDesc 04}
+              </div>
+            </div>
+            {/block:IfCharacterName04}
+          </div>
+        </div>
+      </section>
+
+      {/block:IfShowSectionCharacters}

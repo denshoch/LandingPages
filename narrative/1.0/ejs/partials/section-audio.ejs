@@ -1,0 +1,16 @@
+      <!-- セクション：オーディオ -->
+      {block:IfShowSectionAudio}
+      <section id="movie" class="section-light">
+        <div class="container dd-container">
+          <h2 class="section-title text-center">{text:SectionAudio Heading}</h2>
+          {block:IfSectionAudioLead}
+            <p class="section-lead text-center">{text:SectionAudio Lead}</p>
+          {/block:IfSectionAudioLead}
+          {block:IfSectionAudioEmbedCode}
+          <div class="audio-container">
+            {text:SectionAudio EmbedCode}
+          </div>
+          {/block:IfSectionAudioEmbedCode}
+        </div>
+      </section>
+      {/block:IfShowSectionAudio}
