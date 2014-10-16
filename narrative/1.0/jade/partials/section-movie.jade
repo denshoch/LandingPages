@@ -1,0 +1,18 @@
+// セクション：動画 
+| 
+| {block:IfShowSectionMovie}
+section#movie.section-dark
+  .container.dd-container
+    h2.section-title.text-center {text:SectionMovie Heading}
+    | 
+    | {block:IfSectionMovieLead}
+    p.section-lead.text-center {text:SectionMovie Lead}
+    | 
+    | {/block:IfSectionMovieLead}
+    | {block:IfSectionMovieEmbedCode}
+    div(class="embed-responsive {select:SectionMovie AspectRatio}")
+      | {text:SectionMovie EmbedCode}
+    | 
+    | {/block:IfSectionMovieEmbedCode}
+| 
+| {/block:IfShowSectionMovie}

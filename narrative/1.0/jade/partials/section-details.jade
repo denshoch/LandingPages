@@ -1,0 +1,103 @@
+// セクション：詳細情報 
+| 
+| {block:IfShowSectionDetails}
+section#info.section-inverse
+  .container.dd-container
+    h2.h4.section-title.text-center {text:SectionDetails Heading}
+    | 
+    | {block:IfSectionDetailsLead}
+    p.h1.text-center.section-lead {text:SectionDetails Lead}
+    | 
+    | {/block:IfSectionDetailsLead}
+    table.table.table-condenced
+      tr
+        th タイトル
+        td
+          | {block:IfBookCollectionTitle}
+          | {text:BookCollectionTitle}
+          br
+          | 
+          | {/block:IfBookCollectionTitle}
+          | {text:BookTitle}
+          br
+          | 
+          | {block:IfBookSubtitle}
+          | {text:BookSubtitle}
+          br
+          | 
+          | {/block:IfBookSubtitle}
+      | 
+      | {block:IfAuthorName01}
+      tr
+        th 著者
+        td
+          ul.list-unstyled
+            | 
+            | {block:IfAuthorName01}
+            | 
+            li {text:AuthorName 01}
+            | 
+            | {/block:IfAuthorName01}
+            | {block:IfAuthorName02}
+            | 
+            li {text:AuthorName 02}
+            | 
+            | {/block:IfAuthorName02}
+            | {block:IfContributorName01}
+            | 
+            li {text:ContributorName 01}
+            | 
+            | {/block:IfContributorName01}
+            | {block:IfContributorName02}
+            | 
+            li {text:ContributorName 02}
+            | 
+            | {/block:IfContributorName02}
+      | 
+      | {/block:IfAuthorName01}
+      | {block:IfSectionDetailsDatePublished}
+      tr
+        th 発行日
+        td {text:SectionDetails DatePublished}
+      | 
+      | {/block:IfSectionDetailsDatePublished}
+      | {block:IfSectionDetailsPublisherName}
+      tr
+        th 発行者
+        | 
+        | {block:IfSectionDetailsPublisherURL}
+        td
+          a(href='{text:SectionDetails PublisherURL}') {text:SectionDetails PublisherName}
+        | 
+        | {/block:IfSectionDetailsPublisherURL}
+        | {block:IfNotSectionDetailsPublisherURL}
+        td {text:SectionDetails PublisherName}
+        | 
+        | {/block:IfNotSectionDetailsPublisherURL}
+      | 
+      | {/block:IfSectionDetailsPublisherName}
+      | {block:IfShowPrice}
+      tr
+        th 販売価格
+        td
+          p
+            | {block:IfPrice}{text:Price} 円{/block:IfPrice}
+            | {block:IfNotPrice}無料{/block:IfNotPrice}
+          p
+            a.btn.btn-default.btn-sm(href='#acquisition') この本を入手
+      | 
+      | {/block:IfShowPrice}
+      | {block:IfSectionDetailsISBN}
+      tr
+        th ISBN
+        td {text:SectionDetails ISBN}
+      | 
+      | {/block:IfSectionDetailsISBN}
+      | {block:IfSectionDetailsFormatDesc}
+      tr
+        th フォーマット
+        td {text:SectionDetails FormatDesc}
+      | 
+      | {/block:IfSectionDetailsFormatDesc}
+| 
+| {/block:IfShowSectionDetails}

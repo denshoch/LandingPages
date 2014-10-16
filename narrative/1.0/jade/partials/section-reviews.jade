@@ -1,0 +1,172 @@
+// セクション：レビュー 
+| 
+| {block:IfShowSectionReviews}
+section#reviews.section
+  .container.dd-container
+    h2.h4.section-title.text-center {text:SectionReviews Heading}
+    | 
+    | {block:IfSectionReviewsLead}
+    p.h1.text-center.section-lead {text:SectionReviews Lead}
+    | 
+    | {/block:IfSectionReviewsLead}
+    | {block:IfReviewComment01}
+    .review-container
+      | 
+      | {block:IfReviewTitle01}
+      p.review-title {text:ReviewTitle 01}
+      | 
+      | {/block:IfReviewTitle01}
+      .bubble
+        blockquote
+          | {text:ReviewComment 01}
+          | {block:IfReviewAttributionTitle01}
+          footer
+            | 
+            | {block:IfReviewAttributionURL01}
+            | 
+            a(href='{text:ReviewAttributionURL 01}') {text:ReviewAttributionTitle 01}
+            | 
+            | {/block:IfReviewAttributionURL01}
+            | {block:IfNotReviewAttributionURL01}
+            | {text:ReviewAttributionTitle 01}
+            | {/block:IfNotReviewAttributionURL01}
+          | 
+          | {/block:IfReviewAttributionTitle01}
+      .media.reviewer-container
+        .pull-left
+          | 
+          | {block:IfReviewerImage01Image}
+          | 
+          img.media-object.img-circle(style='width: 48px;', src='{image:ReviewerImage 01}', alt='')
+          | 
+          | {/block:IfReviewerImage01Image}
+          | {block:IfNotReviewerImage01Image}
+          .reviewer-icon-placeholder
+            i.fa.fa-user
+          | 
+          | {/block:IfNotReviewerImage01Image}
+        .media-body
+          .reviewer-name
+            | 
+            | {block:IfReviewerURL01}
+            | 
+            a(href='{text:ReviewerURL 01}') {text:ReviewerName 01}
+            | 
+            | {/block:IfReviewerURL01}
+            | {block:IfNotReviewerURL01}
+            | {text:ReviewerName 01}
+            | {/block:IfNotReviewerURL01}
+            | {block:IfReviewerRole01}
+            span.reviewer-role {text:ReviewerRole 01}
+            | {/block:IfReviewerRole01}
+    | 
+    | {/block:IfReviewComment01}
+    | {block:IfReviewComment02}
+    hr.context-break
+    .review-container
+      | 
+      | {block:IfReviewTitle02}
+      p.review-title {text:ReviewTitle 02}
+      | 
+      | {/block:IfReviewTitle02}
+      .bubble
+        blockquote
+          | {text:ReviewComment 02}
+          | {block:IfReviewAttributionTitle02}
+          footer
+            | 
+            | {block:IfReviewAttributionURL02}
+            | 
+            a(href='{text:ReviewAttributionURL 02}') {text:ReviewAttributionTitle 02}
+            | 
+            | {/block:IfReviewAttributionURL02}
+            | {block:IfNotReviewAttributionURL02}
+            | {text:ReviewAttributionTitle 02}
+            | {/block:IfNotReviewAttributionURL02}
+          | 
+          | {/block:IfReviewAttributionTitle02}
+      .media.reviewer-container
+        .pull-left
+          | 
+          | {block:IfReviewerImage02Image}
+          | 
+          img.media-object.img-circle(style='width: 48px;', src='{image:ReviewerImage 02}', alt='')
+          | 
+          | {/block:IfReviewerImage02Image}
+          | {block:IfNotReviewerImage02Image}
+          .reviewer-icon-placeholder
+            i.fa.fa-user
+          | 
+          | {/block:IfNotReviewerImage02Image}
+        .media-body
+          .reviewer-name
+            | 
+            | {block:IfReviewerURL02}
+            | 
+            a(href='{text:ReviewerURL 02}') {text:ReviewerName 02}
+            | 
+            | {/block:IfReviewerURL02}
+            | {block:IfNotReviewerURL02}
+            | {text:ReviewerName 02}
+            | {/block:IfNotReviewerURL02}
+            | {block:IfReviewerRole02}
+            span.reviewer-role {text:ReviewerRole 02}
+            | {/block:IfReviewerRole02}
+            | 
+    | 
+    | {/block:IfReviewComment02}
+    | {block:IfReviewComment03}
+    hr.context-break
+    .review-container
+      | 
+      | {block:IfReviewTitle03}
+      p.review-title {text:ReviewTitle 03}
+      | 
+      | {/block:IfReviewTitle03}
+      .bubble
+        blockquote
+          | {text:ReviewComment 03}
+          | {block:IfReviewAttributionTitle03}
+          footer
+            | 
+            | {block:IfReviewAttributionURL03}
+            | 
+            a(href='{text:ReviewAttributionURL 03}') {text:ReviewAttributionTitle 03}
+            | 
+            | {/block:IfReviewAttributionURL03}
+            | {block:IfNotReviewAttributionURL03}
+            | {text:ReviewAttributionTitle 03}
+            | {/block:IfNotReviewAttributionURL03}
+          | 
+          | {/block:IfReviewAttributionTitle03}
+      .media.reviewer-container
+        .pull-left
+          | 
+          | {block:IfReviewerImage03Image}
+          | 
+          img.media-object.img-circle(style='width: 48px;', src='{image:ReviewerImage 03}', alt='')
+          | 
+          | {/block:IfReviewerImage03Image}
+          | {block:IfNotReviewerImage03Image}
+          .reviewer-icon-placeholder
+            i.fa.fa-user
+          | 
+          | {/block:IfNotReviewerImage03Image}
+        .media-body
+          .reviewer-name
+            | 
+            | {block:IfReviewerURL03}
+            | 
+            a(href='{text:ReviewerURL 03}') {text:ReviewerName 03}
+            | 
+            | {/block:IfReviewerURL03}
+            | {block:IfNotReviewerURL03}
+            | {text:ReviewerName 03}
+            | {/block:IfNotReviewerURL03}
+            | {block:IfReviewerRole03}
+            span.reviewer-role {text:ReviewerRole 03}
+            | {/block:IfReviewerRole03}
+    | 
+    | {/block:IfReviewComment03}
+| 
+| {/block:IfShowSectionReviews}

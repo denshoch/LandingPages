@@ -1,0 +1,14 @@
+footer#footer
+  .container.dd-container.text-center
+    | 
+    | {block:IfCopyrightHolder}
+    p Copyright © {CopyrightYears} {text:CopyrightHolder}
+    | 
+    | {/block:IfCopyrightHolder}
+    p {block:IfFooterText}{text:FooterText}{/block:IfFooterText}
+    div
+      small
+        a(href='http://lp.denshochan.com/') Theme
+        | designed by
+        a(href='http://densho.hatenablog.com/') Densho Channel
+        | .

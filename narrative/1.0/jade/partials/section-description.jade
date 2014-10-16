@@ -1,0 +1,15 @@
+// セクション：内容紹介 
+| 
+| {block:IfShowSectionDescription}
+section#description.section-inverse
+  .container.dd-container
+    h2.section-title.text-center {text:SectionDescription Heading}
+    | 
+    | {block:IfSectionDescriptionLead}
+    p.section-lead.text-center {text:SectionDescription Lead}
+    | 
+    | {/block:IfSectionDescriptionLead}
+    .description-body
+      | {Description}
+| 
+| {/block:IfShowSectionDescription}

@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
-var ejs  = require('gulp-ejs');
+var jade = require('gulp-jade');
 
 // Bower
 var config = {
@@ -34,9 +34,9 @@ gulp.task('narrative', function () {
         }))
         .on('error', function (err) { console.log(err.message); })
         .pipe(gulp.dest('narrative/' + config.versions.narrative + '/css'));
-    gulp.src('narrative/' + config.versions.narrative + '/ejs/*.ejs')
-        .pipe(ejs({
-        msg: 'Hello Gulp!'
+    gulp.src('narrative/' + config.versions.narrative + '/jade/*.jade')
+        .pipe(jade({
+        pretty: true,
     },{ext: '.txt'}))
         .on('error', function (err) { console.log(err.message); })
         .pipe(gulp.dest("./narrative"));

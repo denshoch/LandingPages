@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+  <head>
+    <!--
+    Theme Narrative (Den-Den Landing Page)
+    version: 1.0.12
+    by @lost_and_found from Densho Channel
+    mail: <info@denshochan.com>
+    Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
+    license: MIT
+    -->
+    <meta charset="utf-8"> 
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><![endif]-->
+    {block:Hidden}
+    <meta name="color:PrimaryColor" content="#0088aa">
+    <meta name="image:CoverImage" content="">
+    <meta name="if:HeaderColumnLayout Reverse" content="0">
+    <meta name="if:HeaderImageEffect Blur" content="0">
+    <meta name="if:HeaderImageEffect Darken" content="0">
+    <meta name="if:HeaderTextEffect Shadow" content="0">
+    <meta name="text:SiteSubtitle" content="Official Website">
+    <meta name="text:BookTitle" content="タイトル">
+    <meta name="text:BookSubtitle" content="サブタイトル">
+    <meta name="text:BookCollectionTitle" content="シリーズタイトル">
+    <meta name="select:BookLanguage" content="ja" title="Japanese">
+    <meta name="select:BookLanguage" content="en" title="English">
+    <meta name="if:ShowPrice" content="1">
+    <meta name="text:Price" content="">
+    <meta name="text:Catchphrase Main" content="キャッチフレーズ メイン">
+    <meta name="text:Catchphrase Sub" content="キャッチフレーズ サブ">
+    <meta name="text:Keywords" content="">
+    <!-- 内容紹介 -->
+    <meta name="if:ShowSectionDescription" content="1">
+    <meta name="text:SectionDescription Heading" content="STORY">
+    <meta name="text:SectionDescription Lead" content="内容紹介：リード文">
+    <!-- セクション：動画 -->
+    <meta name="if:ShowSectionMovie" content="0">
+    <meta name="text:SectionMovie Heading" content="MOVIE">
+    <meta name="text:SectionMovie Lead" content="動画：リード文">
+    <meta name="text:SectionMovie EmbedCode" content="">
+    <meta name="select:SectionMovie AspectRatio" content="embed-responsive-16by9" title="16:9">
+    <meta name="select:SectionMovie AspectRatio" content="embed-responsive-4by3" title="4:3">
+    <!-- セクション：オーディオ -->
+    <meta name="if:ShowSectionAudio" content="0">
+    <meta name="text:SectionAudio Heading" content="AUDIO">
+    <meta name="text:SectionAudio Lead" content="オーディオ：リード文">
+    <meta name="text:SectionAudio EmbedCode" content="">
+    <!-- セクション：特徴紹介 -->
+    <meta name="if:ShowSectionFeatures" content="0">
+    <meta name="text:SectionFeatures Heading" content="FEATURES">
+    <meta name="text:SectionFeatures Lead" content="本書の特徴：リード文">
+    <!-- セクション：特徴紹介 - 本書の特徴 01 -->
+    <meta name="image:FeatureImage 01" content="">
+    <meta name="text:FeaturePlaceholder 01" content="1">
+    <meta name="text:FeatureHeading 01" content="特徴 01">
+    <meta name="text:FeatureDesc 01" content="特徴の説明 01">
+    <!-- セクション：特徴紹介 - 本書の特徴 02 -->
+    <meta name="image:FeatureImage 02" content="">
+    <meta name="text:FeaturePlaceholder 02" content="2">
+    <meta name="text:FeatureHeading 02" content="特徴 02">
+    <meta name="text:FeatureDesc 02" content="特徴の説明 02">
+    <!-- セクション：特徴紹介 - 本書の特徴 03 -->
+    <meta name="image:FeatureImage 03" content="">
+    <meta name="text:FeaturePlaceholder 03" content="3">
+    <meta name="text:FeatureHeading 03" content="特徴 03">
+    <meta name="text:FeatureDesc 03" content="特徴の説明 03">
+    <!-- セクション：登場人物紹介 -->
+    <meta name="if:ShowSectionCharacters" content="1">
+    <meta name="text:SectionCharacters Heading" content="CHARACTERS">
+    <meta name="text:SectionCharacters Lead" content="キャラクター紹介：リード文">
+    <!-- セクション：登場人物紹介 一列に表示するキャラクターの数1〜4 -->
+    <meta name="select:ColumnCount Characters" content="col-sm-12" title="1">
+    <meta name="select:ColumnCount Characters" content="col-sm-6" title="2">
+    <meta name="select:ColumnCount Characters" content="col-sm-4" title="3">
+    <meta name="select:ColumnCount Characters" content="col-sm-3" title="4">
+    <!-- セクション：登場人物紹介 キャラクター 01  -->
+    <meta name="image:CharacterImage 01" content="">
+    <meta name="text:CharacterName 01" content="">
+    <meta name="text:CharacterDesc 01" content="">
+    <!-- セクション：登場人物紹介 キャラクター 02  -->
+    <meta name="image:CharacterImage 02" content="">
+    <meta name="text:CharacterName 02" content="">
+    <meta name="text:CharacterDesc 02" content="">
+    <!-- セクション：登場人物紹介 キャラクター 03  -->
+    <meta name="image:CharacterImage 03" content="">
+    <meta name="text:CharacterName 03" content="">
+    <meta name="text:CharacterDesc 03" content="">
+    <!-- セクション：登場人物紹介 キャラクター 04  -->
+    <meta name="image:CharacterImage 04" content="">
+    <meta name="text:CharacterName 04" content="">
+    <meta name="text:CharacterDesc 04" content="">
+    <!-- 試し読み -->
+    <meta name="if:ShowSectionPreview" content="1">
+    <meta name="text:SectionPreview Heading" content="PREVIEW">
+    <meta name="text:SectionPreview Lead" content="試し読み：リード文">
+    <meta name="text:PreviewEmbedCode" content="">
+    <meta name="text:PreviewLink" content="">
+    <!-- 詳細情報 -->
+    <meta name="if:ShowSectionDetails" content="1">
+    <meta name="text:SectionDetails Heading" content="DETAILS">
+    <meta name="text:SectionDetails Lead" content="商品詳細：リード文">
+    <meta name="text:SectionDetails DatePublished" content="1900-01-01">
+    <meta name="text:SectionDetails PublisherName" content="">
+    <meta name="text:SectionDetails PublisherURL" content="">
+    <meta name="text:SectionDetails ISBN" content="">
+    <meta name="if:Format Ebook" content="1">
+    <meta name="text:SectionDetails FormatDesc" content="">
+    <!-- 自由記述 -->
+    <meta name="if:ShowSectionFreeWriting" content="1">
+    <meta name="text:SectionFreeWriting Heading" content="FREE WRITING">
+    <meta name="text:SectionFreeWriting Lead" content="自由記述：リード文">
+    <meta name="text:SectionFreeWriting Body" content="自由に文章を書けます。">
+    <!-- セクション：レビュー -->
+    <meta name="if:ShowSectionReviews" content="1">
+    <meta name="text:SectionReviews Heading" content="REVIEWS">
+    <meta name="text:SectionReviews Lead" content="レビュー／推薦文：リード文">
+    <!-- セクション：レビュー 01-->
+    <meta name="text:ReviewTitle 01" content="">
+    <meta name="text:ReviewComment 01" content="">
+    <meta name="text:ReviewAttributionTitle 01" content="">
+    <meta name="text:ReviewAttributionURL 01" content="">
+    <meta name="image:ReviewerImage 01" content="">
+    <meta name="text:ReviewerName 01" content="">
+    <meta name="text:ReviewerURL 01" content="">
+    <meta name="text:ReviewerRole 01" content="">
+    <!-- セクション：レビュー 02-->
+    <meta name="text:ReviewTitle 02" content="">
+    <meta name="text:ReviewComment 02" content="">
+    <meta name="text:ReviewAttributionTitle 02" content="">
+    <meta name="text:ReviewAttributionURL 02" content="">
+    <meta name="image:ReviewerImage 02" content="">
+    <meta name="text:ReviewerName 02" content="">
+    <meta name="text:ReviewerURL 02" content="">
+    <meta name="text:ReviewerRole 02" content="">
+    <!-- セクション：レビュー 03-->
+    <meta name="text:ReviewTitle 03" content="">
+    <meta name="text:ReviewComment 03" content="">
+    <meta name="text:ReviewAttributionTitle 03" content="">
+    <meta name="text:ReviewAttributionURL 03" content="">
+    <meta name="image:ReviewerImage 03" content="">
+    <meta name="text:ReviewerName 03" content="">
+    <meta name="text:ReviewerURL 03" content="">
+    <meta name="text:ReviewerRole 03" content="">
+    <!-- 電子書籍とのつきあい方 -->
+    <meta name="if:ShowSectionHowToRead" content="0">
+    <!-- セクション：購入／ダウンロード -->
+    <meta name="if:ShowSectionAcquisition" content="1">
+    <meta name="text:SectionAcquisition Heading" content="GET IT NOW!">
+    <meta name="text:SectionAcquisition Lead" content="購入／ダウンロード：リード文">
+    <meta name="text:SectionAcquisition Note" content="価格はストアのセールやキャンペーンなどによって変動する場合があります。">
+    <meta name="text:AcquisitionLinkLabel 01" content="">
+    <meta name="text:AcquisitionLinkURL 01" content="">
+    <meta name="text:AcquisitionLinkLabel 02" content="">
+    <meta name="text:AcquisitionLinkURL 02" content="">
+    <meta name="text:AcquisitionLinkLabel 03" content="">
+    <meta name="text:AcquisitionLinkURL 03" content="">
+    <meta name="text:AcquisitionLinkLabel 04" content="">
+    <meta name="text:AcquisitionLinkURL 04" content="">
+    <meta name="text:AcquisitionLinkLabel 05" content="">
+    <meta name="text:AcquisitionLinkURL 05" content="">
+    <meta name="text:AcquisitionLinkLabel 06" content="">
+    <meta name="text:AcquisitionLinkURL 06" content="">
+    <!-- セクション：関連コンテンツ-->
+    <meta name="if:ShowSectionRelatedWorks" content="1">
+    <meta name="text:SectionRelatedWorks Heading" content="RELATED WORKS">
+    <meta name="text:SectionRelatedWorks Lead" content="関連商品：リード文">
+    <!-- 一列に表示する作品の数0〜4 -->
+    <meta name="select:ColumnCount RelatedWorks" content="col-sm-12" title="1">
+    <meta name="select:ColumnCount RelatedWorks" content="col-sm-6" title="2">
+    <meta name="select:ColumnCount RelatedWorks" content="col-sm-4" title="3">
+    <meta name="select:ColumnCount RelatedWorks" content="col-sm-3" title="4">
+    <!-- セクション：関連コンテンツ 01 -->
+    <meta name="image:RelatedWorkImage 01" content="">
+    <meta name="text:RelatedWorkTitle 01" content="">
+    <meta name="text:RelatedWorkURL 01" content="">
+    <!-- セクション：関連コンテンツ 02 -->
+    <meta name="image:RelatedWorkImage 02" content="">
+    <meta name="text:RelatedWorkTitle 02" content="">
+    <meta name="text:RelatedWorkURL 02" content="">
+    <!-- セクション：関連コンテンツ 03 -->
+    <meta name="image:RelatedWorkImage 03" content="">
+    <meta name="text:RelatedWorkTitle 03" content="">
+    <meta name="text:RelatedWorkURL 03" content="">
+    <!-- セクション：関連コンテンツ 04 -->
+    <meta name="image:RelatedWorkImage 04" content="">
+    <meta name="text:RelatedWorkTitle 04" content="">
+    <meta name="text:RelatedWorkURL 04" content="">
+    <!-- セクション：著者紹介 -->
+    <meta name="if:ShowSectionBiographies" content="1">
+    <meta name="text:SectionBiographies Heading" content="CREATED BY">
+    <meta name="text:SectionBiographies Lead" content="著者紹介：リード文">
+    <!-- セクション：著者紹介 著者01 -->
+    <meta name="image:AuthorImage 01" content="">
+    <meta name="text:AuthorName 01" content="">
+    <meta name="text:AuthorNameKana 01" content="">
+    <meta name="text:AuthorDescription 01" content="">
+    <meta name="text:AuthorURL 01" content="">
+    <meta name="text:AuthorTwitter 01" content="">
+    <meta name="text:AuthorFacebook 01" content="">
+    <meta name="text:AuthorGooglePlus 01" content="">
+    <!-- セクション：著者紹介 著者02 -->
+    <meta name="image:AuthorImage 02" content="">
+    <meta name="text:AuthorName 02" content="">
+    <meta name="text:AuthorNameKana 02" content="">
+    <meta name="text:AuthorDescription 02" content="">
+    <meta name="text:AuthorURL 02" content="">
+    <meta name="text:AuthorTwitter 02" content="">
+    <meta name="text:AuthorFacebook 02" content="">
+    <meta name="text:AuthorGooglePlus 02" content="">
+    <!-- セクション：著者紹介 協力者01 -->
+    <meta name="image:ContributorImage 01" content="">
+    <meta name="text:ContributorName 01" content="">
+    <meta name="text:ContributorNameKana 01" content="">
+    <meta name="text:ContributorRole 01" content="">
+    <meta name="text:ContributorDescription 01" content="">
+    <meta name="text:ContributorURL 01" content="">
+    <meta name="text:ContributorTwitter 01" content="">
+    <meta name="text:ContributorFacebook 01" content="">
+    <meta name="text:ContributorGooglePlus 01" content="">
+    <!-- セクション：著者紹介 協力者02 -->
+    <meta name="image:ContributorImage 02" content="">
+    <meta name="text:ContributorName 02" content="">
+    <meta name="text:ContributorNameKana 02" content="">
+    <meta name="text:ContributorRole 02" content="">
+    <meta name="text:ContributorDescription 02" content="">
+    <meta name="text:ContributorURL 02" content="">
+    <meta name="text:ContributorTwitter 02" content="">
+    <meta name="text:ContributorFacebook 02" content="">
+    <meta name="text:ContributorGooglePlus 02" content="">
+    <!-- Facebook Page -->
+    <meta name="text:FacebookPageURL" content="">
+    <meta name="text:FacebookAppID" content="">
+    <!-- Contact Form -->
+    <meta name="if:ShowSectionContact" content="0">
+    <meta name="text:SectionContact Heading" content="CONTACT">
+    <meta name="text:SectionContact EmbedCode" content="">
+    <!-- Footer -->
+    <meta name="text:CopyrightHolder" content="">
+    <meta name="text:FooterText" content="">
+    <!-- Google Analytics -->
+    <meta name="text:GoogleAnalyticsID" content="">
+    <!-- Twitter Player -->
+    <meta name="text:TwitterPlayerURL" content="">
+    <!-- Schema.org JSON-LD -->
+    <meta name="if:EnableSchemaOrg" content="1"> 
+    {block:Hidden}
+    <title>{Title} {text:BookSubtitle} | {text:SiteSubtitle}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    {block:Description}
+     
+    <meta name="description" content="{MetaDescription}"> 
+    {/block:Description}
+     
+    {block:IfKeywords}
+    <meta name="keywords" content="{text:Keywords}"> 
+    {/block:IfKeywords}
+     
+    <!-- Facebook page--> 
+    {block:IfFacebookAppID}
+     
+    <meta property="fb:app_id" content="{text:FacebookAppID}"> 
+    {/block:IfFacebookAppID}
+    <!-- OGP -->
+    <meta property="og:title" content="{Title} {text:BookSubtitle} - {text:AuthorName 01} {block:IfAuthorName02}…etc.{/block:IfAuthorName02}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{image:CoverImage}">
+    <meta property="og:site_name" content="{Title} {text:BookSubtitle} | {text:SiteSubtitle}"> 
+    {block:Description}
+    <meta property="og:description" content="{MetaDescription}"> 
+    {/block:Description}
+    <meta property="og:url" content="{BlogURL}">
+    <!-- TwitterCard --> 
+    {block:IfTwitterPlayerURL}
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:player" content="{text:TwitterPlayerURL}">
+    <meta name="twitter:player:width" content="520">
+    <meta name="twitter:player:height" content="560"> 
+    {/block:IfTwitterPlayerURL}
+    {block:IfNotTwitterPlayerURL}
+    <meta name="twitter:card" content="summary_large_image"> 
+    {/block:IfNotTwitterPlayerURL}
+    {block:IfAuthorTwitter01}
+    <meta name="twitter:site" content="@{text:AuthorTwitter 01}">
+    <meta name="twitter:creator" content="@{text:AuthorTwitter 01}"> 
+    {/block:IfAuthorTwitter01}
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <link rel="stylesheet" media="screen" href="//denshoch.github.io/LandingPages/narrative/1.0/css/styles.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="canonical" href="{BlogURL}">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style>
+      a {
+      color: {color:PrimaryColor};
+      }
+      a:hover,
+      a:focus {
+      color: {color:PrimaryColor};
+      }
+      .bubble {
+      background: {color:PrimaryColor};
+      }
+      .bubble:after {
+      border-color: {color:PrimaryColor} transparent;
+      }
+      #header:before {
+      background-image: url({HeaderImage});
+      {block:IfHeaderImageEffectBlur}
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+      {/block:IfHeaderImageEffectBlur}
+      }
+      #header #header-inner {
+      {block:IfHeaderImageEffectDarken}
+      background-color: rgba(0,0,0,0.2);
+      {/block:IfHeaderImageEffectDarken}
+      }
+      #catchprase-container-inner {
+      {block:IfHeaderTextEffectShadow}
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.4), -2px -2px 10px rgba(0,0,0,0.4), 2px -2px 10px rgba(0,0,0,0.4), -2px 2px 10px rgba(0,0,0,0.4);
+      {/block:IfHeaderTextEffectShadow}
+      }
+      #header-bottom .creators-list > li {
+      color: {color:PrimaryColor};
+      }
+      .section-lead {
+      color: {color:PrimaryColor};
+      }
+      .section-inverse {
+      background: {color:PrimaryColor};
+      }
+      .feature-image-placeholder {
+      color: {color:PrimaryColor};
+      }
+      .character-desc {
+      border-color: {color:PrimaryColor};
+      }
+      .review-container .review-title {
+      color: {color:PrimaryColor};
+      }
+      .review-container .reviewer-icon-placeholder {
+      color: {color:PrimaryColor};
+      }
+      .review-container .reviewer-name {
+      color: {color:PrimaryColor};
+      }
+      .review-container .reviewer-name a:hover,
+      .review-container .reviewer-name a:active {
+      color: {color:PrimaryColor};
+      }
+      .role {
+      background-color: {color:PrimaryColor};
+      }
+      #bio a .fa-stack:hover,
+      #bio a .fa-stack:focus {
+      color: {color:PrimaryColor};
+      }
+      {CustomCSS}
+      iframe#tumblr_controls {
+      display:none;
+      }
+    </style>
+  </head>
+  <body>
+     
+    {block:IndexPage}
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      {block:IfFacebookAppID}
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId={text:FacebookAppID}&version=v2.0";
+      {/block:IfFacebookAppID}
+      {block:IfNotFacebookAppID}
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+      {/block:IfNotFacebookAppID}
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script> 
+    {/block:IndexPage}
+    <header id="header">
+      <h1 class="sr-only">{Title}</h1>
+      <div id="header-inner">
+        <div class="container">
+          <div class="rows">
+             
+            {block:IfHeaderColumnLayoutReverse}
+            <div id="catchprase-container" class="col-sm-push-5 col-sm-7 text-right">
+               
+              {/block:IfHeaderColumnLayoutReverse}
+              {block:IfNotHeaderColumnLayoutReverse}
+              <div id="catchprase-container" class="col-sm-7">
+                 
+                {/block:IfNotHeaderColumnLayoutReverse}
+                <div id="catchprase-container-inner">
+                  <p class="catchprase">
+                     
+                    {text:Catchphrase Main}
+                  </p>
+                  <p class="subphrase hidden-xs">
+                     
+                    {text:Catchphrase Sub}
+                  </p>
+                  <hr>
+                  <div class="hidden-xs">
+                     
+                    {block:IfBookCollectionTitle}
+                    <p class="book-collection-title"><span class="book-collection-title-label">{text:BookCollectionTitle}</span></p> 
+                    {/block:IfBookCollectionTitle}
+                    <p class="book-title">
+                       
+                      {text:BookTitle}
+                    </p> 
+                    {block:IfBookSubtitle}
+                    <p class="book-subtitle">
+                       
+                      {text:BookSubtitle}
+                    </p> 
+                    {/block:IfBookSubtitle}
+                    <ul class="list-inline creators-list">
+                       
+                      {block:IfAuthorName01}
+                      <li>{text:AuthorName 01}</li> 
+                      {/block:IfAuthorName01}
+                      {block:IfAuthorName02}
+                      <li>{text:AuthorName 02}</li> 
+                      {/block:IfAuthorName02}
+                      {block:IfContributorName01}
+                      <li>{text:ContributorName 01}</li> 
+                      {/block:IfContributorName01}
+                      {block:IfContributorName02}
+                      <li>{text:ContributorName 02}</li> 
+                      {/block:IfContributorName02}
+                    </ul>
+                  </div>
+                  <div class="btn-container hidden-xs">
+                    <ul class="list-inline">
+                       
+                      {block:IfPreviewEmbedCode}
+                      <li>
+                        <p><a href="#preview" class="btn btn-default btn-lg">試し読みする</a></p>
+                      </li> 
+                      {/block:IfPreviewEmbedCode}
+                      {block:IfNotPreviewEmbedCode}
+                      {block:IfPreviewLink}
+                      <li>
+                        <p><a href="#preview" class="btn btn-default btn-lg">試し読みする</a></p>
+                      </li> 
+                      {block:IfPreviewLink}
+                      {/block:IfNotPreviewEmbedCode}
+                      <li>
+                        <p><a href="#acquisition" class="btn btn-default btn-lg">この本を入手</a></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div> 
+                {block:IfNotHeaderColumnLayoutReverse}
+              </div> 
+              {/block:IfNotHeaderColumnLayoutReverse}
+              {block:IfHeaderColumnLayoutReverse}
+            </div> 
+            {/block:IfHeaderColumnLayoutReverse}
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header-bottom">
+      <div class="rows">
+        <div class="container">
+           
+          {block:IfHeaderColumnLayoutReverse}
+          <div id="cover-image-container" class="col-sm-5">
+             
+            {/block:IfHeaderColumnLayoutReverse}
+            {block:IfNotHeaderColumnLayoutReverse}
+            <div id="cover-image-container" class="col-sm-push-7 col-sm-5">
+               
+              {/block:IfNotHeaderColumnLayoutReverse}
+               <img id="cover-image" src="{image:CoverImage}" alt="" class="img-thumbnail">
+              <div class="visible-xs">
+                 
+                {block:IfBookCollectionTitle}
+                <p class="book-collection-title"><span class="book-collection-title-label">{text:BookCollectionTitle}</span></p> 
+                {/block:IfBookCollectionTitle}
+                <p class="book-title">
+                   
+                  {text:BookTitle}
+                </p> 
+                {block:IfBookSubtitle}
+                <p class="book-subtitle">
+                   
+                  {text:BookSubtitle}
+                </p> 
+                {/block:IfBookSubtitle}
+                <hr class="context-break">
+                <ul class="list-inline creators-list">
+                   
+                  {block:IfAuthorName01}
+                  <li>{text:AuthorName 01}</li> 
+                  {/block:IfAuthorName01}
+                  {block:IfAuthorName02}
+                  <li>{text:AuthorName 02}</li> 
+                  {/block:IfAuthorName02}
+                  {block:IfContributorName01}
+                  <li>{text:ContributorName 01}</li> 
+                  {/block:IfContributorName01}
+                  {block:IfContributorName02}
+                  <li>{text:ContributorName 02}</li> 
+                  {/block:IfContributorName02}
+                </ul>
+                <div class="btn-container">
+                  <ul class="list-inline">
+                     
+                    {block:IfPreviewEmbedCode}
+                    <li>
+                      <p><a href="#preview" class="btn btn-success btn-lg">試し読みする</a></p>
+                    </li> 
+                    {/block:IfPreviewEmbedCode}
+                    {block:IfNotPreviewEmbedCode}
+                    {block:IfPreviewLink}
+                    <li>
+                      <p><a href="#preview" class="btn btn-success btn-lg">試し読みする</a></p>
+                    </li> 
+                    {block:IfPreviewLink}
+                    {/block:IfNotPreviewEmbedCode}
+                    <li>
+                      <p><a href="#acquisition" class="btn btn-primary btn-lg">この本を入手</a></p>
+                    </li>
+                  </ul>
+                </div>
+              </div> 
+              {block:IfNotHeaderColumnLayoutReverse}
+            </div> 
+            {/block:IfNotHeaderColumnLayoutReverse}
+            {block:IfHeaderColumnLayoutReverse}
+          </div> 
+          {/block:IfHeaderColumnLayoutReverse}
+           
+          {block:IfHeaderColumnLayoutReverse}
+          <div id="social" class="col-sm-7">
+             
+            {/block:IfHeaderColumnLayoutReverse}
+            {block:IfNotHeaderColumnLayoutReverse}
+            <div id="social" class="col-sm-pull-5 col-sm-7">
+               
+              {/block:IfNotHeaderColumnLayoutReverse}
+              <ul class="list-inline text-center social-bottuns">
+                <li id="tweet-btn"><a href="https://twitter.com/share" data-url="{BlogURL}" class="twitter-share-button">Tweet</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </li>
+                <li id="fb-like-btn">
+                  <div data-url="{BlogURL}" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" class="fb-like"></div>
+                </li>
+                <li id="hb-btn"><a href="http://b.hatena.ne.jp/entry/" data-hatena-bookmark-layout="standard-balloon" title="このエントリーをはてなブックマークに追加" class="hatena-bookmark-button"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a>
+                  <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+                </li>
+                <li id="g-plusone-btn">
+                  <div data-size="medium" class="g-plusone"></div>
+                  <script type="text/javascript">
+                    window.___gcfg = {lang: 'ja'};
+                    (function() {
+                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                    po.src = 'https://apis.google.com/js/plusone.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                    })();
+                  </script>
+                </li>
+              </ul> 
+              {block:IfNotHeaderColumnLayoutReverse}
+            </div> 
+            {/block:IfNotHeaderColumnLayoutReverse}
+            {block:IfHeaderColumnLayoutReverse}
+          </div> 
+          {/block:IfHeaderColumnLayoutReverse}
+        </div>
+      </div>
+    </div> 
+    {block:IndexPage}
+    <!-- セクション：内容紹介 --> 
+    {block:IfShowSectionDescription}
+    <section id="description" class="section-inverse">
+      <div class="container dd-container">
+        <h2 class="section-title text-center">{text:SectionDescription Heading}</h2> 
+        {block:IfSectionDescriptionLead}
+        <p class="section-lead text-center">{text:SectionDescription Lead}</p> 
+        {/block:IfSectionDescriptionLead}
+        <div class="description-body">{Description}</div>
+      </div>
+    </section> 
+    {/block:IfShowSectionDescription}
+    <!-- セクション：動画 --> 
+    {block:IfShowSectionMovie}
+    <section id="movie" class="section-dark">
+      <div class="container dd-container">
+        <h2 class="section-title text-center">{text:SectionMovie Heading}</h2> 
+        {block:IfSectionMovieLead}
+        <p class="section-lead text-center">{text:SectionMovie Lead}</p> 
+        {/block:IfSectionMovieLead}
+        {block:IfSectionMovieEmbedCode}
+        <div class="embed-responsive {select:SectionMovie AspectRatio}">{text:SectionMovie EmbedCode}</div> 
+        {/block:IfSectionMovieEmbedCode}
+      </div>
+    </section> 
+    {/block:IfShowSectionMovie}
+    <!-- セクション：オーディオ --> 
+    {block:IfShowSectionAudio}
+    <section id="movie" class="section-light">
+      <div class="container dd-container">
+        <h2 class="section-title text-center">{text:SectionAudio Heading}</h2> 
+        {block:IfSectionAudioLead}
+        <p class="section-lead text-center">{text:SectionAudio Lead}</p> 
+        {/block:IfSectionAudioLead}
+        {block:IfSectionAudioEmbedCode}
+        <div class="audio-container">
+           
+          {text:SectionAudio EmbedCode}
+        </div> 
+        {/block:IfSectionAudioEmbedCode}
+      </div>
+    </section> 
+    {/block:IfShowSectionAudio}
+    <!-- セクション：特徴紹介 --> 
+    {block:IfShowSectionFeatures}
+    <section id="features">
+      <div class="container dd-container-wide">
+        <h2 class="h4 section-title text-center">{text:SectionFeatures Heading}</h2> 
+        {block:IfSectionFeaturesLead}
+        <p class="h1 text-center section-lead">{text:SectionFeatures Lead}</p> 
+        {/block:IfSectionFeaturesLead}
+        <div class="row">
+          <div class="col-md-4">
+            <div class="media">
+              <div class="pull-left text-center">
+                 
+                {block:IfFeatureImage01Image}<img style="width: 64px;" src="{image:FeatureImage 01}" alt="" class="media-object">{/block:IfFeatureImage01Image}
+                {block:IfNotFeatureImage01Image}
+                <div class="feature-image-placeholder">{text:FeaturePlaceholder 01}</div> 
+                {/block:IfNotFeatureImage01Image}
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading feature-heading">{text:FeatureHeading 01}</h4>
+                <div class="feature-description">
+                  <p>{text:FeatureDesc 01}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="media">
+              <div class="pull-left text-center">
+                 
+                {block:IfFeatureImage02Image}<img style="width: 64px;" src="{image:FeatureImage 02}" alt="" class="media-object">{/block:IfFeatureImage02Image}
+                {block:IfNotFeatureImage02Image}
+                <div class="feature-image-placeholder">{text:FeaturePlaceholder 02}</div> 
+                {/block:IfNotFeatureImage02Image}
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading feature-heading">{text:FeatureHeading 02}</h4>
+                <div class="feature-description">
+                  <p>{text:FeatureDesc 02}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="media">
+              <div class="pull-left text-center">
+                 
+                {block:IfFeatureImage03Image}<img style="width: 64px;" src="{image:FeatureImage 03}" alt="" class="media-object">{/block:IfFeatureImage03Image}
+                {block:IfNotFeatureImage03Image}
+                <div class="feature-image-placeholder">{text:FeaturePlaceholder 03}</div> 
+                {/block:IfNotFeatureImage03Image}
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading feature-heading">{text:FeatureHeading 03}</h4>
+                <div class="feature-description">
+                  <p>{text:FeatureDesc 03}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    {/block:IfShowSectionFeatures}
+    <!-- セクション：登場人物紹介 --> 
+    {block:IfShowSectionCharacters}
+    {block:IfShowSectionFeatures}
+    <hr class="context-break"> 
+    {/block:IfShowSectionFeatures}
+    <section id="characters">
+      <div class="container dd-container">
+        <h2 class="h4 section-title text-center">{text:SectionCharacters Heading}</h2> 
+        {block:IfSectionCharactersLead}
+        <p class="h1 text-center section-lead">{text:SectionCharacters Lead}</p> 
+        {/block:IfSectionCharactersLead}
+        <div class="row">
+           
+          {block:IfCharacterName01}
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage01Image}<img style="width: 128px;" src="{image:CharacterImage 01}" alt="" class="img-thumbnail">{/block:IfCharacterImage01Image}
+            <div class="h5 character-name">{text:CharacterName 01}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 01}
+            </div>
+          </div> 
+          {/block:IfCharacterName01}
+          {block:IfCharacterName02}
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage02Image}<img style="width: 128px;" src="{image:CharacterImage 02}" alt="" class="img-thumbnail">{/block:IfCharacterImage02Image}
+            <div class="h5 character-name">{text:CharacterName 02}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 02}
+            </div>
+          </div> 
+          {/block:IfCharacterName02}
+          {block:IfCharacterName03}
+          <div class="separator-for-{select:ColumnCount.Characters}"></div>
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage03Image}<img style="width: 128px;" src="{image:CharacterImage 03}" alt="" class="img-thumbnail">{/block:IfCharacterImage03Image}
+            <div class="h5 character-name">{text:CharacterName 03}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 03}
+            </div>
+          </div> 
+          {/block:IfCharacterName03}
+          {block:IfCharacterName04}
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage04Image}<img style="width: 128px;" src="{image:CharacterImage 04}" alt="" class="img-thumbnail">{block:IfCharacterImage04Image}
+            <div class="h5 character-name">{text:CharacterName 04}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 04}
+            </div>
+          </div> 
+          {/block:IfCharacterName04}
+        </div>
+      </div>
+    </section> 
+    {/block:IfShowSectionCharacters}
+    <!-- セクション：試し読み --> 
+    {block:IfShowSectionPreview}
+      {block:IfShowSectionCharacters}
+    <hr class="context-break"> 
+      {/block:IfShowSectionCharacters}
+      {block:IfNotShowSectionCharacters}
+        {block:IfShowSectionFeatures}
+    <hr class="context-break"> 
+        {/block:IfShowSectionFeatures}
+      {/block:IfNotShowSectionCharacters}
+    <section id="preview">
+      <div class="container dd-container">
+        <h2 class="h4 section-title text-center">{text:SectionPreview Heading}</h2> 
+        {block:IfSectionPreviewLead}
+        <p class="h1 text-center section-lead">{text:SectionPreview Lead}</p> 
+        {/block:IfSectionPreviewLead}
+        {block:IfPreviewEmbedCode}
+        <div class="preview-container center-block text-center">
+           
+          {text:PreviewEmbedCode}
+        </div> 
+        {/block:IfPreviewEmbedCode}
+        {block:IfPreviewLink}
+        <div class="btn-container">
+          <p class="text-center"><a href="{text:IfPreviewLink}" class="btn btn-success btn-lg">試し読みを開く</a></p>
+        </div> 
+        {/block:IfPreviewLink}
+      </div>
+    </section> 
+    {/block:IfShowSectionPreview}
+    <!-- セクション：詳細情報 --> 
+    {block:IfShowSectionDetails}
+    <section id="info" class="section-inverse">
+      <div class="container dd-container">
+        <h2 class="h4 section-title text-center">{text:SectionDetails Heading}</h2> 
+        {block:IfSectionDetailsLead}
+        <p class="h1 text-center section-lead">{text:SectionDetails Lead}</p> 
+        {/block:IfSectionDetailsLead}
+        <table class="table table-condenced">
+          <tr>
+            <th>タイトル</th>
+            <td>
+              {block:IfBookCollectionTitle}
+              {text:BookCollectionTitle}<br> 
+              {/block:IfBookCollectionTitle}
+              {text:BookTitle}<br> 
+              {block:IfBookSubtitle}
+              {text:BookSubtitle}<br> 
+              {/block:IfBookSubtitle}
+            </td>
+          </tr> 
+          {block:IfAuthorName01}
+          <tr>
+            <th>著者</th>
+            <td>
+              <ul class="list-unstyled">
+                 
+                {block:IfAuthorName01}
+                 
+                <li>{text:AuthorName 01}</li> 
+                {/block:IfAuthorName01}
+                {block:IfAuthorName02}
+                 
+                <li>{text:AuthorName 02}</li> 
+                {/block:IfAuthorName02}
+                {block:IfContributorName01}
+                 
+                <li>{text:ContributorName 01}</li> 
+                {/block:IfContributorName01}
+                {block:IfContributorName02}
+                 
+                <li>{text:ContributorName 02}</li> 
+                {/block:IfContributorName02}
+              </ul>
+            </td>
+          </tr> 
+          {/block:IfAuthorName01}
+          {block:IfSectionDetailsDatePublished}
+          <tr>
+            <th>発行日</th>
+            <td>{text:SectionDetails DatePublished}</td>
+          </tr> 
+          {/block:IfSectionDetailsDatePublished}
+          {block:IfSectionDetailsPublisherName}
+          <tr>
+            <th>発行者</th> 
+            {block:IfSectionDetailsPublisherURL}
+            <td><a href="{text:SectionDetails PublisherURL}">{text:SectionDetails PublisherName}</a></td> 
+            {/block:IfSectionDetailsPublisherURL}
+            {block:IfNotSectionDetailsPublisherURL}
+            <td>{text:SectionDetails PublisherName}</td> 
+            {/block:IfNotSectionDetailsPublisherURL}
+          </tr> 
+          {/block:IfSectionDetailsPublisherName}
+          {block:IfShowPrice}
+          <tr>
+            <th>販売価格</th>
+            <td>
+              <p>
+                {block:IfPrice}{text:Price} 円{/block:IfPrice}
+                {block:IfNotPrice}無料{/block:IfNotPrice}
+              </p>
+              <p><a href="#acquisition" class="btn btn-default btn-sm">この本を入手</a></p>
+            </td>
+          </tr> 
+          {/block:IfShowPrice}
+          {block:IfSectionDetailsISBN}
+          <tr>
+            <th>ISBN</th>
+            <td>{text:SectionDetails ISBN}</td>
+          </tr> 
+          {/block:IfSectionDetailsISBN}
+          {block:IfSectionDetailsFormatDesc}
+          <tr>
+            <th>フォーマット</th>
+            <td>{text:SectionDetails FormatDesc}</td>
+          </tr> 
+          {/block:IfSectionDetailsFormatDesc}
+        </table>
+      </div>
+    </section> 
+    {/block:IfShowSectionDetails}
+    <!-- セクション：自由記述 --> 
+    {block:IfShowSectionFreeWriting}
+    <section id="free-writing" class="section">
+      <div class="container dd-container">
+        <h2 class="h4 section-title text-center">{text:SectionFreeWriting Heading}</h2> 
+        {block:IfSectionFreeWritingLead}
+        <p class="h1 text-center section-lead">{text:SectionFreeWriting Lead}</p> 
+        {/block:IfSectionFreeWritingLead}
+        <div class="free-writing-body-container">
+          {block:IfSectionFreeWritingBody}
+          {text:SectionFreeWriting Body}
+          {/block:IfSectionFreeWritingBody}
+        </div>
+      </div>
+    </section> 
+    {block:IfShowSectionReviews}
+    <hr class="context-break"> 
+    {/block:IfShowSectionReviews}
+    {/block:IfShowSectionFreeWriting}
+    <!-- セクション：レビュー --> 
+    {block:IfShowSectionReviews}
+    <section id="reviews" class="section">
+      <div class="container dd-container">
+        <h2 class="h4 section-title text-center">{text:SectionReviews Heading}</h2> 
+        {block:IfSectionReviewsLead}
+        <p class="h1 text-center section-lead">{text:SectionReviews Lead}</p> 
+        {/block:IfSectionReviewsLead}
+        {block:IfReviewComment01}
+        <div class="review-container">
+           
+          {block:IfReviewTitle01}
+          <p class="review-title">{text:ReviewTitle 01}</p> 
+          {/block:IfReviewTitle01}
+          <div class="bubble">
+            <blockquote>
+              {text:ReviewComment 01}
+              {block:IfReviewAttributionTitle01}
+              <footer>
+                 
+                {block:IfReviewAttributionURL01}
+                 <a href="{text:ReviewAttributionURL 01}">{text:ReviewAttributionTitle 01}</a> 
+                {/block:IfReviewAttributionURL01}
+                {block:IfNotReviewAttributionURL01}
+                {text:ReviewAttributionTitle 01}
+                {/block:IfNotReviewAttributionURL01}
+              </footer> 
+              {/block:IfReviewAttributionTitle01}
+            </blockquote>
+          </div>
+          <div class="media reviewer-container">
+            <div class="pull-left">
+               
+              {block:IfReviewerImage01Image}
+               <img style="width: 48px;" src="{image:ReviewerImage 01}" alt="" class="media-object img-circle"> 
+              {/block:IfReviewerImage01Image}
+              {block:IfNotReviewerImage01Image}
+              <div class="reviewer-icon-placeholder"><i class="fa fa-user"></i></div> 
+              {/block:IfNotReviewerImage01Image}
+            </div>
+            <div class="media-body">
+              <div class="reviewer-name">
+                 
+                {block:IfReviewerURL01}
+                 <a href="{text:ReviewerURL 01}">{text:ReviewerName 01}</a> 
+                {/block:IfReviewerURL01}
+                {block:IfNotReviewerURL01}
+                {text:ReviewerName 01}
+                {/block:IfNotReviewerURL01}
+                {block:IfReviewerRole01}<span class="reviewer-role">{text:ReviewerRole 01}</span>{/block:IfReviewerRole01}
+              </div>
+            </div>
+          </div>
+        </div> 
+        {/block:IfReviewComment01}
+        {block:IfReviewComment02}
+        <hr class="context-break">
+        <div class="review-container">
+           
+          {block:IfReviewTitle02}
+          <p class="review-title">{text:ReviewTitle 02}</p> 
+          {/block:IfReviewTitle02}
+          <div class="bubble">
+            <blockquote>
+              {text:ReviewComment 02}
+              {block:IfReviewAttributionTitle02}
+              <footer>
+                 
+                {block:IfReviewAttributionURL02}
+                 <a href="{text:ReviewAttributionURL 02}">{text:ReviewAttributionTitle 02}</a> 
+                {/block:IfReviewAttributionURL02}
+                {block:IfNotReviewAttributionURL02}
+                {text:ReviewAttributionTitle 02}
+                {/block:IfNotReviewAttributionURL02}
+              </footer> 
+              {/block:IfReviewAttributionTitle02}
+            </blockquote>
+          </div>
+          <div class="media reviewer-container">
+            <div class="pull-left">
+               
+              {block:IfReviewerImage02Image}
+               <img style="width: 48px;" src="{image:ReviewerImage 02}" alt="" class="media-object img-circle"> 
+              {/block:IfReviewerImage02Image}
+              {block:IfNotReviewerImage02Image}
+              <div class="reviewer-icon-placeholder"><i class="fa fa-user"></i></div> 
+              {/block:IfNotReviewerImage02Image}
+            </div>
+            <div class="media-body">
+              <div class="reviewer-name">
+                 
+                {block:IfReviewerURL02}
+                 <a href="{text:ReviewerURL 02}">{text:ReviewerName 02}</a> 
+                {/block:IfReviewerURL02}
+                {block:IfNotReviewerURL02}
+                {text:ReviewerName 02}
+                {/block:IfNotReviewerURL02}
+                {block:IfReviewerRole02}<span class="reviewer-role">{text:ReviewerRole 02}</span>{/block:IfReviewerRole02}
+                 
+              </div>
+            </div>
+          </div>
+        </div> 
+        {/block:IfReviewComment02}
+        {block:IfReviewComment03}
+        <hr class="context-break">
+        <div class="review-container">
+           
+          {block:IfReviewTitle03}
+          <p class="review-title">{text:ReviewTitle 03}</p> 
+          {/block:IfReviewTitle03}
+          <div class="bubble">
+            <blockquote>
+              {text:ReviewComment 03}
+              {block:IfReviewAttributionTitle03}
+              <footer>
+                 
+                {block:IfReviewAttributionURL03}
+                 <a href="{text:ReviewAttributionURL 03}">{text:ReviewAttributionTitle 03}</a> 
+                {/block:IfReviewAttributionURL03}
+                {block:IfNotReviewAttributionURL03}
+                {text:ReviewAttributionTitle 03}
+                {/block:IfNotReviewAttributionURL03}
+              </footer> 
+              {/block:IfReviewAttributionTitle03}
+            </blockquote>
+          </div>
+          <div class="media reviewer-container">
+            <div class="pull-left">
+               
+              {block:IfReviewerImage03Image}
+               <img style="width: 48px;" src="{image:ReviewerImage 03}" alt="" class="media-object img-circle"> 
+              {/block:IfReviewerImage03Image}
+              {block:IfNotReviewerImage03Image}
+              <div class="reviewer-icon-placeholder"><i class="fa fa-user"></i></div> 
+              {/block:IfNotReviewerImage03Image}
+            </div>
+            <div class="media-body">
+              <div class="reviewer-name">
+                 
+                {block:IfReviewerURL03}
+                 <a href="{text:ReviewerURL 03}">{text:ReviewerName 03}</a> 
+                {/block:IfReviewerURL03}
+                {block:IfNotReviewerURL03}
+                {text:ReviewerName 03}
+                {/block:IfNotReviewerURL03}
+                {block:IfReviewerRole03}<span class="reviewer-role">{text:ReviewerRole 03}</span>{/block:IfReviewerRole03}
+              </div>
+            </div>
+          </div>
+        </div> 
+        {/block:IfReviewComment03}
+      </div>
+    </section> 
+    {/block:IfShowSectionReviews}
+    <!-- セクション：電子書籍とのつきあい方 --> 
+    {block:IfShowSectionHowToRead}
+    <section id="how-to-read" class="section-light">
+      <div class="container dd-container">
+        <h2 class="h4 section-title text-center">HOW TO READ EBOOKS</h2>
+        <p class="h1 text-center section-lead"><span class="inline-block">電子書籍との</span><span class="inline-block">つきあい方</span></p>
+        <div class="free-writing-body-container">
+          <ul>
+            <li>専用端末がないと読めない？</li>
+            <li>端末が壊れたら買った本は無駄になる？</li>
+            <li>何に気をつければいいの？</li>
+          </ul>
+          <p>はじめて電子書籍に触れる人の、よくある疑問に答えます。</p>
+          <p class="text-center"><a href="http://lp.denshochan.com/how-to-read-ebooks.html" target="_blank" class="btn btn-info btn-lg"><i class="fa fa-external-link"></i>電子書籍とのつきあい方</a></p>
+        </div>
+      </div>
+    </section> 
+    {/block:IfShowSectionHowToRead}
+    <!-- セクション：購入／ダウンロード --> 
+    {block:IfShowSectionAcquisition}
+    <section id="acquisition" class="section-inverse">
+      <div class="container dd-container">
+        <h2 class="h4 section-title text-center">{text:SectionAcquisition Heading}</h2> 
+        {block:IfSectionAcquisitionLead}
+        <p class="h1 text-center section-lead">{text:SectionAcquisition Lead}</p> 
+        {/block:IfSectionAcquisitionLead}
+        {block:IfShowPrice}
+          {block:IfPrice}
+        <p class="text-center">販売価格<span class="price">{text:Price}</span>円</p> 
+          {/block:IfPrice}
+          {block:IfNotPrice}
+        <p class="text-center">販売価格<span class="price">無料</span></p> 
+          {/block:IfNotPrice}
+        {/block:IfShowPrice}
+        {block:IfSectionAcquisitionNote}
+        <p class="text-center small">{text:SectionAcquisition Note}</p> 
+        {/block:IfSectionAcquisitionNote}
+        <hr>
+        <ul class="list-inline text-center">
+           
+          {block:IfAcquisitionLinkLabel01}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 01}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 01}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel01}
+          {block:IfAcquisitionLinkLabel02}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 02}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 02}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel02}
+          {block:IfAcquisitionLinkLabel03}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 03}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 03}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel03}
+          {block:IfAcquisitionLinkLabel04}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 04}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 04}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel04}
+          {block:IfAcquisitionLinkLabel05}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 05}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 05}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel05}
+          {block:IfAcquisitionLinkLabel06}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 06}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 06}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel06}
+        </ul>
+      </div>
+    </section> 
+    {/block:IfShowSectionAcquisition}
+    <!-- セクション：関連コンテンツ --> 
+    {block:IfShowSectionRelatedWorks}
+    <section id="related-contents" title="Related works">
+      <div class="container dd-container">
+        <h2 class="h4 section-title text-center">{text:SectionRelatedWorks Heading}</h2> 
+        {block:IfSectionRelatedWorksLead}
+        <p class="h1 text-center section-lead">{text:SectionRelatedWorks Lead}</p> 
+        {/block:IfSectionRelatedWorksLead}
+        <div class="row">
+           
+          {block:IfRelatedWorkTitle01}
+          <div class="{select:ColumnCount RelatedWorks}">
+            <div class="thumbnail text-center"><a href="{text:RelatedWorkURL 01}" title="{text:RelatedWorkTitle 01}" class="target">
+                <div style="background-image: url({image:RelatedWorkImage 01});" class="thumbnail-container"></div></a>
+              <div class="caption"><a href="{text:RelatedWorkURL 01}" class="thumbnail-title">{text:RelatedWorkTitle 01}</a></div>
+            </div>
+          </div> 
+          {/block:IfRelatedWorkTitle01}
+          {block:IfRelatedWorkTitle02}
+          <div class="{select:ColumnCount RelatedWorks}">
+            <div class="thumbnail text-center"><a href="{text:RelatedWorkURL 02}" title="{text:RelatedWorkTitle 02}">
+                <div style="background-image: url({image:RelatedWorkImage 02});" class="thumbnail-container"></div></a>
+              <div class="caption"><a href="{text:RelatedWorkURL 02}" class="thumbnail-title">{text:RelatedWorkTitle 02}</a></div>
+            </div>
+          </div> 
+          {/block:IfRelatedWorkTitle02}
+          {block:IfRelatedWorkTitle03}
+          <div class="{select:ColumnCount RelatedWorks}">
+            <div class="thumbnail text-center"><a href="{text:RelatedWorkURL 03}" title="{text:RelatedWorkTitle 03}">
+                <div style="background-image: url({image:RelatedWorkImage 03});" class="thumbnail-container"></div></a>
+              <div class="caption"><a href="{text:RelatedWorkURL 03}" class="thumbnail-title">{text:RelatedWorkTitle 03}</a></div>
+            </div>
+          </div> 
+          {/block:IfRelatedWorkTitle03}
+          {block:IfRelatedWorkTitle04}
+          <div class="{select:ColumnCount RelatedWorks}">
+            <div class="thumbnail text-center"><a href="{text:RelatedWorkURL 04}" title="{text:RelatedWorkTitle 04}">
+                <div style="background-image: url({image:RelatedWorkImage 04});" class="thumbnail-container"></div></a>
+              <div class="caption"><a href="{text:RelatedWorkURL 04}" class="thumbnail-title">{text:RelatedWorkTitle 04}</a></div>
+            </div>
+          </div> 
+          {/block:IfRelatedWorkTitle04}
+        </div>
+      </div>
+    </section>
+    <hr class="context-break"> 
+    {/block:IfShowSectionRelatedWorks}
+    <!-- セクション：著者紹介 --> 
+    {block:IfShowSectionBiographies}
+    <section id="bio">
+      <div class="container dd-container">
+        <h2 class="h4 section-title text-center">{text:SectionBiographies Heading}</h2> 
+        {block:IfSectionBiographiesLead}
+        <p class="h1 text-center section-lead">{text:SectionBiographies Lead}</p> 
+        {/block:IfSectionBiographiesLead}
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <ul class="media-list">
+               
+              {block:IfAuthorName01}
+              <li class="media">
+                <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:AuthorImage 01}" alt="" class="media-object img-circle"></div>
+                <div class="media-body">
+                  <div class="media-heading"><span class="role">著者</span> 
+                    {text:AuthorName 01}<small>{text:AuthorNameKana 01}</small>
+                  </div>
+                  <ul class="list-inline">
+                     
+                    {block:IfAuthorURL01}
+                    <li><a href="{text:AuthorURL 01}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorURL01}
+                    {block:IfAuthorTwitter01}
+                    <li><a href="http://twitter.com/{text:AuthorTwitter 01}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorTwitter01}
+                    {block:IfAuthorFacebook01}
+                    <li><a href="http://facebook.com/{text:AuthorFacebook 01}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorFacebook01}
+                    {block:IfAuthorGooglePlus01}
+                    <li><a href="http://plus.google.com/{text:AuthorGooglePlus 01}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorGooglePlus01}
+                  </ul>
+                  <div class="author-description">
+                     
+                    {text:AuthorDescription 01}
+                  </div>
+                </div>
+              </li> 
+              {/block:IfAuthorName01}
+              {block:IfAuthorName02}
+              <li class="media">
+                <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:AuthorImage 02}" alt="" class="media-object img-circle"></div>
+                <div class="media-body">
+                  <div class="media-heading"><span class="role">著者</span> 
+                    {text:AuthorName 02}<small>{text:AuthorNameKana 02}</small>
+                  </div>
+                  <ul class="list-inline">
+                     
+                    {block:IfAuthorURL02}
+                    <li><a href="{text:AuthorURL 02}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorURL02}
+                    {block:IfAuthorTwitter02}
+                    <li><a href="http://twitter.com/{text:AuthorTwitter 02}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorTwitter02}
+                    {block:IfAuthorFacebook02}
+                    <li><a href="http://facebook.com/{text:AuthorFacebook 02}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorFacebook02}
+                    {block:IfAuthorGooglePlus02}
+                    <li><a href="http://plus.google.com/{text:AuthorGooglePlus 02}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorGooglePlus02}
+                  </ul>
+                  <div class="author-description">
+                     
+                    {text:AuthorDescription 02}
+                  </div>
+                </div>
+              </li> 
+              {/block:IfAuthorName02}
+              {block:IfContributorName01}
+              <li class="media">
+                <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:ContributorImage 01}" alt="" class="media-object img-circle"></div>
+                <div class="media-body">
+                  <div class="media-heading">
+                     
+                    {block:IfContributorRole01}<span class="role">{text:ContributorRole 01}</span> 
+                    {/block:IfContributorRole01}
+                    {text:ContributorName 01}<small>{text:ContributorNameKana 01}</small>
+                  </div>
+                  <ul class="list-inline">
+                     
+                    {block:IfContributorURL01}
+                    <li><a href="{text:ContributorURL 01}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorURL01}
+                    {block:IfContributorTwitter01}
+                    <li><a href="http://twitter.com/{text:ContributorTwitter 01}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorTwitter01}
+                    {block:IfContributorFacebook01}
+                    <li><a href="http://facebook.com/{text:ContributorFacebook 01}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorFacebook01}
+                    {block:IfContributorGooglePlus01}
+                    <li><a href="http://plus.google.com/{text:ContributorGooglePlus 01}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorGooglePlus01}
+                  </ul>
+                  <div class="author-description">
+                     
+                    {text:ContributorDescription 01}
+                  </div>
+                </div>
+              </li> 
+              {/block:IfContributorName01}
+              {block:IfContributorName02}
+              <li class="media">
+                <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:ContributorImage 02}" alt="" class="media-object img-circle"></div>
+                <div class="media-body">
+                  <div class="media-heading">
+                     
+                    {block:IfContributorRole02}
+                     <span class="role">{text:ContributorRole 02}</span> 
+                    {/block:IfContributorRole02}
+                    {text:ContributorName 02}<small>{text:ContributorNameKana 02}</small>
+                  </div>
+                  <ul class="list-inline">
+                     
+                    {block:IfContributorURL02}
+                    <li><a href="{text:ContributorURL 02}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorURL02}
+                    {block:IfContributorTwitter02}
+                    <li><a href="http://twitter.com/{text:ContributorTwitter 02}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorTwitter02}
+                    {block:IfContributorFacebook02}
+                    <li><a href="http://facebook.com/{text:ContributorFacebook 02}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorFacebook02}
+                    {block:IfContributorGooglePlus02}
+                    <li><a href="http://plus.google.com/{text:ContributorGooglePlus 02}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorGooglePlus02}
+                  </ul>
+                  <div class="author-description">
+                     
+                    {text:ContributorDescription 02}
+                  </div>
+                </div>
+              </li> 
+              {/block:IfContributorName02}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section> 
+    {/block:IfShowSectionBiographies}
+     
+    {block:IfShowSectionContact}
+    <hr class="context-break">
+    <section id="contact">
+      <div class="container dd-container">
+        <h2 class="h4 section-title text-center">{text:SectionContact Heading}</h2>
+        <div class="contact-form-container">
+           
+          {text:SectionContact EmbedCode}
+        </div>
+      </div>
+    </section> 
+    {/block:IfShowSectionContact}
+     
+    {block:IfFacebookPageURL}
+    <div id="fb-like-box-container" class="container dd-container">
+      <div data-href="{text:FacebookPageURL}" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true" class="fb-like-box"></div>
+    </div> 
+    {/block:IfFacebookPageURL}
+     
+    <!-- Schema.org JSON-LD --> 
+    {block:IfEnableSchemaOrg}
+    <script type="application/ld+json">
+      {
+      "@context": "http://schema.org",
+      "@type": "Book",
+      {block:IfSectionDetailsISBN}
+      "isbn": "{text:SectionDetails ISBN}",
+      {/block:IfSectionDetailsISBN}
+      {block:IfFormatEbook}
+      "bookFormat": "http://schema.org/EBook",
+      {/block:IfFormatEbook}
+      "inLanguage": "{select:BookLanguage}",
+      {block:IfSectionDetailsDatePublished}"datePublished": "{text:SectionDetails DatePublished}",{/block:IfSectionDetailsDatePublished}
+      {block:IfSectionDetailsPublisherName}"publisher": {"name": "{text:SectionDetails PublisherName}"{block:IfSectionDetailsPublisherURL}, "url": "{text:SectionDetails PublisherURL}"{/block:IfSectionDetailsPublisherURL}},{/block:IfSectionDetailsPublisherName}
+      "author": [
+      { "name": "{text:AuthorName 01}", "description": "{text:AuthorDescription 01}"{block:IfAuthorImage01Image}, "image": "{image:AuthorImage 01}"{/block:IfAuthorImage01Image}{block:IfAuthorURL01}, "url": "{text:AuthorURL 01}"{/block:IfAuthorURL01} }
+      {block:IfAuthorName02},{ "name": "{text:AuthorName 02}", "description": "{text:AuthorDescription 02}"{block:IfAuthorImage02Image}, "image": "{image:AuthorImage 02}"{/block:IfAuthorImage02Image}{block:IfAuthorURL02}, "url": "{text:AuthorURL 02}"{/block:IfAuthorURL02} }{/block:IfAuthorName02}
+      ],
+      {block:IfContributorName01}
+      "contributor": [
+      { "name": "{text:ContributorName 01}", "description": "{text:ContributorDescription 01}"{block:IfContributorImage01Image}, "image": "{image:ContributorImage 01}"{/block:IfContributorImage01Image}{block:IfContributorURL01}, "url": "{text:ContributorURL 01}"{/block:IfContributorURL01} }
+      {block:IfContributorName02},{ "name": "{text:ContributorName 02}", "description": "{text:ContributorDescription 02}"{block:IfContributorImage02Image}, "image": "{image:ContributorImage 02}"{/block:IfContributorImage02Image}{block:IfContributorURL02}, "url": "{text:ContributorURL 02}"{/block:IfContributorURL02} }{/block:IfContributorName02}
+      ],
+      {/block:IfContributorName01}
+      "url": "{BlogURL}",
+      "image": "{image:CoverImage}",
+      "description": "{MetaDescription}",
+      {block:IfKeywords}
+      "keywords": "{text:Keywords}",
+      {/block:IfKeywords}
+      "name": "{Title} {text:BookSubtitle}"
+      }
+    </script> 
+    {/block:IfEnableSchemaOrg} 
+    {/block:IndexPage}
+    <footer id="footer">
+      <div class="container dd-container text-center">
+         
+        {block:IfCopyrightHolder}
+        <p>Copyright © {CopyrightYears} {text:CopyrightHolder}</p> 
+        {/block:IfCopyrightHolder}
+        <p>{block:IfFooterText}{text:FooterText}{/block:IfFooterText}</p>
+        <div><small><a href="http://lp.denshochan.com/">Theme</a>designed by<a href="http://densho.hatenablog.com/">Densho Channel</a>.</small></div>
+      </div>
+    </footer>
+    <!-- Google Analytics --> 
+    {block:IfGoogleAnalyticsID}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '{text:GoogleAnalyticsID}', 'auto');
+      ga('send', 'pageview');
+    </script> 
+    {/block:IfGoogleAnalyticsID}
+  </body>
+</html>
