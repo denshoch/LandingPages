@@ -4,11 +4,11 @@ var jade = require('gulp-jade');
 
 // Bower
 var config = {
-     bowerDir: './bower_components' ,
+    bowerDir: './bower_components',
     versions: {
       narrative: "1.0"
     }
-}
+};
 
 gulp.task('base', function () {
     return gulp.src('css/styles.scss')
