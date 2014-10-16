@@ -42,6 +42,4 @@ gulp.task('narrative', function () {
         .pipe(gulp.dest("./narrative"));
 });
 
-gulp.task('default', function () {
-    gulp.run('base');
-});
+gulp.task('default', ['base']);
