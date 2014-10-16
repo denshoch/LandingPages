@@ -1,0 +1,19 @@
+// セクション：オーディオ 
+| 
+| {block:IfShowSectionAudio}
+section#movie.section-light
+  .container.dd-container
+    h2.section-title.text-center {text:SectionAudio Heading}
+    | 
+    | {block:IfSectionAudioLead}
+    p.section-lead.text-center {text:SectionAudio Lead}
+    | 
+    | {/block:IfSectionAudioLead}
+    | {block:IfSectionAudioEmbedCode}
+    .audio-container
+      | 
+      | {text:SectionAudio EmbedCode}
+    | 
+    | {/block:IfSectionAudioEmbedCode}
+| 
+| {/block:IfShowSectionAudio}

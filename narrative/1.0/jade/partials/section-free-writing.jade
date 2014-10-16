@@ -1,0 +1,21 @@
+// セクション：自由記述 
+| 
+| {block:IfShowSectionFreeWriting}
+section#free-writing.section
+  .container.dd-container
+    h2.h4.section-title.text-center {text:SectionFreeWriting Heading}
+    | 
+    | {block:IfSectionFreeWritingLead}
+    p.h1.text-center.section-lead {text:SectionFreeWriting Lead}
+    | 
+    | {/block:IfSectionFreeWritingLead}
+    .free-writing-body-container
+      | {block:IfSectionFreeWritingBody}
+      | {text:SectionFreeWriting Body}
+      | {/block:IfSectionFreeWritingBody}
+| 
+| {block:IfShowSectionReviews}
+hr.context-break
+| 
+| {/block:IfShowSectionReviews}
+| {/block:IfShowSectionFreeWriting}

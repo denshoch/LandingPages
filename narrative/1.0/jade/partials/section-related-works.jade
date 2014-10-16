@@ -1,0 +1,52 @@
+// セクション：関連コンテンツ 
+| 
+| {block:IfShowSectionRelatedWorks}
+section#related-contents(title='Related works')
+  .container.dd-container
+    h2.h4.section-title.text-center {text:SectionRelatedWorks Heading}
+    | 
+    | {block:IfSectionRelatedWorksLead}
+    p.h1.text-center.section-lead {text:SectionRelatedWorks Lead}
+    | 
+    | {/block:IfSectionRelatedWorksLead}
+    .row
+      | 
+      | {block:IfRelatedWorkTitle01}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a.target(href='{text:RelatedWorkURL 01}', title='{text:RelatedWorkTitle 01}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 01});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 01}') {text:RelatedWorkTitle 01}
+      | 
+      | {/block:IfRelatedWorkTitle01}
+      | {block:IfRelatedWorkTitle02}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a(href='{text:RelatedWorkURL 02}', title='{text:RelatedWorkTitle 02}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 02});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 02}') {text:RelatedWorkTitle 02}
+      | 
+      | {/block:IfRelatedWorkTitle02}
+      | {block:IfRelatedWorkTitle03}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a(href='{text:RelatedWorkURL 03}', title='{text:RelatedWorkTitle 03}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 03});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 03}') {text:RelatedWorkTitle 03}
+      | 
+      | {/block:IfRelatedWorkTitle03}
+      | {block:IfRelatedWorkTitle04}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a(href='{text:RelatedWorkURL 04}', title='{text:RelatedWorkTitle 04}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 04});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 04}') {text:RelatedWorkTitle 04}
+      | 
+      | {/block:IfRelatedWorkTitle04}
+hr.context-break
+| 
+| {/block:IfShowSectionRelatedWorks}
