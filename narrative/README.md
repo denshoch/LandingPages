@@ -2,7 +2,7 @@
 
 でんでんランディングページ テーマ：Narrative
 
-バージョン: 1.0.12
+バージョン: 1.0.13
 
 ![スクリーンショット](../images/sc_narrative.png)
 
@@ -56,49 +56,49 @@
 <th>項目</th><th>通常版</th><th>軽量版</th>
 </tr>
 <tr>
-<td>内容紹介</td><td>support</td><td>support</td>
+<td>内容紹介セクション</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>動画</td><td>support</td><td></td>
+<td>動画セクション</td><td>あり</td><td>なし</td>
 </tr>
 <tr>
-<td>オーディオ</td><td>support</td><td></td>
+<td>オーディオセクション</td><td>あり</td><td>なし</td>
 </tr>
 <tr>
-<td>特徴紹介</td><td>support</td><td>support</td>
+<td>特徴紹介セクション</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>キャラクター紹介</td><td>4名</td><td>3名</td>
+<td>キャラクター紹介セクション</td><td>4名</td><td>3名</td>
 </tr>
 <tr>
-<td>試し読み</td><td>support</td><td>support</td>
+<td>試し読みセクション</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>作品詳細</td><td>support</td><td>support</td>
+<td>作品詳細セクション</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>自由記述</td><td>support</td><td>support</td>
+<td>自由記述セクション</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>レビュー</td><td>3件</td><td>3件</td>
+<td>レビューセクション</td><td>3件</td><td>3件</td>
 </tr>
 <tr>
-<td>電子書籍とのつきあい方</td><td>support</td><td>support</td>
+<td>電子書籍とのつきあい方セクション</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>購入リンク</td><td>6</td><td>3</td>
+<td>購入リンクセクション</td><td>6</td><td>3</td>
 </tr>
 <tr>
-<td>関連作品</td><td>4</td><td>3</td>
+<td>関連作品紹介セクション</td><td>4</td><td>3</td>
 </tr>
 <tr>
-<td>著者紹介</td><td>著者2名<br/>協力者2名</td><td>著者1名<br/>協力者1名</td>
+<td>著者紹介セクション</td><td>著者2名<br/>協力者2名</td><td>著者1名<br/>協力者1名</td>
 </tr>
 <tr>
-<td>コンタクトフォーム</td><td>support</td><td></td>
+<td>コンタクトフォームセクション</td><td>あり</td><td>なし</td>
 </tr>
 <tr>
-<td>Facebookページ</td><td>support</td><td></td>
+<td>Facebookページ</td><td>あり</td><td>なし</td>
 </tr>
 </table>
 
