@@ -25,6 +25,12 @@
 ## Setup
 
 ```
-$ npm install --save-dev gulp gulp-ruby-sass gulp-ejs bower
+$ npm install --save-dev gulp gulp-ruby-sass gulp-rename gulp-jade bower
 $ bower install bootstrap-sass-official
+```
+
+### Build a specific theme
+
+```
+$ gulp narrative
 ```

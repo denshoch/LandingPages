@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
+var rename = require("gulp-rename");
 var jade = require('gulp-jade');
 
 // Bower
@@ -36,9 +37,12 @@ gulp.task('narrative', function () {
         .pipe(gulp.dest('narrative/' + config.versions.narrative + '/css'));
     gulp.src('narrative/' + config.versions.narrative + '/jade/*.jade')
         .pipe(jade({
-        pretty: true,
-    },{ext: '.txt'}))
+          pretty: true,
+        }))
         .on('error', function (err) { console.log(err.message); })
+        .pipe(rename({
+          extname: ".txt"
+        }))
         .pipe(gulp.dest("./narrative"));
 });
 

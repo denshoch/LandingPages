@@ -589,6 +589,7 @@
 - [@fujinyo](https://twitter.com/fujinyo)（[言い値書店](http://www.iineshoten.com/), [EPUB to Twitter](http://www.iineshoten.com/e2t/)）
 - [@satorumurmur](https://twitter.com/satorumurmur) ([BiB/i](http://sarasa.la/bib/i/))
 - [ヘリベマルヲ](https://plus.google.com/+%E3%83%98%E3%83%AA%E3%83%99%E3%83%9E%E3%83%AB%E3%83%B2)（『[ガラスの泡](http://the-glass-bubble.tumblr.com/)』）
+- @takahashim
 
 また、このテーマは、[@sanographix](https://github.com/sanographix) さんの同人音楽CD特設サイト向けTumblrテーマ [Tokusetsu 2](http://sanographix.github.io/tumblr/tokusetsu2/) を参考にさせて頂きました。
 
@@ -596,6 +597,10 @@
 
 ## History 変更履歴
 
+- 1.0.13
+  - 2014.10.17
+    - テーマファイルをjadeからのビルド生成に変更
+    - Googleアナリティクスのコード変更
 - 1.0.12
   - 2014.10.15
     - テーマファイルをejsからのビルド生成に変更
