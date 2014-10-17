@@ -1,0 +1,34 @@
+// Schema.org JSON-LD 
+| 
+| {block:IfEnableSchemaOrg}
+script(type='application/ld+json').
+  {
+  "@context": "http://schema.org",
+  "@type": "Book",
+  {block:IfSectionDetailsISBN}
+  "isbn": "{text:SectionDetails ISBN}",
+  {/block:IfSectionDetailsISBN}
+  {block:IfFormatEbook}
+  "bookFormat": "http://schema.org/EBook",
+  {/block:IfFormatEbook}
+  "inLanguage": "{select:BookLanguage}",
+  {block:IfSectionDetailsDatePublished}"datePublished": "{text:SectionDetails DatePublished}",{/block:IfSectionDetailsDatePublished}
+  {block:IfSectionDetailsPublisherName}"publisher": {"name": "{text:SectionDetails PublisherName}"{block:IfSectionDetailsPublisherURL}, "url": "{text:SectionDetails PublisherURL}"{/block:IfSectionDetailsPublisherURL}},{/block:IfSectionDetailsPublisherName}
+  "author": [
+  { "name": "{text:AuthorName 01}", "description": "{text:AuthorDescription 01}"{block:IfAuthorImage01Image}, "image": "{image:AuthorImage 01}"{/block:IfAuthorImage01Image}{block:IfAuthorURL01}, "url": "{text:AuthorURL 01}"{/block:IfAuthorURL01} }
+  ],
+  {block:IfContributorName01}
+  "contributor": [
+  { "name": "{text:ContributorName 01}", "description": "{text:ContributorDescription 01}"{block:IfContributorImage01Image}, "image": "{image:ContributorImage 01}"{/block:IfContributorImage01Image}{block:IfContributorURL01}, "url": "{text:ContributorURL 01}"{/block:IfContributorURL01} }
+  ],
+  {/block:IfContributorName01}
+  "url": "{BlogURL}",
+  "image": "{image:CoverImage}",
+  "description": "{MetaDescription}",
+  {block:IfKeywords}
+  "keywords": "{text:Keywords}",
+  {/block:IfKeywords}
+  "name": "{Title} {text:BookSubtitle}"
+  }
+| 
+| {/block:IfEnableSchemaOrg}

@@ -1,0 +1,53 @@
+// セクション：購入／ダウンロード 
+| 
+| {block:IfShowSectionAcquisition}
+section#acquisition.section-inverse
+  .container.dd-container
+    h2.h4.section-title.text-center {text:SectionAcquisition Heading}
+    | 
+    | {block:IfSectionAcquisitionLead}
+    p.h1.text-center.section-lead {text:SectionAcquisition Lead}
+    | 
+    | {/block:IfSectionAcquisitionLead}
+    | {block:IfShowPrice}
+    |   {block:IfPrice}
+    p.text-center
+      | 販売価格
+      span.price {text:Price}
+      | 円
+    | 
+    |   {/block:IfPrice}
+    |   {block:IfNotPrice}
+    p.text-center
+      | 販売価格
+      span.price 無料
+    | 
+    |   {/block:IfNotPrice}
+    | {/block:IfShowPrice}
+    | {block:IfSectionAcquisitionNote}
+    p.text-center.small {text:SectionAcquisition Note}
+    | 
+    | {/block:IfSectionAcquisitionNote}
+    hr
+    ul.list-inline.text-center
+      | 
+      | {block:IfAcquisitionLinkLabel01}
+      li
+        p
+          a.btn.btn-primary.btn-lg(href='{text:AcquisitionLinkURL 01}') {text:AcquisitionLinkLabel 01}
+      | 
+      | {/block:IfAcquisitionLinkLabel01}
+      | {block:IfAcquisitionLinkLabel02}
+      li
+        p
+          a.btn.btn-primary.btn-lg(href='{text:AcquisitionLinkURL 02}') {text:AcquisitionLinkLabel 02}
+      | 
+      | {/block:IfAcquisitionLinkLabel02}
+      | {block:IfAcquisitionLinkLabel03}
+      li
+        p
+          a.btn.btn-primary.btn-lg(href='{text:AcquisitionLinkURL 03}') {text:AcquisitionLinkLabel 03}
+      | 
+      | {/block:IfAcquisitionLinkLabel03}
+| 
+| {/block:IfShowSectionAcquisition}

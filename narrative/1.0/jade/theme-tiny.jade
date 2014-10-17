@@ -1,0 +1,326 @@
+doctype
+html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
+  head
+    //
+            Theme Narrative Tiny (Den-Den Landing Page)
+            version: 1.0.13
+            by @lost_and_found from Densho Channel
+            mail: <info@denshochan.com>
+            Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
+            license: MIT
+    meta(charset='utf-8')
+    | 
+    | <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><![endif]-->
+    | {block:Hidden}
+    meta(name='color:PrimaryColor', content='#0088aa')
+    meta(name='image:CoverImage', content='')
+    meta(name='if:HeaderColumnLayout Reverse', content='0')
+    meta(name='if:HeaderImageEffect Blur', content='0')
+    meta(name='if:HeaderImageEffect Darken', content='0')
+    meta(name='if:HeaderTextEffect Shadow', content='0')
+    meta(name='text:SiteSubtitle', content='Official Website')
+    meta(name='text:BookTitle', content='タイトル')
+    meta(name='text:BookSubtitle', content='サブタイトル')
+    meta(name='text:BookCollectionTitle', content='シリーズタイトル')
+    meta(name='select:BookLanguage', content='ja', title='Japanese')
+    meta(name='select:BookLanguage', content='en', title='English')
+    meta(name='if:ShowPrice', content='1')
+    meta(name='text:Price', content='')
+    meta(name='text:Catchphrase Main', content='キャッチフレーズ メイン')
+    meta(name='text:Catchphrase Sub', content='キャッチフレーズ サブ')
+    meta(name='text:Keywords', content='')
+    // 内容紹介 
+    meta(name='if:ShowSectionDescription', content='1')
+    meta(name='text:SectionDescription Heading', content='STORY')
+    meta(name='text:SectionDescription Lead', content='内容紹介：リード文')
+
+    include ./partials/section-features-vars.jade
+
+    include ./partials/tiny-section-characters-vars.jade
+
+    // 試し読み 
+    meta(name='if:ShowSectionPreview', content='1')
+    meta(name='text:SectionPreview Heading', content='PREVIEW')
+    meta(name='text:SectionPreview Lead', content='試し読み：リード文')
+    meta(name='text:PreviewEmbedCode', content='')
+    meta(name='text:PreviewLink', content='')
+    // 詳細情報 
+    meta(name='if:ShowSectionDetails', content='1')
+    meta(name='text:SectionDetails Heading', content='DETAILS')
+    meta(name='text:SectionDetails Lead', content='商品詳細：リード文')
+    meta(name='text:SectionDetails DatePublished', content='1900-01-01')
+    meta(name='text:SectionDetails PublisherName', content='')
+    meta(name='text:SectionDetails PublisherURL', content='')
+    meta(name='text:SectionDetails ISBN', content='')
+    meta(name='if:Format Ebook', content='1')
+    meta(name='text:SectionDetails FormatDesc', content='')
+    // 自由記述 
+    meta(name='if:ShowSectionFreeWriting', content='1')
+    meta(name='text:SectionFreeWriting Heading', content='FREE WRITING')
+    meta(name='text:SectionFreeWriting Lead', content='自由記述：リード文')
+    meta(name='text:SectionFreeWriting Body', content='自由に文章を書けます。')
+
+    include ./partials/section-reviews-vars.jade
+
+    // 電子書籍とのつきあい方 
+    meta(name='if:ShowSectionHowToRead', content='0')
+
+    include ./partials/tiny-section-acquisition-vars.jade
+
+    include ./partials/tiny-section-related-works-vars.jade
+
+    include ./partials/tiny-section-biographies-vars.jade
+
+    // Footer 
+    meta(name='text:CopyrightHolder', content='')
+    meta(name='text:FooterText', content='')
+    // Google Analytics 
+    meta(name='text:GoogleAnalyticsID', content='')
+    // Twitter Player 
+    meta(name='text:TwitterPlayerURL', content='')
+    // Schema.org JSON-LD 
+    meta(name='if:EnableSchemaOrg', content='1')
+    | 
+    | {block:Hidden}
+    title {Title} {text:BookSubtitle} | {text:SiteSubtitle}
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    | 
+    | {block:Description}
+    | 
+    meta(name='description', content='{MetaDescription}')
+    | 
+    | {/block:Description}
+    | 
+    | {block:IfKeywords}
+    meta(name='keywords', content='{text:Keywords}')
+    | 
+    | {/block:IfKeywords}
+    | 
+    // OGP 
+    meta(property='og:title', content='{Title} {text:BookSubtitle} - {text:AuthorName 01} {block:IfAuthorName02}…etc.{/block:IfAuthorName02}')
+    meta(property='og:type', content='website')
+    meta(property='og:image', content='{image:CoverImage}')
+    meta(property='og:site_name', content='{Title} {text:BookSubtitle} | {text:SiteSubtitle}')
+    | 
+    | {block:Description}
+    meta(property='og:description', content='{MetaDescription}')
+    | 
+    | {/block:Description}
+    meta(property='og:url', content='{BlogURL}')
+    // TwitterCard 
+    | 
+    | {block:IfTwitterPlayerURL}
+    meta(name='twitter:card', content='player')
+    meta(name='twitter:player', content='{text:TwitterPlayerURL}')
+    meta(name='twitter:player:width', content='520')
+    meta(name='twitter:player:height', content='560')
+    | 
+    | {/block:IfTwitterPlayerURL}
+    | {block:IfNotTwitterPlayerURL}
+    meta(name='twitter:card', content='summary_large_image')
+    | 
+    | {/block:IfNotTwitterPlayerURL}
+    | {block:IfAuthorTwitter01}
+    meta(name='twitter:site', content='@{text:AuthorTwitter 01}')
+    meta(name='twitter:creator', content='@{text:AuthorTwitter 01}')
+    | 
+    | {/block:IfAuthorTwitter01}
+    link(rel='shortcut icon', href='{Favicon}')
+    link(rel='apple-touch-icon-precomposed', href='{PortraitURL-128}')
+    link(rel='alternate', type='application/rss+xml', href='{RSS}')
+    link(rel='stylesheet', media='screen', href='//denshoch.github.io/LandingPages/narrative/1.0/css/styles.css')
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css')
+    link(rel='canonical', href='{BlogURL}')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+
+    include ./partials/style.jade
+
+  body
+
+    include ./partials/fb-root.jade
+
+    header#header
+      h1.sr-only {Title}
+      #header-inner
+        .container
+          .rows
+            | 
+            | {block:IfHeaderColumnLayoutReverse}
+            #catchprase-container.col-sm-push-5.col-sm-7.text-right
+              | 
+              | {/block:IfHeaderColumnLayoutReverse}
+              | {block:IfNotHeaderColumnLayoutReverse}
+              #catchprase-container.col-sm-7
+                | 
+                | {/block:IfNotHeaderColumnLayoutReverse}
+                #catchprase-container-inner
+                  p.catchprase
+                    | 
+                    | {text:Catchphrase Main}
+                  p.subphrase.hidden-xs
+                    | 
+                    | {text:Catchphrase Sub}
+                  hr
+                  .hidden-xs
+                    | 
+                    | {block:IfBookCollectionTitle}
+                    p.book-collection-title
+                      span.book-collection-title-label {text:BookCollectionTitle}
+                    | 
+                    | {/block:IfBookCollectionTitle}
+                    p.book-title
+                      | 
+                      | {text:BookTitle}
+                    | 
+                    | {block:IfBookSubtitle}
+                    p.book-subtitle
+                      | 
+                      | {text:BookSubtitle}
+                    | 
+                    | {/block:IfBookSubtitle}
+                    include ./partials/tiny-creators-list.jade
+                  .btn-container.hidden-xs
+                    ul.list-inline
+                      | 
+                      | {block:IfPreviewEmbedCode}
+                      li
+                        p
+                          a.btn.btn-default.btn-lg(href='#preview') 試し読みする
+                      | 
+                      | {/block:IfPreviewEmbedCode}
+                      | {block:IfNotPreviewEmbedCode}
+                      | {block:IfPreviewLink}
+                      li
+                        p
+                          a.btn.btn-default.btn-lg(href='#preview') 試し読みする
+                      | 
+                      | {block:IfPreviewLink}
+                      | {/block:IfNotPreviewEmbedCode}
+                      li
+                        p
+                          a.btn.btn-default.btn-lg(href='#acquisition') この本を入手
+
+                | 
+                | {block:IfNotHeaderColumnLayoutReverse}
+              | 
+              | {/block:IfNotHeaderColumnLayoutReverse}
+              | {block:IfHeaderColumnLayoutReverse}
+            | 
+            | {/block:IfHeaderColumnLayoutReverse}
+    #header-bottom
+      .rows
+        .container
+          | 
+          | {block:IfHeaderColumnLayoutReverse}
+          #cover-image-container.col-sm-5
+            | 
+            | {/block:IfHeaderColumnLayoutReverse}
+            | {block:IfNotHeaderColumnLayoutReverse}
+            #cover-image-container.col-sm-push-7.col-sm-5
+              | 
+              | {/block:IfNotHeaderColumnLayoutReverse}
+              | 
+              img#cover-image.img-thumbnail(src='{image:CoverImage}', alt='')
+              .visible-xs
+                | 
+                | {block:IfBookCollectionTitle}
+                p.book-collection-title
+                  span.book-collection-title-label {text:BookCollectionTitle}
+                | 
+                | {/block:IfBookCollectionTitle}
+                p.book-title
+                  | 
+                  | {text:BookTitle}
+                | 
+                | {block:IfBookSubtitle}
+                p.book-subtitle
+                  | 
+                  | {text:BookSubtitle}
+                | 
+                | {/block:IfBookSubtitle}
+                hr.context-break
+
+                include ./partials/tiny-creators-list.jade
+
+                .btn-container
+                  ul.list-inline
+                    | 
+                    | {block:IfPreviewEmbedCode}
+                    li
+                      p
+                        a.btn.btn-success.btn-lg(href='#preview') 試し読みする
+                    | 
+                    | {/block:IfPreviewEmbedCode}
+                    | {block:IfNotPreviewEmbedCode}
+                    | {block:IfPreviewLink}
+                    li
+                      p
+                        a.btn.btn-success.btn-lg(href='#preview') 試し読みする
+                    | 
+                    | {block:IfPreviewLink}
+                    | {/block:IfNotPreviewEmbedCode}
+                    li
+                      p
+                        a.btn.btn-primary.btn-lg(href='#acquisition') この本を入手
+              | 
+              | {block:IfNotHeaderColumnLayoutReverse}
+            | 
+            | {/block:IfNotHeaderColumnLayoutReverse}
+            | {block:IfHeaderColumnLayoutReverse}
+          | 
+          | {/block:IfHeaderColumnLayoutReverse}
+
+          | 
+          | {block:IfHeaderColumnLayoutReverse}
+          #social.col-sm-7
+            | 
+            | {/block:IfHeaderColumnLayoutReverse}
+            | {block:IfNotHeaderColumnLayoutReverse}
+            #social.col-sm-pull-5.col-sm-7
+              | 
+              | {/block:IfNotHeaderColumnLayoutReverse}
+
+              include ./partials/social-buttons.jade
+
+              | 
+              | {block:IfNotHeaderColumnLayoutReverse}
+            | 
+            | {/block:IfNotHeaderColumnLayoutReverse}
+            | {block:IfHeaderColumnLayoutReverse}
+          | 
+          | {/block:IfHeaderColumnLayoutReverse}
+    | 
+    | {block:IndexPage}
+
+    include ./partials/section-description.jade
+
+    include ./partials/section-features.jade
+
+    include ./partials/tiny-section-characters.jade
+
+    include ./partials/section-preview.jade
+
+    include ./partials/tiny-section-details.jade
+
+    include ./partials/section-free-writing.jade
+
+    include ./partials/section-reviews.jade
+
+    include ./partials/section-how-to-read.jade
+
+    include ./partials/tiny-section-acquisition.jade
+
+    include ./partials/tiny-section-related-works.jade
+
+    include ./partials/tiny-section-biographies.jade
+
+    include ./partials/tiny-schema-org.jade
+
+    | 
+    | {/block:IndexPage}
+
+    include ./partials/footer.jade
+
+    include ./partials/google-analytics.jade

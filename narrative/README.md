@@ -42,7 +42,65 @@
 
 1. Tumblrのダッシュボード画面で作成したブログが選択して、`カスタマイズ`を押します。
 2. テーマの編集画面で`HTMLを編集`を選びます。
-3. `HTMLを編集`の画面に表示されたHTMLコードを削除して、代わりに[こちら](http://denshoch.github.io/LandingPages/narrative/theme.txt) の内容を貼り付けて保存してください。
+3. `HTMLを編集`の画面に表示されたHTMLコードを削除して、代わりに次のいずれかの内容を貼り付けて保存してください。
+
+  - [通常版はこちら](http://denshoch.github.io/LandingPages/narrative/theme.txt)
+  - [軽量版はこちら](http://denshoch.github.io/LandingPages/narrative/theme-tiny.txt)
+
+### 通常版と軽量版の違いについて
+
+通常版の中から必要最低限と思われる項目だけを取り出したものが軽量版です。軽量版のほうが設定項目が少なく、初心者におすすめです。軽量版から通常版への移行は簡単です。反対に通常版から軽量版に移行する場合は、軽量版にない項目が失われてしまうので注意してください。通常版と軽量版の違いは次のとおりです。
+
+<table>
+<tr>
+<th>項目</th><th>通常版</th><th>軽量版</th>
+</tr>
+<tr>
+<td>内容紹介</td><td>support</td><td>support</td>
+</tr>
+<tr>
+<td>動画</td><td>support</td><td></td>
+</tr>
+<tr>
+<td>オーディオ</td><td>support</td><td></td>
+</tr>
+<tr>
+<td>特徴紹介</td><td>support</td><td>support</td>
+</tr>
+<tr>
+<td>キャラクター紹介</td><td>4名</td><td>3名</td>
+</tr>
+<tr>
+<td>試し読み</td><td>support</td><td>support</td>
+</tr>
+<tr>
+<td>作品詳細</td><td>support</td><td>support</td>
+</tr>
+<tr>
+<td>自由記述</td><td>support</td><td>support</td>
+</tr>
+<tr>
+<td>レビュー</td><td>3件</td><td>3件</td>
+</tr>
+<tr>
+<td>電子書籍とのつきあい方</td><td>support</td><td>support</td>
+</tr>
+<tr>
+<td>購入リンク</td><td>6</td><td>3</td>
+</tr>
+<tr>
+<td>関連作品</td><td>4</td><td>3</td>
+</tr>
+<tr>
+<td>著者紹介</td><td>著者2名<br/>協力者2名</td><td>著者1名<br/>協力者1名</td>
+</tr>
+<tr>
+<td>コンタクトフォーム</td><td>support</td><td></td>
+</tr>
+<tr>
+<td>Facebookページ</td><td>support</td><td></td>
+</tr>
+</table>
 
 ## Update <small>アップデート</small>
 
@@ -601,6 +659,7 @@
   - 2014.10.17
     - テーマファイルをjadeからのビルド生成に変更
     - Googleアナリティクスのコード変更
+    - 軽量版の導入
 - 1.0.12
   - 2014.10.15
     - テーマファイルをejsからのビルド生成に変更
