@@ -3,7 +3,7 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
   head
     //
             Theme Narrative Tiny (Den-Den Landing Page)
-            version: 1.0.13
+            version: 1.0.14
             by @lost_and_found from Densho Channel
             mail: <info@denshochan.com>
             Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -198,10 +198,15 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
                       | 
                       | {block:IfPreviewLink}
                       | {/block:IfNotPreviewEmbedCode}
+                      | {block:IfShowSectionAcquisition}
                       li
                         p
                           a.btn.btn-default.btn-lg(href='#acquisition') この本を入手
-
+                      | {/block:IfShowSectionAcquisition}
+                      | {block:IfNotShowSectionAcquisition}
+                      li
+                        p.sr-only 入手可能なリンクはありません
+                      | {/block:IfNotShowSectionAcquisition}
                 | 
                 | {block:IfNotHeaderColumnLayoutReverse}
               | 
@@ -261,9 +266,15 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
                     | 
                     | {block:IfPreviewLink}
                     | {/block:IfNotPreviewEmbedCode}
+                    | {block:IfShowSectionAcquisition}
                     li
                       p
                         a.btn.btn-primary.btn-lg(href='#acquisition') この本を入手
+                    | {/block:IfShowSectionAcquisition}
+                    | {block:IfNotShowSectionAcquisition}
+                    li
+                      p.sr-only 入手可能なリンクはありません
+                    | {/block:IfNotShowSectionAcquisition}
               | 
               | {block:IfNotHeaderColumnLayoutReverse}
             | 

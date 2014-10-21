@@ -3,7 +3,7 @@
   <head>
     <!--
     Theme Narrative Tiny (Den-Den Landing Page)
-    version: 1.0.13
+    version: 1.0.14
     by @lost_and_found from Densho Channel
     mail: <info@denshochan.com>
     Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -388,9 +388,14 @@
                       </li> 
                       {block:IfPreviewLink}
                       {/block:IfNotPreviewEmbedCode}
+                      {block:IfShowSectionAcquisition}
                       <li>
                         <p><a href="#acquisition" class="btn btn-default btn-lg">この本を入手</a></p>
-                      </li>
+                      </li>{/block:IfShowSectionAcquisition}
+                      {block:IfNotShowSectionAcquisition}
+                      <li>
+                        <p class="sr-only">入手可能なリンクはありません</p>
+                      </li>{/block:IfNotShowSectionAcquisition}
                     </ul>
                   </div>
                 </div> 
@@ -457,9 +462,14 @@
                     </li> 
                     {block:IfPreviewLink}
                     {/block:IfNotPreviewEmbedCode}
+                    {block:IfShowSectionAcquisition}
                     <li>
                       <p><a href="#acquisition" class="btn btn-primary btn-lg">この本を入手</a></p>
-                    </li>
+                    </li>{/block:IfShowSectionAcquisition}
+                    {block:IfNotShowSectionAcquisition}
+                    <li>
+                      <p class="sr-only">入手可能なリンクはありません</p>
+                    </li>{/block:IfNotShowSectionAcquisition}
                   </ul>
                 </div>
               </div> 
@@ -730,8 +740,8 @@
               <p>
                 {block:IfPrice}{text:Price} 円{/block:IfPrice}
                 {block:IfNotPrice}無料{/block:IfNotPrice}
-              </p>
-              <p><a href="#acquisition" class="btn btn-default btn-sm">この本を入手</a></p>
+              </p>{block:IfShowSectionAcquisition}
+              <p><a href="#acquisition" class="btn btn-default btn-sm">この本を入手</a></p>{/block:IfShowSectionAcquisition}
             </td>
           </tr> 
           {/block:IfShowPrice}

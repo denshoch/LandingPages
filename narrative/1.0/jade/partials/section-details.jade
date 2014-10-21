@@ -83,8 +83,10 @@ section#info.section-inverse
           p
             | {block:IfPrice}{text:Price} 円{/block:IfPrice}
             | {block:IfNotPrice}無料{/block:IfNotPrice}
+          | {block:IfShowSectionAcquisition}
           p
             a.btn.btn-default.btn-sm(href='#acquisition') この本を入手
+          | {/block:IfShowSectionAcquisition}
       | 
       | {/block:IfShowPrice}
       | {block:IfSectionDetailsISBN}
