@@ -3,7 +3,7 @@
   <head>
     <!--
     Theme Narrative (Den-Den Landing Page)
-    version: 1.0.14
+    version: 1.0.15
     by @lost_and_found from Densho Channel
     mail: <info@denshochan.com>
     Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -242,7 +242,10 @@
     <!-- Twitter Player -->
     <meta name="text:TwitterPlayerURL" content="">
     <!-- Schema.org JSON-LD -->
-    <meta name="if:EnableSchemaOrg" content="1"> 
+    <meta name="if:EnableSchemaOrg" content="1">
+    <!-- Custom Code-->
+    <meta name="text:CustomCode Head" content="">
+    <meta name="text:CustomCode Body" content=""> 
     {block:Hidden}
     <title>{Title} {text:BookSubtitle} | {text:SiteSubtitle}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -291,7 +294,11 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="canonical" href="{BlogURL}">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+    {block:IfCustomCodeHead}
+    {text:CustomCode Head}
+    {/block:IfCustomCodeHead}
+     
     <style>
       a {
       color: {color:PrimaryColor};
@@ -1395,6 +1402,10 @@
       ga('require', 'displayfeatures');
       ga('send', 'pageview');
     </script> 
-    {/block:IfGoogleAnalyticsID}
+    {/block:IfGoogleAnalyticsID} 
+    {block:IfCustomCodeBody}
+    {text:CustomCode Body}
+    {/block:IfCustomCodeBody}
+     
   </body>
 </html>
