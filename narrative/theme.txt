@@ -3,7 +3,7 @@
   <head>
     <!--
     Theme Narrative (Den-Den Landing Page)
-    version: 1.0.15
+    version: 1.0.16
     by @lost_and_found from Densho Channel
     mail: <info@denshochan.com>
     Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -193,6 +193,7 @@
     <meta name="image:AuthorImage 01" content="">
     <meta name="text:AuthorName 01" content="">
     <meta name="text:AuthorNameKana 01" content="">
+    <meta name="text:AuthorRole 01" content="著者">
     <meta name="text:AuthorDescription 01" content="">
     <meta name="text:AuthorURL 01" content="">
     <meta name="text:AuthorTwitter 01" content="">
@@ -202,6 +203,7 @@
     <meta name="image:AuthorImage 02" content="">
     <meta name="text:AuthorName 02" content="">
     <meta name="text:AuthorNameKana 02" content="">
+    <meta name="text:AuthorRole 02" content="著者">
     <meta name="text:AuthorDescription 02" content="">
     <meta name="text:AuthorURL 02" content="">
     <meta name="text:AuthorTwitter 02" content="">
@@ -1200,7 +1202,11 @@
               <li class="media">
                 <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:AuthorImage 01}" alt="" class="media-object img-circle"></div>
                 <div class="media-body">
-                  <div class="media-heading"><span class="role">著者</span> 
+                  <div class="media-heading">
+                     
+                    {block:IfAuthorRole01}<span class="role">{text:AuthorRole 01}</span> 
+                    {/block:IfAuthorRole01}
+                     
                     {text:AuthorName 01}<small>{text:AuthorNameKana 01}</small>
                   </div>
                   <ul class="list-inline">
@@ -1229,7 +1235,11 @@
               <li class="media">
                 <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:AuthorImage 02}" alt="" class="media-object img-circle"></div>
                 <div class="media-body">
-                  <div class="media-heading"><span class="role">著者</span> 
+                  <div class="media-heading">
+                     
+                    {block:IfAuthorRole02}<span class="role">{text:AuthorRole 02}</span> 
+                    {/block:IfAuthorRole02}
+                     
                     {text:AuthorName 02}<small>{text:AuthorNameKana 02}</small>
                   </div>
                   <ul class="list-inline">

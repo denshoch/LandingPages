@@ -19,7 +19,11 @@ section#bio
               img.media-object.img-circle(style='width: 64px;', src='{image:AuthorImage 01}', alt='')
             .media-body
               .media-heading
-                span.role 著者
+                | 
+                | {block:IfAuthorRole01}
+                span.role {text:AuthorRole 01}
+                | 
+                | {/block:IfAuthorRole01}
                 | 
                 | {text:AuthorName 01}
                 small {text:AuthorNameKana 01}
@@ -68,7 +72,11 @@ section#bio
               img.media-object.img-circle(style='width: 64px;', src='{image:AuthorImage 02}', alt='')
             .media-body
               .media-heading
-                span.role 著者
+                | 
+                | {block:IfAuthorRole02}
+                span.role {text:AuthorRole 02}
+                | 
+                | {/block:IfAuthorRole02}
                 | 
                 | {text:AuthorName 02}
                 small {text:AuthorNameKana 02}
