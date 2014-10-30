@@ -1055,7 +1055,8 @@
                     {block:IfAuthorRole01}<span class="role">{text:AuthorRole 01}</span> 
                     {/block:IfAuthorRole01}
                      
-                    {text:AuthorName 01}<small>{text:AuthorNameKana 01}</small>
+                    {text:AuthorName 01}
+                     <small>{text:AuthorNameKana 01}</small>
                   </div>
                   <ul class="list-inline">
                      
@@ -1087,7 +1088,8 @@
                      
                     {block:IfContributorRole01}<span class="role">{text:ContributorRole 01}</span> 
                     {/block:IfContributorRole01}
-                    {text:ContributorName 01}<small>{text:ContributorNameKana 01}</small>
+                    {text:ContributorName 01}
+                     <small>{text:ContributorNameKana 01}</small>
                   </div>
                   <ul class="list-inline">
                      
