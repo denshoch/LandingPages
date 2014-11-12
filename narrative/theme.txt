@@ -3,7 +3,7 @@
   <head>
     <!--
     Theme Narrative (Den-Den Landing Page)
-    version: 1.0.18
+    version: 1.0.19
     by @lost_and_found from Densho Channel
     mail: <info@denshochan.com>
     Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -386,7 +386,7 @@
       js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId={text:FacebookAppID}&version=v2.0";
       {/block:IfFacebookAppID}
       {block:IfNotFacebookAppID}
-      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
       {/block:IfNotFacebookAppID}
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
