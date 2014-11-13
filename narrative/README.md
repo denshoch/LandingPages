@@ -12,7 +12,8 @@
 
 セルフパブリッシャー（個人作家）のためのTumblrテーマです。
 
-[デモサイトを見る](http://lp-narrative.tumblr.com/)
+- [デモサイトを見る](http://lp-narrative.tumblr.com/)
+- [導入事例を見る](https://github.com/denshoch/LandingPages/wiki/Examples)
 
 ### このテーマの特徴
 
