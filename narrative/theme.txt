@@ -793,7 +793,7 @@
         {/block:IfPreviewEmbedCode}
         {block:IfPreviewLink}
         <div class="btn-container">
-          <p class="text-center"><a href="{text:IfPreviewLink}" class="btn btn-success btn-lg">試し読みを開く</a></p>
+          <p class="text-center"><a href="{text:PreviewLink}" class="btn btn-success btn-lg">試し読みを開く</a></p>
         </div> 
         {/block:IfPreviewLink}
       </div>
