@@ -739,6 +739,7 @@
             </div>
           </div> 
           {/block:IfCharacterName01}
+           
           {block:IfCharacterName02}
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              
@@ -750,7 +751,10 @@
             </div>
           </div> 
           {/block:IfCharacterName02}
-          <div class="separator-for-col-sm-6"></div>{block:IfCharacterName03}
+           
+          <div class="separator-for-col-sm-6"></div> 
+          {block:IfCharacterName03}
+           
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              
             {block:IfCharacterImage03Image}<img style="width: 128px;" src="{image:CharacterImage 03}" alt="" class="img-thumbnail">{/block:IfCharacterImage03Image}
@@ -761,6 +765,7 @@
             </div>
           </div> 
           {/block:IfCharacterName03}
+           
           {block:IfCharacterName04}
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              

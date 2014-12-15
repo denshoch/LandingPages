@@ -2,7 +2,7 @@
 
 でんでんランディングページ テーマ：Narrative
 
-バージョン: 1.0.20
+バージョン: 1.0.21
 
 ![スクリーンショット](../images/sc_narrative.png)
 
@@ -45,64 +45,71 @@
 2. テーマの編集画面で`HTMLを編集`を選びます。
 3. `HTMLを編集`の画面に表示されたHTMLコードを削除して、代わりに次のいずれかの内容を貼り付けて保存してください。
 
+  - [重量版はこちら](http://denshoch.github.io/LandingPages/narrative/theme-huge.txt)
   - [通常版はこちら](http://denshoch.github.io/LandingPages/narrative/theme.txt)
   - [軽量版はこちら](http://denshoch.github.io/LandingPages/narrative/theme-tiny.txt)
 
-### 通常版と軽量版の違いについて
+### 通常版と軽量版・重量版の違いについて
 
-通常版の中から必要最低限と思われる項目だけを取り出したものが軽量版です。軽量版のほうが設定項目が少なく、初心者におすすめです。軽量版から通常版への移行は簡単です。反対に通常版から軽量版に移行する場合は、軽量版にない項目が失われてしまうので注意してください。通常版と軽量版の違いは次のとおりです。
+軽量版 ＜ 通常版 ＜ 重量版の順で設定できる項目の数が増えていきます。
+
+通常版の中から必要最低限と思われる項目だけを取り出したものが軽量版です。軽量版のほうが設定項目が少なく、初心者におすすめです。
+
+重量版は通常版よりもキャラクターや購入リンクの数が増えています。
+
+下位の版から上位の版への移行は簡単で、HTMLコードを貼り付けなおすだけで完了します。反対に上位の版から下位の版に移行する場合は、下位の版にない項目が失われてしまうので注意してください。
 
 <table>
 <tr>
-<th>項目</th><th>通常版</th><th>軽量版</th>
+<th>項目</th><th>重量版</th><th>通常版</th><th>軽量版</th>
 </tr>
 <tr>
-<td>内容紹介セクション</td><td>あり</td><td>あり</td>
+<td>内容紹介セクション</td><td>あり</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>動画セクション</td><td>あり</td><td>なし</td>
+<td>動画セクション</td><td>あり</td><td>あり</td><td>なし</td>
 </tr>
 <tr>
-<td>オーディオセクション</td><td>あり</td><td>なし</td>
+<td>オーディオセクション</td><td>あり</td><td>あり</td><td>なし</td>
 </tr>
 <tr>
-<td>特徴紹介セクション</td><td>あり</td><td>あり</td>
+<td>特徴紹介セクション</td><td>あり</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>キャラクター紹介セクション</td><td>4名</td><td>3名</td>
+<td>キャラクター紹介セクション</td><td>8名</td><td>4名</td><td>3名</td>
 </tr>
 <tr>
-<td>試し読みセクション</td><td>あり</td><td>あり</td>
+<td>試し読みセクション</td><td>あり</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>作品詳細セクション</td><td>あり</td><td>あり</td>
+<td>作品詳細セクション</td><td>あり</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>自由記述セクション</td><td>あり</td><td>あり</td>
+<td>自由記述セクション</td><td>あり</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>レビューセクション</td><td>3件</td><td>3件</td>
+<td>レビューセクション</td><td>3件</td><td>3件</td><td>3件</td>
 </tr>
 <tr>
-<td>電子書籍とのつきあい方セクション</td><td>あり</td><td>あり</td>
+<td>電子書籍とのつきあい方セクション</td><td>あり</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>購入リンクセクション</td><td>6</td><td>3</td>
+<td>購入リンクセクション</td><td>10</td><td>6</td><td>3</td>
 </tr>
 <tr>
-<td>関連作品紹介セクション</td><td>4</td><td>3</td>
+<td>関連作品紹介セクション</td><td>4</td><td>4</td><td>3</td>
 </tr>
 <tr>
-<td>著者紹介セクション</td><td>著者2名<br/>協力者2名</td><td>著者1名<br/>協力者1名</td>
+<td>著者紹介セクション</td><td>著者2名<br/>協力者2名</td><td>著者2名<br/>協力者2名</td><td>著者1名<br/>協力者1名</td>
 </tr>
 <tr>
-<td>コンタクトフォームセクション</td><td>あり</td><td>なし</td>
+<td>コンタクトフォームセクション</td><td>あり</td><td>あり</td><td>なし</td>
 </tr>
 <tr>
-<td>Facebookページ</td><td>あり</td><td>なし</td>
+<td>Facebookページ</td><td>あり</td><td>あり</td><td>なし</td>
 </tr>
 <tr>
-<td>独自コード領域</td><td>あり</td><td>なし</td>
+<td>独自コード領域</td><td>あり</td><td>あり</td><td>なし</td>
 </tr>
 </table>
 
@@ -333,13 +340,13 @@
   <td>カラム数</td><td>ColumnCount Characters</td><td>大きな画面で表示した場合に、何名のキャラクターを1列に表示するのか指定します。推奨値は、キャラクターが1名の場合:<code>1</code>、キャラクターが2名の場合:<code>2</code>、キャラクターが3名の場合: <code>3</code>、キャラクターが4名の場合:<code>2</code>または<code>4</code>です。</td>
 </tr>
 <tr>
-  <td>キャラクター画像</td><td>CharacterImage 01〜04</td><td>キャラクターの画像です。<strong>128px以上の正方形</strong>の画像を推奨します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>キャラクター画像</td><td>CharacterImage 01〜08</td><td>キャラクターの画像です。<strong>128px以上の正方形</strong>の画像を推奨します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>キャラクター名</td><td>CharacterName 01〜04</td><td>キャラクターの名前です。名前を設定しないキャラクターはページに表示されないので注意してください。</td>
+  <td>キャラクター名</td><td>CharacterName 01〜08</td><td>キャラクターの名前です。名前を設定しないキャラクターはページに表示されないので注意してください。</td>
 </tr>
 <tr>
-  <td>キャラクター説明</td><td>CharacterDesc 01〜04</td><td>キャラクターの説明文です。改行には<code>&lt;br&gt;</code>を入力してください。</td>
+  <td>キャラクター説明</td><td>CharacterDesc 01〜08</td><td>キャラクターの説明文です。改行には<code>&lt;br&gt;</code>を入力してください。</td>
 </tr>
 </table>
 
@@ -504,10 +511,10 @@
   <td>注意書き</td><td>SectionAcquisition Note</td><td>購入／ダウンロードに関する注意書きを記述できます。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>リンクラベル</td><td>AcquisitionLinkLabel 01〜06</td><td>リンクボタンに表示するテキストです。このテキストがないボタンは表示されません。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>リンクラベル</td><td>AcquisitionLinkLabel 01〜10</td><td>リンクボタンに表示するテキストです。このテキストがないボタンは表示されません。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>リンクURL</td><td>AcquisitionLinkURL 01〜06</td><td>リンクボタンが参照するURLです。販売ストアのページや直接無料配布する場合はファイルのURLを記述します。</td>
+  <td>リンクURL</td><td>AcquisitionLinkURL 01〜10</td><td>リンクボタンが参照するURLです。販売ストアのページや直接無料配布する場合はファイルのURLを記述します。</td>
 </tr>
 </table>
 
@@ -685,6 +692,10 @@ head要素とbody要素の中に直接HTMLを記述するためのオプショ�
 
 ## History 変更履歴
 
+- 1.0.21
+  - 2014.12.15
+    - 重量版の導入
+    - キャラクターのグリッドに関するレイアウト修正
 - 1.0.20
   - 2014.12.04
     - 「試し読み」ボタンのリンクが開かない問題を修正。
