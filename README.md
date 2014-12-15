@@ -32,5 +32,5 @@ $ bower install bootstrap-sass-official
 ### Build a specific theme
 
 ```
-$ gulp narrative
+$ npm run narrative
 ```
