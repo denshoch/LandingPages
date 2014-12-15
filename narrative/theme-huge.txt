@@ -2,7 +2,7 @@
 <html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
   <head>
     <!--
-    Theme Narrative (Den-Den Landing Page)
+    Theme Narrative Huge(Den-Den Landing Page)
     version: 1.0.21
     by @lost_and_found from Densho Channel
     mail: <info@denshochan.com>
@@ -64,7 +64,7 @@
     <meta name="text:FeaturePlaceholder 03" content="3">
     <meta name="text:FeatureHeading 03" content="特徴 03">
     <meta name="text:FeatureDesc 03" content="特徴の説明 03">
-    <!-- セクション：登場人物紹介 -->
+    <!-- セクション：登場人物紹介-->
     <meta name="if:ShowSectionCharacters" content="1">
     <meta name="text:SectionCharacters Heading" content="CHARACTERS">
     <meta name="text:SectionCharacters Lead" content="キャラクター紹介：リード文">
@@ -73,22 +73,38 @@
     <meta name="select:ColumnCount Characters" content="col-sm-6" title="2">
     <meta name="select:ColumnCount Characters" content="col-sm-4" title="3">
     <meta name="select:ColumnCount Characters" content="col-sm-3" title="4">
-    <!-- セクション：登場人物紹介 キャラクター 01  -->
+    <!-- セクション：登場人物紹介 キャラクター 01-->
     <meta name="image:CharacterImage 01" content="">
     <meta name="text:CharacterName 01" content="">
     <meta name="text:CharacterDesc 01" content="">
-    <!-- セクション：登場人物紹介 キャラクター 02  -->
+    <!-- セクション：登場人物紹介 キャラクター 02-->
     <meta name="image:CharacterImage 02" content="">
     <meta name="text:CharacterName 02" content="">
     <meta name="text:CharacterDesc 02" content="">
-    <!-- セクション：登場人物紹介 キャラクター 03  -->
+    <!-- セクション：登場人物紹介 キャラクター 03-->
     <meta name="image:CharacterImage 03" content="">
     <meta name="text:CharacterName 03" content="">
     <meta name="text:CharacterDesc 03" content="">
-    <!-- セクション：登場人物紹介 キャラクター 04  -->
+    <!-- セクション：登場人物紹介 キャラクター 04-->
     <meta name="image:CharacterImage 04" content="">
     <meta name="text:CharacterName 04" content="">
     <meta name="text:CharacterDesc 04" content="">
+    <!-- セクション：登場人物紹介 キャラクター 05-->
+    <meta name="image:CharacterImage 05" content="">
+    <meta name="text:CharacterName 05" content="">
+    <meta name="text:CharacterDesc 05" content="">
+    <!-- セクション：登場人物紹介 キャラクター 06-->
+    <meta name="image:CharacterImage 06" content="">
+    <meta name="text:CharacterName 06" content="">
+    <meta name="text:CharacterDesc 06" content="">
+    <!-- セクション：登場人物紹介 キャラクター 07-->
+    <meta name="image:CharacterImage 07" content="">
+    <meta name="text:CharacterName 07" content="">
+    <meta name="text:CharacterDesc 07" content="">
+    <!-- セクション：登場人物紹介 キャラクター 08-->
+    <meta name="image:CharacterImage 08" content="">
+    <meta name="text:CharacterName 08" content="">
+    <meta name="text:CharacterDesc 08" content="">
     <!-- 試し読み -->
     <meta name="if:ShowSectionPreview" content="1">
     <meta name="text:SectionPreview Heading" content="PREVIEW">
@@ -143,7 +159,7 @@
     <meta name="text:ReviewerRole 03" content="">
     <!-- 電子書籍とのつきあい方 -->
     <meta name="if:ShowSectionHowToRead" content="0">
-    <!-- セクション：購入／ダウンロード -->
+    <!-- セクション：購入／ダウンロード-->
     <meta name="if:ShowSectionAcquisition" content="1">
     <meta name="text:SectionAcquisition Heading" content="GET IT NOW!">
     <meta name="text:SectionAcquisition Lead" content="購入／ダウンロード：リード文">
@@ -160,6 +176,14 @@
     <meta name="text:AcquisitionLinkURL 05" content="">
     <meta name="text:AcquisitionLinkLabel 06" content="">
     <meta name="text:AcquisitionLinkURL 06" content="">
+    <meta name="text:AcquisitionLinkLabel 07" content="">
+    <meta name="text:AcquisitionLinkURL 07" content="">
+    <meta name="text:AcquisitionLinkLabel 08" content="">
+    <meta name="text:AcquisitionLinkURL 08" content="">
+    <meta name="text:AcquisitionLinkLabel 09" content="">
+    <meta name="text:AcquisitionLinkURL 09" content="">
+    <meta name="text:AcquisitionLinkLabel 10" content="">
+    <meta name="text:AcquisitionLinkURL 10" content="">
     <!-- セクション：関連コンテンツ-->
     <meta name="if:ShowSectionRelatedWorks" content="1">
     <meta name="text:SectionRelatedWorks Heading" content="RELATED WORKS">
@@ -754,7 +778,6 @@
            
           <div class="separator-for-col-sm-6"></div> 
           {block:IfCharacterName03}
-           
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              
             {block:IfCharacterImage03Image}<img style="width: 128px;" src="{image:CharacterImage 03}" alt="" class="img-thumbnail">{/block:IfCharacterImage03Image}
@@ -766,6 +789,7 @@
           </div> 
           {/block:IfCharacterName03}
            
+          <div class="separator-for-col-sm-4"></div> 
           {block:IfCharacterName04}
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              
@@ -777,6 +801,61 @@
             </div>
           </div> 
           {/block:IfCharacterName04}
+          <div class="separator-for-col-sm-6"></div> 
+          <div class="separator-for-col-sm-3"></div> 
+          {block:IfCharacterName05}
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage05Image}<img style="width: 128px;" src="{image:CharacterImage 05}" alt="" class="img-thumbnail">{block:IfCharacterImage05Image}
+            <div class="h5 character-name">{text:CharacterName 05}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 05}
+            </div>
+          </div> 
+          {/block:IfCharacterName05}
+           
+          {block:IfCharacterName06}
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage06Image}<img style="width: 128px;" src="{image:CharacterImage 06}" alt="" class="img-thumbnail">{block:IfCharacterImage06Image}
+            <div class="h5 character-name">{text:CharacterName 06}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 06}
+            </div>
+          </div> 
+          {/block:IfCharacterName06}
+           
+          <div class="separator-for-col-sm-6"></div> 
+          <div class="separator-for-col-sm-4"></div> 
+          {block:IfCharacterName07}
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage07Image}<img style="width: 128px;" src="{image:CharacterImage 07}" alt="" class="img-thumbnail">{block:IfCharacterImage07Image}
+            <div class="h5 character-name">{text:CharacterName 07}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 07}
+            </div>
+          </div> 
+          {/block:IfCharacterName07}
+           
+          {block:IfCharacterName08}
+           
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage08Image}<img style="width: 128px;" src="{image:CharacterImage 08}" alt="" class="img-thumbnail">{block:IfCharacterImage08Image}
+            <div class="h5 character-name">{text:CharacterName 08}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 08}
+            </div>
+          </div> 
+          {/block:IfCharacterName08}
+           
+          <div class="separator-for-col-sm-6"></div> 
+          <div class="separator-for-col-sm-3"></div>
         </div>
       </div>
     </section> 
@@ -1105,10 +1184,10 @@
         {/block:IfSectionAcquisitionLead}
         {block:IfShowPrice}
           {block:IfPrice}
-        <p class="text-center">販売価格<span class="price">{text:Price}</span>円</p> 
+        <p class="text-center">販売価格<span class="price">{text:Price}</span>円 </p> 
           {/block:IfPrice}
           {block:IfNotPrice}
-        <p class="text-center">販売価格<span class="price">無料</span></p> 
+        <p class="text-center">販売価格 <span class="price">無料</span></p> 
           {/block:IfNotPrice}
         {/block:IfShowPrice}
         {block:IfSectionAcquisitionNote}
@@ -1147,6 +1226,26 @@
             <p><a href="{text:AcquisitionLinkURL 06}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 06}</a></p>
           </li> 
           {/block:IfAcquisitionLinkLabel06}
+          {block:IfAcquisitionLinkLabel07}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 07}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 07}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel07}
+          {block:IfAcquisitionLinkLabel08}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 08}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 08}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel08}
+          {block:IfAcquisitionLinkLabel09}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 09}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 09}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel09}
+          {block:IfAcquisitionLinkLabel10}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 10}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 10}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel10}
         </ul>
       </div>
     </section> 

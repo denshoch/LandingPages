@@ -44,7 +44,6 @@ section#characters
       div(class='separator-for-col-sm-6')
       | 
       | {block:IfCharacterName03}
-      | 
       div(class="character-container {select:ColumnCount Characters} container center-block text-center")
         | 
         | {block:IfCharacterImage03Image}
@@ -56,6 +55,8 @@ section#characters
           | {text:CharacterDesc 03}
       | 
       | {/block:IfCharacterName03}
+      | 
+      div(class='separator-for-col-sm-4')
       | 
       | {block:IfCharacterName04}
       div(class="character-container {select:ColumnCount Characters} container center-block text-center")
@@ -69,5 +70,69 @@ section#characters
           | {text:CharacterDesc 04}
       | 
       | {/block:IfCharacterName04}
+      div(class='separator-for-col-sm-6')
+      | 
+      div(class='separator-for-col-sm-3')
+      | 
+      | {block:IfCharacterName05}
+      div(class="character-container {select:ColumnCount Characters} container center-block text-center")
+        | 
+        | {block:IfCharacterImage05Image}
+        img.img-thumbnail(style='width: 128px;', src='{image:CharacterImage 05}', alt='')
+        | {block:IfCharacterImage05Image}
+        .h5.character-name {text:CharacterName 05}
+        .character-desc
+          | 
+          | {text:CharacterDesc 05}
+      | 
+      | {/block:IfCharacterName05}
+      | 
+      | {block:IfCharacterName06}
+      div(class="character-container {select:ColumnCount Characters} container center-block text-center")
+        | 
+        | {block:IfCharacterImage06Image}
+        img.img-thumbnail(style='width: 128px;', src='{image:CharacterImage 06}', alt='')
+        | {block:IfCharacterImage06Image}
+        .h5.character-name {text:CharacterName 06}
+        .character-desc
+          | 
+          | {text:CharacterDesc 06}
+      | 
+      | {/block:IfCharacterName06}
+      | 
+      div(class='separator-for-col-sm-6')
+      | 
+      div(class='separator-for-col-sm-4')
+      | 
+      | {block:IfCharacterName07}
+      div(class="character-container {select:ColumnCount Characters} container center-block text-center")
+        | 
+        | {block:IfCharacterImage07Image}
+        img.img-thumbnail(style='width: 128px;', src='{image:CharacterImage 07}', alt='')
+        | {block:IfCharacterImage07Image}
+        .h5.character-name {text:CharacterName 07}
+        .character-desc
+          | 
+          | {text:CharacterDesc 07}
+      | 
+      | {/block:IfCharacterName07}
+      | 
+      | {block:IfCharacterName08}
+      | 
+      div(class="character-container {select:ColumnCount Characters} container center-block text-center")
+        | 
+        | {block:IfCharacterImage08Image}
+        img.img-thumbnail(style='width: 128px;', src='{image:CharacterImage 08}', alt='')
+        | {block:IfCharacterImage08Image}
+        .h5.character-name {text:CharacterName 08}
+        .character-desc
+          | 
+          | {text:CharacterDesc 08}
+      | 
+      | {/block:IfCharacterName08}
+      | 
+      div(class='separator-for-col-sm-6')
+      | 
+      div(class='separator-for-col-sm-3')
 | 
 | {/block:IfShowSectionCharacters}

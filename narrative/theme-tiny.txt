@@ -3,7 +3,7 @@
   <head>
     <!--
     Theme Narrative Tiny (Den-Den Landing Page)
-    version: 1.0.20
+    version: 1.0.21
     by @lost_and_found from Densho Channel
     mail: <info@denshochan.com>
     Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -299,6 +299,14 @@
       #bio a .fa-stack:hover,
       #bio a .fa-stack:focus {
       color: {color:PrimaryColor};
+      }
+      .separator-for-{select:ColumnCount Characters}:before,
+      .separator-for-{select:ColumnCount Characters}:after {
+        content: " ";
+        display: table;
+      }
+      .separator-for-{select:ColumnCount Characters}:after {
+        clear: both;
       }
       {CustomCSS}
       iframe#tumblr_controls {
@@ -633,7 +641,7 @@
           </div> 
           {/block:IfCharacterName02}
           {block:IfCharacterName03}
-          <div class="separator-for-{select:ColumnCount.Characters}"></div>
+           
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              
             {block:IfCharacterImage03Image}<img style="width: 128px;" src="{image:CharacterImage 03}" alt="" class="img-thumbnail">{/block:IfCharacterImage03Image}
