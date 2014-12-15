@@ -64,6 +64,14 @@ style.
   #bio a .fa-stack:focus {
   color: {color:PrimaryColor};
   }
+  .separator-for-{select:ColumnCount Characters}:before,
+  .separator-for-{select:ColumnCount Characters}:after {
+    content: " ";
+    display: table;
+  }
+  .separator-for-{select:ColumnCount Characters}:after {
+    clear: both;
+  }
   {CustomCSS}
   iframe#tumblr_controls {
   display:none;

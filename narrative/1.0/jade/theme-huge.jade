@@ -2,7 +2,7 @@ doctype
 html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
   head
     //
-            Theme Narrative Tiny (Den-Den Landing Page)
+            Theme Narrative Huge(Den-Den Landing Page)
             version: 1.0.21
             by @lost_and_found from Densho Channel
             mail: <info@denshochan.com>
@@ -34,9 +34,13 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
     meta(name='text:SectionDescription Heading', content='STORY')
     meta(name='text:SectionDescription Lead', content='内容紹介：リード文')
 
+    include ./partials/section-movie-vars.jade
+
+    include ./partials/section-audio-vars.jade
+
     include ./partials/section-features-vars.jade
 
-    include ./partials/tiny-section-characters-vars.jade
+    include ./partials/huge-section-characters-vars.jade
 
     // 試し読み 
     meta(name='if:ShowSectionPreview', content='1')
@@ -65,12 +69,19 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
     // 電子書籍とのつきあい方 
     meta(name='if:ShowSectionHowToRead', content='0')
 
-    include ./partials/tiny-section-acquisition-vars.jade
+    include ./partials/huge-section-acquisition-vars.jade
 
-    include ./partials/tiny-section-related-works-vars.jade
+    include ./partials/section-related-works-vars.jade
 
-    include ./partials/tiny-section-biographies-vars.jade
+    include ./partials/section-biographies-vars.jade
 
+    // Facebook Page 
+    meta(name='text:FacebookPageURL', content='')
+    meta(name='text:FacebookAppID', content='')
+    // Contact Form 
+    meta(name='if:ShowSectionContact', content='0')
+    meta(name='text:SectionContact Heading', content='CONTACT')
+    meta(name='text:SectionContact EmbedCode', content='')
     // Footer 
     meta(name='text:CopyrightHolder', content='')
     meta(name='text:FooterText', content='')
@@ -80,6 +91,11 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
     meta(name='text:TwitterPlayerURL', content='')
     // Schema.org JSON-LD 
     meta(name='if:EnableSchemaOrg', content='1')
+
+    // Custom Code
+    meta(name='text:CustomCode Head', content='')
+    meta(name='text:CustomCode Body', content='')
+    
     | 
     | {block:Hidden}
     title {Title} {text:BookSubtitle} | {text:SiteSubtitle}
@@ -97,6 +113,13 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
     | 
     | {/block:IfKeywords}
     | 
+    // Facebook page
+    | 
+    | {block:IfFacebookAppID}
+    | 
+    meta(property='fb:app_id', content='{text:FacebookAppID}')
+    | 
+    | {/block:IfFacebookAppID}
     // OGP 
     meta(property='og:title', content='{Title} {text:BookSubtitle} - {text:AuthorName 01} {block:IfAuthorName02}…etc.{/block:IfAuthorName02}')
     meta(property='og:type', content='website')
@@ -134,7 +157,11 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
     link(rel='canonical', href='{BlogURL}')
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
     script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
-
+    | 
+    | {block:IfCustomCodeHead}
+    | {text:CustomCode Head}
+    | {/block:IfCustomCodeHead}
+    | 
     include ./partials/style.jade
 
   body
@@ -180,7 +207,24 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
                       | {text:BookSubtitle}
                     | 
                     | {/block:IfBookSubtitle}
-                    include ./partials/tiny-creators-list.jade
+                    ul.list-inline.creators-list
+                      | 
+                      | {block:IfAuthorName01}
+                      li {text:AuthorName 01}
+                      | 
+                      | {/block:IfAuthorName01}
+                      | {block:IfAuthorName02}
+                      li {text:AuthorName 02}
+                      | 
+                      | {/block:IfAuthorName02}
+                      | {block:IfContributorName01}
+                      li {text:ContributorName 01}
+                      | 
+                      | {/block:IfContributorName01}
+                      | {block:IfContributorName02}
+                      li {text:ContributorName 02}
+                      | 
+                      | {/block:IfContributorName02}
                   .btn-container.hidden-xs
                     ul.list-inline
                       | 
@@ -247,7 +291,7 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
                 | {/block:IfBookSubtitle}
                 hr.context-break
 
-                include ./partials/tiny-creators-list.jade
+                include ./partials/creators-list.jade
 
                 .btn-container
                   ul.list-inline
@@ -307,13 +351,17 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
 
     include ./partials/section-description.jade
 
+    include ./partials/section-movie.jade
+
+    include ./partials/section-audio.jade
+
     include ./partials/section-features.jade
 
-    include ./partials/tiny-section-characters.jade
+    include ./partials/huge-section-characters.jade
 
     include ./partials/section-preview.jade
 
-    include ./partials/tiny-section-details.jade
+    include ./partials/section-details.jade
 
     include ./partials/section-free-writing.jade
 
@@ -321,13 +369,17 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
 
     include ./partials/section-how-to-read.jade
 
-    include ./partials/tiny-section-acquisition.jade
+    include ./partials/huge-section-acquisition.jade
 
-    include ./partials/tiny-section-related-works.jade
+    include ./partials/section-related-works.jade
 
-    include ./partials/tiny-section-biographies.jade
+    include ./partials/section-biographies.jade
 
-    include ./partials/tiny-schema-org.jade
+    include ./partials/section-contact.jade
+
+    include ./partials/facebook-page.jade
+
+    include ./partials/schema-org.jade
 
     | 
     | {/block:IndexPage}
@@ -335,3 +387,9 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
     include ./partials/footer.jade
 
     include ./partials/google-analytics.jade
+
+    | 
+    | {block:IfCustomCodeBody}
+    | {text:CustomCode Body}
+    | {/block:IfCustomCodeBody}
+    | 

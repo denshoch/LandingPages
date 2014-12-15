@@ -2,7 +2,7 @@
 <html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
   <head>
     <!--
-    Theme Narrative Tiny (Den-Den Landing Page)
+    Theme Narrative Huge(Den-Den Landing Page)
     version: 1.0.21
     by @lost_and_found from Densho Channel
     mail: <info@denshochan.com>
@@ -33,6 +33,18 @@
     <meta name="if:ShowSectionDescription" content="1">
     <meta name="text:SectionDescription Heading" content="STORY">
     <meta name="text:SectionDescription Lead" content="内容紹介：リード文">
+    <!-- セクション：動画 -->
+    <meta name="if:ShowSectionMovie" content="0">
+    <meta name="text:SectionMovie Heading" content="MOVIE">
+    <meta name="text:SectionMovie Lead" content="動画：リード文">
+    <meta name="text:SectionMovie EmbedCode" content="">
+    <meta name="select:SectionMovie AspectRatio" content="embed-responsive-16by9" title="16:9">
+    <meta name="select:SectionMovie AspectRatio" content="embed-responsive-4by3" title="4:3">
+    <!-- セクション：オーディオ -->
+    <meta name="if:ShowSectionAudio" content="0">
+    <meta name="text:SectionAudio Heading" content="AUDIO">
+    <meta name="text:SectionAudio Lead" content="オーディオ：リード文">
+    <meta name="text:SectionAudio EmbedCode" content="">
     <!-- セクション：特徴紹介 -->
     <meta name="if:ShowSectionFeatures" content="0">
     <meta name="text:SectionFeatures Heading" content="FEATURES">
@@ -52,7 +64,7 @@
     <meta name="text:FeaturePlaceholder 03" content="3">
     <meta name="text:FeatureHeading 03" content="特徴 03">
     <meta name="text:FeatureDesc 03" content="特徴の説明 03">
-    <!-- セクション：登場人物紹介 -->
+    <!-- セクション：登場人物紹介-->
     <meta name="if:ShowSectionCharacters" content="1">
     <meta name="text:SectionCharacters Heading" content="CHARACTERS">
     <meta name="text:SectionCharacters Lead" content="キャラクター紹介：リード文">
@@ -60,18 +72,39 @@
     <meta name="select:ColumnCount Characters" content="col-sm-12" title="1">
     <meta name="select:ColumnCount Characters" content="col-sm-6" title="2">
     <meta name="select:ColumnCount Characters" content="col-sm-4" title="3">
-    <!-- セクション：登場人物紹介 キャラクター 01  -->
+    <meta name="select:ColumnCount Characters" content="col-sm-3" title="4">
+    <!-- セクション：登場人物紹介 キャラクター 01-->
     <meta name="image:CharacterImage 01" content="">
     <meta name="text:CharacterName 01" content="">
     <meta name="text:CharacterDesc 01" content="">
-    <!-- セクション：登場人物紹介 キャラクター 02  -->
+    <!-- セクション：登場人物紹介 キャラクター 02-->
     <meta name="image:CharacterImage 02" content="">
     <meta name="text:CharacterName 02" content="">
     <meta name="text:CharacterDesc 02" content="">
-    <!-- セクション：登場人物紹介 キャラクター 03  -->
+    <!-- セクション：登場人物紹介 キャラクター 03-->
     <meta name="image:CharacterImage 03" content="">
     <meta name="text:CharacterName 03" content="">
     <meta name="text:CharacterDesc 03" content="">
+    <!-- セクション：登場人物紹介 キャラクター 04-->
+    <meta name="image:CharacterImage 04" content="">
+    <meta name="text:CharacterName 04" content="">
+    <meta name="text:CharacterDesc 04" content="">
+    <!-- セクション：登場人物紹介 キャラクター 05-->
+    <meta name="image:CharacterImage 05" content="">
+    <meta name="text:CharacterName 05" content="">
+    <meta name="text:CharacterDesc 05" content="">
+    <!-- セクション：登場人物紹介 キャラクター 06-->
+    <meta name="image:CharacterImage 06" content="">
+    <meta name="text:CharacterName 06" content="">
+    <meta name="text:CharacterDesc 06" content="">
+    <!-- セクション：登場人物紹介 キャラクター 07-->
+    <meta name="image:CharacterImage 07" content="">
+    <meta name="text:CharacterName 07" content="">
+    <meta name="text:CharacterDesc 07" content="">
+    <!-- セクション：登場人物紹介 キャラクター 08-->
+    <meta name="image:CharacterImage 08" content="">
+    <meta name="text:CharacterName 08" content="">
+    <meta name="text:CharacterDesc 08" content="">
     <!-- 試し読み -->
     <meta name="if:ShowSectionPreview" content="1">
     <meta name="text:SectionPreview Heading" content="PREVIEW">
@@ -126,7 +159,7 @@
     <meta name="text:ReviewerRole 03" content="">
     <!-- 電子書籍とのつきあい方 -->
     <meta name="if:ShowSectionHowToRead" content="0">
-    <!-- セクション：購入／ダウンロード -->
+    <!-- セクション：購入／ダウンロード-->
     <meta name="if:ShowSectionAcquisition" content="1">
     <meta name="text:SectionAcquisition Heading" content="GET IT NOW!">
     <meta name="text:SectionAcquisition Lead" content="購入／ダウンロード：リード文">
@@ -137,14 +170,29 @@
     <meta name="text:AcquisitionLinkURL 02" content="">
     <meta name="text:AcquisitionLinkLabel 03" content="">
     <meta name="text:AcquisitionLinkURL 03" content="">
+    <meta name="text:AcquisitionLinkLabel 04" content="">
+    <meta name="text:AcquisitionLinkURL 04" content="">
+    <meta name="text:AcquisitionLinkLabel 05" content="">
+    <meta name="text:AcquisitionLinkURL 05" content="">
+    <meta name="text:AcquisitionLinkLabel 06" content="">
+    <meta name="text:AcquisitionLinkURL 06" content="">
+    <meta name="text:AcquisitionLinkLabel 07" content="">
+    <meta name="text:AcquisitionLinkURL 07" content="">
+    <meta name="text:AcquisitionLinkLabel 08" content="">
+    <meta name="text:AcquisitionLinkURL 08" content="">
+    <meta name="text:AcquisitionLinkLabel 09" content="">
+    <meta name="text:AcquisitionLinkURL 09" content="">
+    <meta name="text:AcquisitionLinkLabel 10" content="">
+    <meta name="text:AcquisitionLinkURL 10" content="">
     <!-- セクション：関連コンテンツ-->
     <meta name="if:ShowSectionRelatedWorks" content="1">
     <meta name="text:SectionRelatedWorks Heading" content="RELATED WORKS">
     <meta name="text:SectionRelatedWorks Lead" content="関連商品：リード文">
-    <!-- 一列に表示する作品の数 -->
+    <!-- 一列に表示する作品の数-->
     <meta name="select:ColumnCount RelatedWorks" content="col-sm-12" title="1">
     <meta name="select:ColumnCount RelatedWorks" content="col-sm-6" title="2">
     <meta name="select:ColumnCount RelatedWorks" content="col-sm-4" title="3">
+    <meta name="select:ColumnCount RelatedWorks" content="col-sm-3" title="4">
     <!-- セクション：関連コンテンツ 01 -->
     <meta name="image:RelatedWorkImage 01" content="">
     <meta name="text:RelatedWorkTitle 01" content="">
@@ -157,6 +205,10 @@
     <meta name="image:RelatedWorkImage 03" content="">
     <meta name="text:RelatedWorkTitle 03" content="">
     <meta name="text:RelatedWorkURL 03" content="">
+    <!-- セクション：関連コンテンツ 04 -->
+    <meta name="image:RelatedWorkImage 04" content="">
+    <meta name="text:RelatedWorkTitle 04" content="">
+    <meta name="text:RelatedWorkURL 04" content="">
     <!-- セクション：著者紹介 -->
     <meta name="if:ShowSectionBiographies" content="1">
     <meta name="text:SectionBiographies Heading" content="CREATED BY">
@@ -171,6 +223,16 @@
     <meta name="text:AuthorTwitter 01" content="">
     <meta name="text:AuthorFacebook 01" content="">
     <meta name="text:AuthorGooglePlus 01" content="">
+    <!-- セクション：著者紹介 著者02 -->
+    <meta name="image:AuthorImage 02" content="">
+    <meta name="text:AuthorName 02" content="">
+    <meta name="text:AuthorNameKana 02" content="">
+    <meta name="text:AuthorRole 02" content="著者">
+    <meta name="text:AuthorDescription 02" content="">
+    <meta name="text:AuthorURL 02" content="">
+    <meta name="text:AuthorTwitter 02" content="">
+    <meta name="text:AuthorFacebook 02" content="">
+    <meta name="text:AuthorGooglePlus 02" content="">
     <!-- セクション：著者紹介 協力者01 -->
     <meta name="image:ContributorImage 01" content="">
     <meta name="text:ContributorName 01" content="">
@@ -181,6 +243,23 @@
     <meta name="text:ContributorTwitter 01" content="">
     <meta name="text:ContributorFacebook 01" content="">
     <meta name="text:ContributorGooglePlus 01" content="">
+    <!-- セクション：著者紹介 協力者02 -->
+    <meta name="image:ContributorImage 02" content="">
+    <meta name="text:ContributorName 02" content="">
+    <meta name="text:ContributorNameKana 02" content="">
+    <meta name="text:ContributorRole 02" content="">
+    <meta name="text:ContributorDescription 02" content="">
+    <meta name="text:ContributorURL 02" content="">
+    <meta name="text:ContributorTwitter 02" content="">
+    <meta name="text:ContributorFacebook 02" content="">
+    <meta name="text:ContributorGooglePlus 02" content="">
+    <!-- Facebook Page -->
+    <meta name="text:FacebookPageURL" content="">
+    <meta name="text:FacebookAppID" content="">
+    <!-- Contact Form -->
+    <meta name="if:ShowSectionContact" content="0">
+    <meta name="text:SectionContact Heading" content="CONTACT">
+    <meta name="text:SectionContact EmbedCode" content="">
     <!-- Footer -->
     <meta name="text:CopyrightHolder" content="">
     <meta name="text:FooterText" content="">
@@ -189,7 +268,10 @@
     <!-- Twitter Player -->
     <meta name="text:TwitterPlayerURL" content="">
     <!-- Schema.org JSON-LD -->
-    <meta name="if:EnableSchemaOrg" content="1"> 
+    <meta name="if:EnableSchemaOrg" content="1">
+    <!-- Custom Code-->
+    <meta name="text:CustomCode Head" content="">
+    <meta name="text:CustomCode Body" content=""> 
     {block:Hidden}
     <title>{Title} {text:BookSubtitle} | {text:SiteSubtitle}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -203,6 +285,11 @@
     <meta name="keywords" content="{text:Keywords}"> 
     {/block:IfKeywords}
      
+    <!-- Facebook page--> 
+    {block:IfFacebookAppID}
+     
+    <meta property="fb:app_id" content="{text:FacebookAppID}"> 
+    {/block:IfFacebookAppID}
     <!-- OGP -->
     <meta property="og:title" content="{Title} {text:BookSubtitle} - {text:AuthorName 01} {block:IfAuthorName02}…etc.{/block:IfAuthorName02}">
     <meta property="og:type" content="website">
@@ -233,7 +320,11 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="canonical" href="{BlogURL}">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+    {block:IfCustomCodeHead}
+    {text:CustomCode Head}
+    {/block:IfCustomCodeHead}
+     
     <style>
       a {
       color: {color:PrimaryColor};
@@ -377,9 +468,15 @@
                       {block:IfAuthorName01}
                       <li>{text:AuthorName 01}</li> 
                       {/block:IfAuthorName01}
+                      {block:IfAuthorName02}
+                      <li>{text:AuthorName 02}</li> 
+                      {/block:IfAuthorName02}
                       {block:IfContributorName01}
                       <li>{text:ContributorName 01}</li> 
                       {/block:IfContributorName01}
+                      {block:IfContributorName02}
+                      <li>{text:ContributorName 02}</li> 
+                      {/block:IfContributorName02}
                     </ul>
                   </div>
                   <div class="btn-container hidden-xs">
@@ -452,9 +549,15 @@
                   {block:IfAuthorName01}
                   <li>{text:AuthorName 01}</li> 
                   {/block:IfAuthorName01}
+                  {block:IfAuthorName02}
+                  <li>{text:AuthorName 02}</li> 
+                  {/block:IfAuthorName02}
                   {block:IfContributorName01}
                   <li>{text:ContributorName 01}</li> 
                   {/block:IfContributorName01}
+                  {block:IfContributorName02}
+                  <li>{text:ContributorName 02}</li> 
+                  {/block:IfContributorName02}
                 </ul>
                 <div class="btn-container">
                   <ul class="list-inline">
@@ -541,6 +644,37 @@
       </div>
     </section> 
     {/block:IfShowSectionDescription}
+    <!-- セクション：動画 --> 
+    {block:IfShowSectionMovie}
+    <section id="movie" class="section-dark">
+      <div class="container dd-container">
+        <h2 class="section-title text-center">{text:SectionMovie Heading}</h2> 
+        {block:IfSectionMovieLead}
+        <p class="section-lead text-center">{text:SectionMovie Lead}</p> 
+        {/block:IfSectionMovieLead}
+        {block:IfSectionMovieEmbedCode}
+        <div class="embed-responsive {select:SectionMovie AspectRatio}">{text:SectionMovie EmbedCode}</div> 
+        {/block:IfSectionMovieEmbedCode}
+      </div>
+    </section> 
+    {/block:IfShowSectionMovie}
+    <!-- セクション：オーディオ --> 
+    {block:IfShowSectionAudio}
+    <section id="movie" class="section-light">
+      <div class="container dd-container">
+        <h2 class="section-title text-center">{text:SectionAudio Heading}</h2> 
+        {block:IfSectionAudioLead}
+        <p class="section-lead text-center">{text:SectionAudio Lead}</p> 
+        {/block:IfSectionAudioLead}
+        {block:IfSectionAudioEmbedCode}
+        <div class="audio-container">
+           
+          {text:SectionAudio EmbedCode}
+        </div> 
+        {/block:IfSectionAudioEmbedCode}
+      </div>
+    </section> 
+    {/block:IfShowSectionAudio}
     <!-- セクション：特徴紹介 --> 
     {block:IfShowSectionFeatures}
     <section id="features">
@@ -640,7 +774,7 @@
             </div>
           </div> 
           {/block:IfCharacterName02}
-          {block:IfCharacterName03}
+          <div class="separator-for-col-sm-6"></div>{block:IfCharacterName03}
           <div class="separator-for-{select:ColumnCount.Characters}"></div>
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              
@@ -652,6 +786,65 @@
             </div>
           </div> 
           {/block:IfCharacterName03}
+          <div class="separator-for-col-sm-4"></div>{block:IfCharacterName04}
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage04Image}<img style="width: 128px;" src="{image:CharacterImage 04}" alt="" class="img-thumbnail">{block:IfCharacterImage04Image}
+            <div class="h5 character-name">{text:CharacterName 04}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 04}
+            </div>
+          </div> 
+          {/block:IfCharacterName04}
+          <div class="separator-for-col-sm-6"></div>
+          <div class="separator-for-col-sm-3"></div>{block:IfCharacterName05}
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage05Image}<img style="width: 128px;" src="{image:CharacterImage 05}" alt="" class="img-thumbnail">{block:IfCharacterImage05Image}
+            <div class="h5 character-name">{text:CharacterName 05}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 05}
+            </div>
+          </div> 
+          {/block:IfCharacterName05}
+          {block:IfCharacterName06}
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage06Image}<img style="width: 128px;" src="{image:CharacterImage 06}" alt="" class="img-thumbnail">{block:IfCharacterImage06Image}
+            <div class="h5 character-name">{text:CharacterName 06}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 06}
+            </div>
+          </div> 
+          {/block:IfCharacterName06}
+          <div class="separator-for-col-sm-6"></div>
+          <div class="separator-for-col-sm-4"></div>{block:IfCharacterName07}
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage07Image}<img style="width: 128px;" src="{image:CharacterImage 07}" alt="" class="img-thumbnail">{block:IfCharacterImage07Image}
+            <div class="h5 character-name">{text:CharacterName 07}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 07}
+            </div>
+          </div> 
+          {/block:IfCharacterName07}
+          {block:IfCharacterName08}
+          <div class="character-container {select:ColumnCount Characters} container center-block text-center">
+             
+            {block:IfCharacterImage08Image}<img style="width: 128px;" src="{image:CharacterImage 08}" alt="" class="img-thumbnail">{block:IfCharacterImage08Image}
+            <div class="h5 character-name">{text:CharacterName 08}</div>
+            <div class="character-desc">
+               
+              {text:CharacterDesc 08}
+            </div>
+          </div> 
+          {/block:IfCharacterName08}
+          <div class="separator-for-col-sm-6"></div>
+          <div class="separator-for-col-sm-3"></div>
         </div>
       </div>
     </section> 
@@ -717,10 +910,18 @@
                  
                 <li>{text:AuthorName 01}</li> 
                 {/block:IfAuthorName01}
+                {block:IfAuthorName02}
+                 
+                <li>{text:AuthorName 02}</li> 
+                {/block:IfAuthorName02}
                 {block:IfContributorName01}
                  
                 <li>{text:ContributorName 01}</li> 
                 {/block:IfContributorName01}
+                {block:IfContributorName02}
+                 
+                <li>{text:ContributorName 02}</li> 
+                {/block:IfContributorName02}
               </ul>
             </td>
           </tr> 
@@ -972,10 +1173,10 @@
         {/block:IfSectionAcquisitionLead}
         {block:IfShowPrice}
           {block:IfPrice}
-        <p class="text-center">販売価格<span class="price">{text:Price}</span>円</p> 
+        <p class="text-center">販売価格<span class="price">{text:Price}</span>円 </p> 
           {/block:IfPrice}
           {block:IfNotPrice}
-        <p class="text-center">販売価格<span class="price">無料</span></p> 
+        <p class="text-center">販売価格 <span class="price">無料</span></p> 
           {/block:IfNotPrice}
         {/block:IfShowPrice}
         {block:IfSectionAcquisitionNote}
@@ -999,6 +1200,41 @@
             <p><a href="{text:AcquisitionLinkURL 03}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 03}</a></p>
           </li> 
           {/block:IfAcquisitionLinkLabel03}
+          {block:IfAcquisitionLinkLabel04}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 04}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 04}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel04}
+          {block:IfAcquisitionLinkLabel05}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 05}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 05}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel05}
+          {block:IfAcquisitionLinkLabel06}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 06}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 06}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel06}
+          {block:IfAcquisitionLinkLabel07}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 07}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 07}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel07}
+          {block:IfAcquisitionLinkLabel08}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 08}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 08}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel08}
+          {block:IfAcquisitionLinkLabel09}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 09}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 09}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel09}
+          {block:IfAcquisitionLinkLabel10}
+          <li>
+            <p><a href="{text:AcquisitionLinkURL 10}" class="btn btn-primary btn-lg">{text:AcquisitionLinkLabel 10}</a></p>
+          </li> 
+          {/block:IfAcquisitionLinkLabel10}
         </ul>
       </div>
     </section> 
@@ -1037,6 +1273,14 @@
             </div>
           </div> 
           {/block:IfRelatedWorkTitle03}
+          {block:IfRelatedWorkTitle04}
+          <div class="{select:ColumnCount RelatedWorks}">
+            <div class="thumbnail text-center"><a href="{text:RelatedWorkURL 04}" title="{text:RelatedWorkTitle 04}">
+                <div style="background-image: url({image:RelatedWorkImage 04});" class="thumbnail-container"></div></a>
+              <div class="caption"><a href="{text:RelatedWorkURL 04}" class="thumbnail-title">{text:RelatedWorkTitle 04}</a></div>
+            </div>
+          </div> 
+          {/block:IfRelatedWorkTitle04}
         </div>
       </div>
     </section>
@@ -1088,6 +1332,40 @@
                 </div>
               </li> 
               {/block:IfAuthorName01}
+              {block:IfAuthorName02}
+              <li class="media">
+                <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:AuthorImage 02}" alt="" class="media-object img-circle"></div>
+                <div class="media-body">
+                  <div class="media-heading">
+                     
+                    {block:IfAuthorRole02}<span class="role">{text:AuthorRole 02}</span> 
+                    {/block:IfAuthorRole02}
+                     
+                    {text:AuthorName 02}
+                     <small>{text:AuthorNameKana 02}</small>
+                  </div>
+                  <ul class="list-inline">
+                     
+                    {block:IfAuthorURL02}
+                    <li><a href="{text:AuthorURL 02}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorURL02}
+                    {block:IfAuthorTwitter02}
+                    <li><a href="http://twitter.com/{text:AuthorTwitter 02}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorTwitter02}
+                    {block:IfAuthorFacebook02}
+                    <li><a href="http://facebook.com/{text:AuthorFacebook 02}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorFacebook02}
+                    {block:IfAuthorGooglePlus02}
+                    <li><a href="http://plus.google.com/{text:AuthorGooglePlus 02}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorGooglePlus02}
+                  </ul>
+                  <div class="author-description">
+                     
+                    {text:AuthorDescription 02}
+                  </div>
+                </div>
+              </li> 
+              {/block:IfAuthorName02}
               {block:IfContributorName01}
               <li class="media">
                 <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:ContributorImage 01}" alt="" class="media-object img-circle"></div>
@@ -1121,12 +1399,66 @@
                 </div>
               </li> 
               {/block:IfContributorName01}
+              {block:IfContributorName02}
+              <li class="media">
+                <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:ContributorImage 02}" alt="" class="media-object img-circle"></div>
+                <div class="media-body">
+                  <div class="media-heading">
+                     
+                    {block:IfContributorRole02}
+                     <span class="role">{text:ContributorRole 02}</span> 
+                    {/block:IfContributorRole02}
+                    {text:ContributorName 02}
+                     <small>{text:ContributorNameKana 02}</small>
+                  </div>
+                  <ul class="list-inline">
+                     
+                    {block:IfContributorURL02}
+                    <li><a href="{text:ContributorURL 02}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorURL02}
+                    {block:IfContributorTwitter02}
+                    <li><a href="http://twitter.com/{text:ContributorTwitter 02}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorTwitter02}
+                    {block:IfContributorFacebook02}
+                    <li><a href="http://facebook.com/{text:ContributorFacebook 02}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorFacebook02}
+                    {block:IfContributorGooglePlus02}
+                    <li><a href="http://plus.google.com/{text:ContributorGooglePlus 02}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorGooglePlus02}
+                  </ul>
+                  <div class="author-description">
+                     
+                    {text:ContributorDescription 02}
+                  </div>
+                </div>
+              </li> 
+              {/block:IfContributorName02}
             </ul>
           </div>
         </div>
       </div>
     </section> 
     {/block:IfShowSectionBiographies}
+     
+    {block:IfShowSectionContact}
+    <hr class="context-break">
+    <section id="contact">
+      <div class="container dd-container">
+        <h2 class="h4 section-title text-center">{text:SectionContact Heading}</h2>
+        <div class="contact-form-container">
+           
+          {text:SectionContact EmbedCode}
+        </div>
+      </div>
+    </section> 
+    {/block:IfShowSectionContact}
+     
+    {block:IfFacebookPageURL}
+    <div id="fb-like-box-container" class="container dd-container">
+      <div data-href="{text:FacebookPageURL}" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true" class="fb-like-box"></div>
+    </div> 
+    {/block:IfFacebookPageURL}
+     
     <!-- Schema.org JSON-LD --> 
     {block:IfEnableSchemaOrg}
     <script type="application/ld+json">
@@ -1144,10 +1476,12 @@
       {block:IfSectionDetailsPublisherName}"publisher": {"name": "{text:SectionDetails PublisherName}"{block:IfSectionDetailsPublisherURL}, "url": "{text:SectionDetails PublisherURL}"{/block:IfSectionDetailsPublisherURL}},{/block:IfSectionDetailsPublisherName}
       "author": [
       { "name": "{text:AuthorName 01}", "description": "{text:AuthorDescription 01}"{block:IfAuthorImage01Image}, "image": "{image:AuthorImage 01}"{/block:IfAuthorImage01Image}{block:IfAuthorURL01}, "url": "{text:AuthorURL 01}"{/block:IfAuthorURL01} }
+      {block:IfAuthorName02},{ "name": "{text:AuthorName 02}", "description": "{text:AuthorDescription 02}"{block:IfAuthorImage02Image}, "image": "{image:AuthorImage 02}"{/block:IfAuthorImage02Image}{block:IfAuthorURL02}, "url": "{text:AuthorURL 02}"{/block:IfAuthorURL02} }{/block:IfAuthorName02}
       ],
       {block:IfContributorName01}
       "contributor": [
       { "name": "{text:ContributorName 01}", "description": "{text:ContributorDescription 01}"{block:IfContributorImage01Image}, "image": "{image:ContributorImage 01}"{/block:IfContributorImage01Image}{block:IfContributorURL01}, "url": "{text:ContributorURL 01}"{/block:IfContributorURL01} }
+      {block:IfContributorName02},{ "name": "{text:ContributorName 02}", "description": "{text:ContributorDescription 02}"{block:IfContributorImage02Image}, "image": "{image:ContributorImage 02}"{/block:IfContributorImage02Image}{block:IfContributorURL02}, "url": "{text:ContributorURL 02}"{/block:IfContributorURL02} }{/block:IfContributorName02}
       ],
       {/block:IfContributorName01}
       "url": "{BlogURL}",
@@ -1184,6 +1518,10 @@
       ga('require', 'displayfeatures');
       ga('send', 'pageview');
     </script> 
-    {/block:IfGoogleAnalyticsID}
+    {/block:IfGoogleAnalyticsID} 
+    {block:IfCustomCodeBody}
+    {text:CustomCode Body}
+    {/block:IfCustomCodeBody}
+     
   </body>
 </html>
