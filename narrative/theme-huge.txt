@@ -3,7 +3,7 @@
   <head>
     <!--
     Theme Narrative Huge(Den-Den Landing Page)
-    version: 1.0.21
+    version: 1.0.22
     by @lost_and_found from Densho Channel
     mail: <info@denshochan.com>
     Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -157,6 +157,33 @@
     <meta name="text:ReviewerName 03" content="">
     <meta name="text:ReviewerURL 03" content="">
     <meta name="text:ReviewerRole 03" content="">
+    <!-- セクション：レビュー 04-->
+    <meta name="text:ReviewTitle 04" content="">
+    <meta name="text:ReviewComment 04" content="">
+    <meta name="text:ReviewAttributionTitle 04" content="">
+    <meta name="text:ReviewAttributionURL 04" content="">
+    <meta name="image:ReviewerImage 04" content="">
+    <meta name="text:ReviewerName 04" content="">
+    <meta name="text:ReviewerURL 04" content="">
+    <meta name="text:ReviewerRole 04" content="">
+    <!-- セクション：レビュー 05-->
+    <meta name="text:ReviewTitle 05" content="">
+    <meta name="text:ReviewComment 05" content="">
+    <meta name="text:ReviewAttributionTitle 05" content="">
+    <meta name="text:ReviewAttributionURL 05" content="">
+    <meta name="image:ReviewerImage 05" content="">
+    <meta name="text:ReviewerName 05" content="">
+    <meta name="text:ReviewerURL 05" content="">
+    <meta name="text:ReviewerRole 05" content="">
+    <!-- セクション：レビュー 06-->
+    <meta name="text:ReviewTitle 06" content="">
+    <meta name="text:ReviewComment 06" content="">
+    <meta name="text:ReviewAttributionTitle 06" content="">
+    <meta name="text:ReviewAttributionURL 06" content="">
+    <meta name="image:ReviewerImage 06" content="">
+    <meta name="text:ReviewerName 06" content="">
+    <meta name="text:ReviewerURL 06" content="">
+    <meta name="text:ReviewerRole 06" content="">
     <!-- 電子書籍とのつきあい方 -->
     <meta name="if:ShowSectionHowToRead" content="0">
     <!-- セクション：購入／ダウンロード-->
@@ -209,6 +236,22 @@
     <meta name="image:RelatedWorkImage 04" content="">
     <meta name="text:RelatedWorkTitle 04" content="">
     <meta name="text:RelatedWorkURL 04" content="">
+    <!-- セクション：関連コンテンツ 05 -->
+    <meta name="image:RelatedWorkImage 05" content="">
+    <meta name="text:RelatedWorkTitle 05" content="">
+    <meta name="text:RelatedWorkURL 05" content="">
+    <!-- セクション：関連コンテンツ 06 -->
+    <meta name="image:RelatedWorkImage 06" content="">
+    <meta name="text:RelatedWorkTitle 06" content="">
+    <meta name="text:RelatedWorkURL 06" content="">
+    <!-- セクション：関連コンテンツ 07 -->
+    <meta name="image:RelatedWorkImage 07" content="">
+    <meta name="text:RelatedWorkTitle 07" content="">
+    <meta name="text:RelatedWorkURL 07" content="">
+    <!-- セクション：関連コンテンツ 08 -->
+    <meta name="image:RelatedWorkImage 08" content="">
+    <meta name="text:RelatedWorkTitle 08" content="">
+    <meta name="text:RelatedWorkURL 08" content="">
     <!-- セクション：著者紹介 -->
     <meta name="if:ShowSectionBiographies" content="1">
     <meta name="text:SectionBiographies Heading" content="CREATED BY">
@@ -233,6 +276,26 @@
     <meta name="text:AuthorTwitter 02" content="">
     <meta name="text:AuthorFacebook 02" content="">
     <meta name="text:AuthorGooglePlus 02" content="">
+    <!-- セクション：著者紹介 著者03 -->
+    <meta name="image:AuthorImage 03" content="">
+    <meta name="text:AuthorName 03" content="">
+    <meta name="text:AuthorNameKana 03" content="">
+    <meta name="text:AuthorRole 03" content="著者">
+    <meta name="text:AuthorDescription 03" content="">
+    <meta name="text:AuthorURL 03" content="">
+    <meta name="text:AuthorTwitter 03" content="">
+    <meta name="text:AuthorFacebook 03" content="">
+    <meta name="text:AuthorGooglePlus 03" content="">
+    <!-- セクション：著者紹介 著者04 -->
+    <meta name="image:AuthorImage 04" content="">
+    <meta name="text:AuthorName 04" content="">
+    <meta name="text:AuthorNameKana 04" content="">
+    <meta name="text:AuthorRole 04" content="著者">
+    <meta name="text:AuthorDescription 04" content="">
+    <meta name="text:AuthorURL 04" content="">
+    <meta name="text:AuthorTwitter 04" content="">
+    <meta name="text:AuthorFacebook 04" content="">
+    <meta name="text:AuthorGooglePlus 04" content="">
     <!-- セクション：著者紹介 協力者01 -->
     <meta name="image:ContributorImage 01" content="">
     <meta name="text:ContributorName 01" content="">
@@ -253,6 +316,26 @@
     <meta name="text:ContributorTwitter 02" content="">
     <meta name="text:ContributorFacebook 02" content="">
     <meta name="text:ContributorGooglePlus 02" content="">
+    <!-- セクション：著者紹介 協力者03 -->
+    <meta name="image:ContributorImage 03" content="">
+    <meta name="text:ContributorName 03" content="">
+    <meta name="text:ContributorNameKana 03" content="">
+    <meta name="text:ContributorRole 03" content="">
+    <meta name="text:ContributorDescription 03" content="">
+    <meta name="text:ContributorURL 03" content="">
+    <meta name="text:ContributorTwitter 03" content="">
+    <meta name="text:ContributorFacebook 03" content="">
+    <meta name="text:ContributorGooglePlus 03" content="">
+    <!-- セクション：著者紹介 協力者04 -->
+    <meta name="image:ContributorImage 04" content="">
+    <meta name="text:ContributorName 04" content="">
+    <meta name="text:ContributorNameKana 04" content="">
+    <meta name="text:ContributorRole 04" content="">
+    <meta name="text:ContributorDescription 04" content="">
+    <meta name="text:ContributorURL 04" content="">
+    <meta name="text:ContributorTwitter 04" content="">
+    <meta name="text:ContributorFacebook 04" content="">
+    <meta name="text:ContributorGooglePlus 04" content="">
     <!-- Facebook Page -->
     <meta name="text:FacebookPageURL" content="">
     <meta name="text:FacebookAppID" content="">
@@ -396,7 +479,15 @@
         content: " ";
         display: table;
       }
-      .separator-for-{select:ColumnCount Characters}:after {
+      .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+        clear: both;
+      }
+      .works-separator-for-{select:ColumnCount RelatedWorks}:before,
+      .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+        content: " ";
+        display: table;
+      }
+      .works-separator-for-{select:ColumnCount RelatedWorks}:after {
         clear: both;
       }
       {CustomCSS}
@@ -471,12 +562,24 @@
                       {block:IfAuthorName02}
                       <li>{text:AuthorName 02}</li> 
                       {/block:IfAuthorName02}
+                      {block:IfAuthorName03}
+                      <li>{text:AuthorName 03}</li> 
+                      {/block:IfAuthorName03}
+                      {block:IfAuthorName04}
+                      <li>{text:AuthorName 04}</li> 
+                      {/block:IfAuthorName04}
                       {block:IfContributorName01}
                       <li>{text:ContributorName 01}</li> 
                       {/block:IfContributorName01}
                       {block:IfContributorName02}
                       <li>{text:ContributorName 02}</li> 
                       {/block:IfContributorName02}
+                      {block:IfContributorName03}
+                      <li>{text:ContributorName 03}</li> 
+                      {/block:IfContributorName03}
+                      {block:IfContributorName04}
+                      <li>{text:ContributorName 04}</li> 
+                      {/block:IfContributorName04}
                     </ul>
                   </div>
                   <div class="btn-container hidden-xs">
@@ -552,12 +655,24 @@
                   {block:IfAuthorName02}
                   <li>{text:AuthorName 02}</li> 
                   {/block:IfAuthorName02}
+                  {block:IfAuthorName03}
+                  <li>{text:AuthorName 03}</li> 
+                  {/block:IfAuthorName03}
+                  {block:IfAuthorName04}
+                  <li>{text:AuthorName 04}</li> 
+                  {/block:IfAuthorName04}
                   {block:IfContributorName01}
                   <li>{text:ContributorName 01}</li> 
                   {/block:IfContributorName01}
                   {block:IfContributorName02}
                   <li>{text:ContributorName 02}</li> 
                   {/block:IfContributorName02}
+                  {block:IfContributorName03}
+                  <li>{text:ContributorName 03}</li> 
+                  {/block:IfContributorName03}
+                  {block:IfContributorName04}
+                  <li>{text:ContributorName 04}</li> 
+                  {/block:IfContributorName04}
                 </ul>
                 <div class="btn-container">
                   <ul class="list-inline">
@@ -925,6 +1040,14 @@
                  
                 <li>{text:AuthorName 02}</li> 
                 {/block:IfAuthorName02}
+                {block:IfAuthorName03}
+                 
+                <li>{text:AuthorName 03}</li> 
+                {/block:IfAuthorName03}
+                {block:IfAuthorName04}
+                 
+                <li>{text:AuthorName 04}</li> 
+                {/block:IfAuthorName04}
                 {block:IfContributorName01}
                  
                 <li>{text:ContributorName 01}</li> 
@@ -933,6 +1056,14 @@
                  
                 <li>{text:ContributorName 02}</li> 
                 {/block:IfContributorName02}
+                 
+                {block:IfContributorName03}
+                <li>{text:ContributorName 03}</li> 
+                {/block:IfContributorName03}
+                 
+                {block:IfContributorName04}
+                <li>{text:ContributorName 04}</li> 
+                {/block:IfContributorName04}
               </ul>
             </td>
           </tr> 
@@ -1153,6 +1284,150 @@
           </div>
         </div> 
         {/block:IfReviewComment03}
+        {block:IfReviewComment04}
+        <hr class="context-break">
+        <div class="review-container">
+           
+          {block:IfReviewTitle04}
+          <p class="review-title">{text:ReviewTitle 04}</p> 
+          {/block:IfReviewTitle04}
+          <div class="bubble">
+            <blockquote>
+              {text:ReviewComment 04}
+              {block:IfReviewAttributionTitle04}
+              <footer>
+                 
+                {block:IfReviewAttributionURL04}
+                 <a href="{text:ReviewAttributionURL 04}">{text:ReviewAttributionTitle 04}</a> 
+                {/block:IfReviewAttributionURL04}
+                {block:IfNotReviewAttributionURL04}
+                {text:ReviewAttributionTitle 04}
+                {/block:IfNotReviewAttributionURL04}
+              </footer> 
+              {/block:IfReviewAttributionTitle04}
+            </blockquote>
+          </div>
+          <div class="media reviewer-container">
+            <div class="pull-left">
+               
+              {block:IfReviewerImage04Image}
+               <img style="width: 48px;" src="{image:ReviewerImage 04}" alt="" class="media-object img-circle"> 
+              {/block:IfReviewerImage04Image}
+              {block:IfNotReviewerImage04Image}
+              <div class="reviewer-icon-placeholder"><i class="fa fa-user"></i></div> 
+              {/block:IfNotReviewerImage04Image}
+            </div>
+            <div class="media-body">
+              <div class="reviewer-name">
+                 
+                {block:IfReviewerURL04}
+                 <a href="{text:ReviewerURL 04}">{text:ReviewerName 04}</a> 
+                {/block:IfReviewerURL04}
+                {block:IfNotReviewerURL04}
+                {text:ReviewerName 04}
+                {/block:IfNotReviewerURL04}
+                {block:IfReviewerRole04}<span class="reviewer-role">{text:ReviewerRole 04}</span>{/block:IfReviewerRole04}
+              </div>
+            </div>
+          </div>
+        </div> 
+        {/block:IfReviewComment04}
+        {block:IfReviewComment05}
+        <hr class="context-break">
+        <div class="review-container">
+           
+          {block:IfReviewTitle05}
+          <p class="review-title">{text:ReviewTitle 05}</p> 
+          {/block:IfReviewTitle05}
+          <div class="bubble">
+            <blockquote>
+              {text:ReviewComment 05}
+              {block:IfReviewAttributionTitle05}
+              <footer>
+                 
+                {block:IfReviewAttributionURL05}
+                 <a href="{text:ReviewAttributionURL 05}">{text:ReviewAttributionTitle 05}</a> 
+                {/block:IfReviewAttributionURL05}
+                {block:IfNotReviewAttributionURL05}
+                {text:ReviewAttributionTitle 05}
+                {/block:IfNotReviewAttributionURL05}
+              </footer> 
+              {/block:IfReviewAttributionTitle05}
+            </blockquote>
+          </div>
+          <div class="media reviewer-container">
+            <div class="pull-left">
+               
+              {block:IfReviewerImage05Image}
+               <img style="width: 48px;" src="{image:ReviewerImage 05}" alt="" class="media-object img-circle"> 
+              {/block:IfReviewerImage05Image}
+              {block:IfNotReviewerImage05Image}
+              <div class="reviewer-icon-placeholder"><i class="fa fa-user"></i></div> 
+              {/block:IfNotReviewerImage05Image}
+            </div>
+            <div class="media-body">
+              <div class="reviewer-name">
+                 
+                {block:IfReviewerURL05}
+                 <a href="{text:ReviewerURL 05}">{text:ReviewerName 05}</a> 
+                {/block:IfReviewerURL05}
+                {block:IfNotReviewerURL05}
+                {text:ReviewerName 05}
+                {/block:IfNotReviewerURL05}
+                {block:IfReviewerRole05}<span class="reviewer-role">{text:ReviewerRole 05}</span>{/block:IfReviewerRole05}
+              </div>
+            </div>
+          </div>
+        </div> 
+        {/block:IfReviewComment05}
+        {block:IfReviewComment06}
+        <hr class="context-break">
+        <div class="review-container">
+           
+          {block:IfReviewTitle06}
+          <p class="review-title">{text:ReviewTitle 06}</p> 
+          {/block:IfReviewTitle06}
+          <div class="bubble">
+            <blockquote>
+              {text:ReviewComment 06}
+              {block:IfReviewAttributionTitle06}
+              <footer>
+                 
+                {block:IfReviewAttributionURL06}
+                 <a href="{text:ReviewAttributionURL 06}">{text:ReviewAttributionTitle 06}</a> 
+                {/block:IfReviewAttributionURL06}
+                {block:IfNotReviewAttributionURL06}
+                {text:ReviewAttributionTitle 06}
+                {/block:IfNotReviewAttributionURL06}
+              </footer> 
+              {/block:IfReviewAttributionTitle06}
+            </blockquote>
+          </div>
+          <div class="media reviewer-container">
+            <div class="pull-left">
+               
+              {block:IfReviewerImage06Image}
+               <img style="width: 48px;" src="{image:ReviewerImage 06}" alt="" class="media-object img-circle"> 
+              {/block:IfReviewerImage06Image}
+              {block:IfNotReviewerImage06Image}
+              <div class="reviewer-icon-placeholder"><i class="fa fa-user"></i></div> 
+              {/block:IfNotReviewerImage06Image}
+            </div>
+            <div class="media-body">
+              <div class="reviewer-name">
+                 
+                {block:IfReviewerURL06}
+                 <a href="{text:ReviewerURL 06}">{text:ReviewerName 06}</a> 
+                {/block:IfReviewerURL06}
+                {block:IfNotReviewerURL06}
+                {text:ReviewerName 06}
+                {/block:IfNotReviewerURL06}
+                {block:IfReviewerRole06}<span class="reviewer-role">{text:ReviewerRole 06}</span>{/block:IfReviewerRole06}
+              </div>
+            </div>
+          </div>
+        </div> 
+        {/block:IfReviewComment06}
       </div>
     </section> 
     {/block:IfShowSectionReviews}
@@ -1276,6 +1551,8 @@
             </div>
           </div> 
           {/block:IfRelatedWorkTitle02}
+           
+          <div class="works-separator-for-col-sm-6"></div> 
           {block:IfRelatedWorkTitle03}
           <div class="{select:ColumnCount RelatedWorks}">
             <div class="thumbnail text-center"><a href="{text:RelatedWorkURL 03}" title="{text:RelatedWorkTitle 03}">
@@ -1284,6 +1561,8 @@
             </div>
           </div> 
           {/block:IfRelatedWorkTitle03}
+           
+          <div class="works-separator-for-col-sm-4"></div> 
           {block:IfRelatedWorkTitle04}
           <div class="{select:ColumnCount RelatedWorks}">
             <div class="thumbnail text-center"><a href="{text:RelatedWorkURL 04}" title="{text:RelatedWorkTitle 04}">
@@ -1292,6 +1571,44 @@
             </div>
           </div> 
           {/block:IfRelatedWorkTitle04}
+           
+          <div class="works-separator-for-col-sm-6"></div>
+          <div class="works-separator-for-col-sm-3"></div> 
+          {block:IfRelatedWorkTitle05}
+          <div class="{select:ColumnCount RelatedWorks}">
+            <div class="thumbnail text-center"><a href="{text:RelatedWorkURL 05}" title="{text:RelatedWorkTitle 05}">
+                <div style="background-image: url({image:RelatedWorkImage 05});" class="thumbnail-container"></div></a>
+              <div class="caption"><a href="{text:RelatedWorkURL 05}" class="thumbnail-title">{text:RelatedWorkTitle 05}</a></div>
+            </div>
+          </div> 
+          {/block:IfRelatedWorkTitle05}
+          {block:IfRelatedWorkTitle06}
+          <div class="{select:ColumnCount RelatedWorks}">
+            <div class="thumbnail text-center"><a href="{text:RelatedWorkURL 06}" title="{text:RelatedWorkTitle 06}">
+                <div style="background-image: url({image:RelatedWorkImage 06});" class="thumbnail-container"></div></a>
+              <div class="caption"><a href="{text:RelatedWorkURL 06}" class="thumbnail-title">{text:RelatedWorkTitle 06}</a></div>
+            </div>
+          </div> 
+          {/block:IfRelatedWorkTitle06}
+           
+          <div class="works-separator-for-col-sm-6"></div>
+          <div class="works-separator-for-col-sm-4"></div> 
+          {block:IfRelatedWorkTitle07}
+          <div class="{select:ColumnCount RelatedWorks}">
+            <div class="thumbnail text-center"><a href="{text:RelatedWorkURL 07}" title="{text:RelatedWorkTitle 07}">
+                <div style="background-image: url({image:RelatedWorkImage 07});" class="thumbnail-container"></div></a>
+              <div class="caption"><a href="{text:RelatedWorkURL 07}" class="thumbnail-title">{text:RelatedWorkTitle 07}</a></div>
+            </div>
+          </div> 
+          {/block:IfRelatedWorkTitle07}
+          {block:IfRelatedWorkTitle08}
+          <div class="{select:ColumnCount RelatedWorks}">
+            <div class="thumbnail text-center"><a href="{text:RelatedWorkURL 08}" title="{text:RelatedWorkTitle 08}">
+                <div style="background-image: url({image:RelatedWorkImage 08});" class="thumbnail-container"></div></a>
+              <div class="caption"><a href="{text:RelatedWorkURL 08}" class="thumbnail-title">{text:RelatedWorkTitle 08}</a></div>
+            </div>
+          </div> 
+          {/block:IfRelatedWorkTitle08}
         </div>
       </div>
     </section>
@@ -1377,6 +1694,74 @@
                 </div>
               </li> 
               {/block:IfAuthorName02}
+              {block:IfAuthorName03}
+              <li class="media">
+                <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:AuthorImage 03}" alt="" class="media-object img-circle"></div>
+                <div class="media-body">
+                  <div class="media-heading">
+                     
+                    {block:IfAuthorRole03}<span class="role">{text:AuthorRole 03}</span> 
+                    {/block:IfAuthorRole03}
+                     
+                    {text:AuthorName 03}
+                     <small>{text:AuthorNameKana 03}</small>
+                  </div>
+                  <ul class="list-inline">
+                     
+                    {block:IfAuthorURL03}
+                    <li><a href="{text:AuthorURL 03}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorURL03}
+                    {block:IfAuthorTwitter03}
+                    <li><a href="http://twitter.com/{text:AuthorTwitter 03}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorTwitter03}
+                    {block:IfAuthorFacebook03}
+                    <li><a href="http://facebook.com/{text:AuthorFacebook 03}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorFacebook03}
+                    {block:IfAuthorGooglePlus03}
+                    <li><a href="http://plus.google.com/{text:AuthorGooglePlus 03}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorGooglePlus03}
+                  </ul>
+                  <div class="author-description">
+                     
+                    {text:AuthorDescription 03}
+                  </div>
+                </div>
+              </li> 
+              {/block:IfAuthorName03}
+              {block:IfAuthorName04}
+              <li class="media">
+                <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:AuthorImage 04}" alt="" class="media-object img-circle"></div>
+                <div class="media-body">
+                  <div class="media-heading">
+                     
+                    {block:IfAuthorRole04}<span class="role">{text:AuthorRole 04}</span> 
+                    {/block:IfAuthorRole04}
+                     
+                    {text:AuthorName 04}
+                     <small>{text:AuthorNameKana 04}</small>
+                  </div>
+                  <ul class="list-inline">
+                     
+                    {block:IfAuthorURL04}
+                    <li><a href="{text:AuthorURL 04}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorURL04}
+                    {block:IfAuthorTwitter04}
+                    <li><a href="http://twitter.com/{text:AuthorTwitter 04}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorTwitter04}
+                    {block:IfAuthorFacebook04}
+                    <li><a href="http://facebook.com/{text:AuthorFacebook 04}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorFacebook04}
+                    {block:IfAuthorGooglePlus04}
+                    <li><a href="http://plus.google.com/{text:AuthorGooglePlus 04}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfAuthorGooglePlus04}
+                  </ul>
+                  <div class="author-description">
+                     
+                    {text:AuthorDescription 04}
+                  </div>
+                </div>
+              </li> 
+              {/block:IfAuthorName04}
               {block:IfContributorName01}
               <li class="media">
                 <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:ContributorImage 01}" alt="" class="media-object img-circle"></div>
@@ -1444,6 +1829,74 @@
                 </div>
               </li> 
               {/block:IfContributorName02}
+              {block:IfContributorName03}
+              <li class="media">
+                <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:ContributorImage 03}" alt="" class="media-object img-circle"></div>
+                <div class="media-body">
+                  <div class="media-heading">
+                     
+                    {block:IfContributorRole03}
+                     <span class="role">{text:ContributorRole 03}</span> 
+                    {/block:IfContributorRole03}
+                    {text:ContributorName 03}
+                     <small>{text:ContributorNameKana 03}</small>
+                  </div>
+                  <ul class="list-inline">
+                     
+                    {block:IfContributorURL03}
+                    <li><a href="{text:ContributorURL 03}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorURL03}
+                    {block:IfContributorTwitter03}
+                    <li><a href="http://twitter.com/{text:ContributorTwitter 03}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorTwitter03}
+                    {block:IfContributorFacebook03}
+                    <li><a href="http://facebook.com/{text:ContributorFacebook 03}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorFacebook03}
+                    {block:IfContributorGooglePlus03}
+                    <li><a href="http://plus.google.com/{text:ContributorGooglePlus 03}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorGooglePlus03}
+                  </ul>
+                  <div class="author-description">
+                     
+                    {text:ContributorDescription 03}
+                  </div>
+                </div>
+              </li> 
+              {/block:IfContributorName03}
+              {block:IfContributorName04}
+              <li class="media">
+                <div style="margin-right: 20px;" class="pull-left"><img style="width: 64px;" src="{image:ContributorImage 04}" alt="" class="media-object img-circle"></div>
+                <div class="media-body">
+                  <div class="media-heading">
+                     
+                    {block:IfContributorRole04}
+                     <span class="role">{text:ContributorRole 04}</span> 
+                    {/block:IfContributorRole04}
+                    {text:ContributorName 04}
+                     <small>{text:ContributorNameKana 04}</small>
+                  </div>
+                  <ul class="list-inline">
+                     
+                    {block:IfContributorURL04}
+                    <li><a href="{text:ContributorURL 04}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorURL04}
+                    {block:IfContributorTwitter04}
+                    <li><a href="http://twitter.com/{text:ContributorTwitter 04}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorTwitter04}
+                    {block:IfContributorFacebook04}
+                    <li><a href="http://facebook.com/{text:ContributorFacebook 04}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorFacebook04}
+                    {block:IfContributorGooglePlus04}
+                    <li><a href="http://plus.google.com/{text:ContributorGooglePlus 04}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    {/block:IfContributorGooglePlus04}
+                  </ul>
+                  <div class="author-description">
+                     
+                    {text:ContributorDescription 04}
+                  </div>
+                </div>
+              </li> 
+              {/block:IfContributorName04}
             </ul>
           </div>
         </div>
@@ -1488,11 +1941,15 @@
       "author": [
       { "name": "{text:AuthorName 01}", "description": "{text:AuthorDescription 01}"{block:IfAuthorImage01Image}, "image": "{image:AuthorImage 01}"{/block:IfAuthorImage01Image}{block:IfAuthorURL01}, "url": "{text:AuthorURL 01}"{/block:IfAuthorURL01} }
       {block:IfAuthorName02},{ "name": "{text:AuthorName 02}", "description": "{text:AuthorDescription 02}"{block:IfAuthorImage02Image}, "image": "{image:AuthorImage 02}"{/block:IfAuthorImage02Image}{block:IfAuthorURL02}, "url": "{text:AuthorURL 02}"{/block:IfAuthorURL02} }{/block:IfAuthorName02}
+      {block:IfAuthorName03},{ "name": "{text:AuthorName 03}", "description": "{text:AuthorDescription 03}"{block:IfAuthorImage03Image}, "image": "{image:AuthorImage 03}"{/block:IfAuthorImage03Image}{block:IfAuthorURL03}, "url": "{text:AuthorURL 03}"{/block:IfAuthorURL03} }{/block:IfAuthorName03}
+      {block:IfAuthorName04},{ "name": "{text:AuthorName 04}", "description": "{text:AuthorDescription 04}"{block:IfAuthorImage04Image}, "image": "{image:AuthorImage 04}"{/block:IfAuthorImage04Image}{block:IfAuthorURL04}, "url": "{text:AuthorURL 04}"{/block:IfAuthorURL04} }{/block:IfAuthorName04} 
       ],
       {block:IfContributorName01}
       "contributor": [
       { "name": "{text:ContributorName 01}", "description": "{text:ContributorDescription 01}"{block:IfContributorImage01Image}, "image": "{image:ContributorImage 01}"{/block:IfContributorImage01Image}{block:IfContributorURL01}, "url": "{text:ContributorURL 01}"{/block:IfContributorURL01} }
       {block:IfContributorName02},{ "name": "{text:ContributorName 02}", "description": "{text:ContributorDescription 02}"{block:IfContributorImage02Image}, "image": "{image:ContributorImage 02}"{/block:IfContributorImage02Image}{block:IfContributorURL02}, "url": "{text:ContributorURL 02}"{/block:IfContributorURL02} }{/block:IfContributorName02}
+      {block:IfContributorName03},{ "name": "{text:ContributorName 03}", "description": "{text:ContributorDescription 03}"{block:IfContributorImage03Image}, "image": "{image:ContributorImage 03}"{/block:IfContributorImage03Image}{block:IfContributorURL03}, "url": "{text:ContributorURL 03}"{/block:IfContributorURL03} }{/block:IfContributorName03}
+      {block:IfContributorName04},{ "name": "{text:ContributorName 04}", "description": "{text:ContributorDescription 04}"{block:IfContributorImage04Image}, "image": "{image:ContributorImage 04}"{/block:IfContributorImage04Image}{block:IfContributorURL04}, "url": "{text:ContributorURL 04}"{/block:IfContributorURL04} }{/block:IfContributorName04}
       ],
       {/block:IfContributorName01}
       "url": "{BlogURL}",

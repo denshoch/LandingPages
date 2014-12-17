@@ -69,7 +69,15 @@ style.
     content: " ";
     display: table;
   }
-  .separator-for-{select:ColumnCount Characters}:after {
+  .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+    clear: both;
+  }
+  .works-separator-for-{select:ColumnCount RelatedWorks}:before,
+  .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+    content: " ";
+    display: table;
+  }
+  .works-separator-for-{select:ColumnCount RelatedWorks}:after {
     clear: both;
   }
   {CustomCSS}

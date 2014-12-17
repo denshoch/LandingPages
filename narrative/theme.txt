@@ -3,7 +3,7 @@
   <head>
     <!--
     Theme Narrative (Den-Den Landing Page)
-    version: 1.0.21
+    version: 1.0.22
     by @lost_and_found from Densho Channel
     mail: <info@denshochan.com>
     Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -372,7 +372,15 @@
         content: " ";
         display: table;
       }
-      .separator-for-{select:ColumnCount Characters}:after {
+      .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+        clear: both;
+      }
+      .works-separator-for-{select:ColumnCount RelatedWorks}:before,
+      .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+        content: " ";
+        display: table;
+      }
+      .works-separator-for-{select:ColumnCount RelatedWorks}:after {
         clear: both;
       }
       {CustomCSS}

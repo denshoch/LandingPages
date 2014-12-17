@@ -3,7 +3,7 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
   head
     //
             Theme Narrative Huge(Den-Den Landing Page)
-            version: 1.0.21
+            version: 1.0.22
             by @lost_and_found from Densho Channel
             mail: <info@denshochan.com>
             Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -64,16 +64,16 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
     meta(name='text:SectionFreeWriting Lead', content='自由記述：リード文')
     meta(name='text:SectionFreeWriting Body', content='自由に文章を書けます。')
 
-    include ./partials/section-reviews-vars.jade
+    include ./partials/huge-section-reviews-vars.jade
 
     // 電子書籍とのつきあい方 
     meta(name='if:ShowSectionHowToRead', content='0')
 
     include ./partials/huge-section-acquisition-vars.jade
 
-    include ./partials/section-related-works-vars.jade
+    include ./partials/huge-section-related-works-vars.jade
 
-    include ./partials/section-biographies-vars.jade
+    include ./partials/huge-section-biographies-vars.jade
 
     // Facebook Page 
     meta(name='text:FacebookPageURL', content='')
@@ -207,24 +207,9 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
                       | {text:BookSubtitle}
                     | 
                     | {/block:IfBookSubtitle}
-                    ul.list-inline.creators-list
-                      | 
-                      | {block:IfAuthorName01}
-                      li {text:AuthorName 01}
-                      | 
-                      | {/block:IfAuthorName01}
-                      | {block:IfAuthorName02}
-                      li {text:AuthorName 02}
-                      | 
-                      | {/block:IfAuthorName02}
-                      | {block:IfContributorName01}
-                      li {text:ContributorName 01}
-                      | 
-                      | {/block:IfContributorName01}
-                      | {block:IfContributorName02}
-                      li {text:ContributorName 02}
-                      | 
-                      | {/block:IfContributorName02}
+
+                    include ./partials/huge-creators-list.jade
+
                   .btn-container.hidden-xs
                     ul.list-inline
                       | 
@@ -291,7 +276,7 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
                 | {/block:IfBookSubtitle}
                 hr.context-break
 
-                include ./partials/creators-list.jade
+                include ./partials/huge-creators-list.jade
 
                 .btn-container
                   ul.list-inline
@@ -361,25 +346,25 @@ html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
 
     include ./partials/section-preview.jade
 
-    include ./partials/section-details.jade
+    include ./partials/huge-section-details.jade
 
     include ./partials/section-free-writing.jade
 
-    include ./partials/section-reviews.jade
+    include ./partials/huge-section-reviews.jade
 
     include ./partials/section-how-to-read.jade
 
     include ./partials/huge-section-acquisition.jade
 
-    include ./partials/section-related-works.jade
+    include ./partials/huge-section-related-works.jade
 
-    include ./partials/section-biographies.jade
+    include ./partials/huge-section-biographies.jade
 
     include ./partials/section-contact.jade
 
     include ./partials/facebook-page.jade
 
-    include ./partials/schema-org.jade
+    include ./partials/huge-schema-org.jade
 
     | 
     | {/block:IndexPage}

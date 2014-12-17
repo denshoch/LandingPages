@@ -1,0 +1,102 @@
+// セクション：関連コンテンツ 
+| 
+| {block:IfShowSectionRelatedWorks}
+section#related-contents(title='Related works')
+  .container.dd-container
+    h2.h4.section-title.text-center {text:SectionRelatedWorks Heading}
+    | 
+    | {block:IfSectionRelatedWorksLead}
+    p.h1.text-center.section-lead {text:SectionRelatedWorks Lead}
+    | 
+    | {/block:IfSectionRelatedWorksLead}
+    .row
+      | 
+      | {block:IfRelatedWorkTitle01}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a.target(href='{text:RelatedWorkURL 01}', title='{text:RelatedWorkTitle 01}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 01});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 01}') {text:RelatedWorkTitle 01}
+      | 
+      | {/block:IfRelatedWorkTitle01}
+      | {block:IfRelatedWorkTitle02}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a(href='{text:RelatedWorkURL 02}', title='{text:RelatedWorkTitle 02}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 02});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 02}') {text:RelatedWorkTitle 02}
+      | 
+      | {/block:IfRelatedWorkTitle02}
+      | 
+      div(class='works-separator-for-col-sm-6')
+      | 
+      | {block:IfRelatedWorkTitle03}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a(href='{text:RelatedWorkURL 03}', title='{text:RelatedWorkTitle 03}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 03});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 03}') {text:RelatedWorkTitle 03}
+      | 
+      | {/block:IfRelatedWorkTitle03}
+      | 
+      div(class='works-separator-for-col-sm-4')
+      | 
+      | {block:IfRelatedWorkTitle04}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a(href='{text:RelatedWorkURL 04}', title='{text:RelatedWorkTitle 04}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 04});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 04}') {text:RelatedWorkTitle 04}
+      | 
+      | {/block:IfRelatedWorkTitle04}
+      | 
+      div(class='works-separator-for-col-sm-6')
+      div(class='works-separator-for-col-sm-3')
+      | 
+      | {block:IfRelatedWorkTitle05}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a(href='{text:RelatedWorkURL 05}', title='{text:RelatedWorkTitle 05}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 05});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 05}') {text:RelatedWorkTitle 05}
+      | 
+      | {/block:IfRelatedWorkTitle05}
+      | {block:IfRelatedWorkTitle06}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a(href='{text:RelatedWorkURL 06}', title='{text:RelatedWorkTitle 06}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 06});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 06}') {text:RelatedWorkTitle 06}
+      | 
+      | {/block:IfRelatedWorkTitle06}
+      | 
+      div(class='works-separator-for-col-sm-6')
+      div(class='works-separator-for-col-sm-4')
+      | 
+      | {block:IfRelatedWorkTitle07}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a(href='{text:RelatedWorkURL 07}', title='{text:RelatedWorkTitle 07}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 07});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 07}') {text:RelatedWorkTitle 07}
+      | 
+      | {/block:IfRelatedWorkTitle07}
+      | {block:IfRelatedWorkTitle08}
+      div(class="{select:ColumnCount RelatedWorks}")
+        .thumbnail.text-center
+          a(href='{text:RelatedWorkURL 08}', title='{text:RelatedWorkTitle 08}')
+            .thumbnail-container(style='background-image: url({image:RelatedWorkImage 08});')
+          .caption
+            a.thumbnail-title(href='{text:RelatedWorkURL 08}') {text:RelatedWorkTitle 08}
+      | 
+      | {/block:IfRelatedWorkTitle08}
+hr.context-break
+| 
+| {/block:IfShowSectionRelatedWorks}

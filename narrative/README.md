@@ -2,7 +2,7 @@
 
 でんでんランディングページ テーマ：Narrative
 
-バージョン: 1.0.21
+バージョン: 1.0.22
 
 ![スクリーンショット](../images/sc_narrative.png)
 
@@ -45,23 +45,23 @@
 2. テーマの編集画面で`HTMLを編集`を選びます。
 3. `HTMLを編集`の画面に表示されたHTMLコードを削除して、代わりに次のいずれかの内容を貼り付けて保存してください。
 
-  - [重量版はこちら](http://denshoch.github.io/LandingPages/narrative/theme-huge.txt)
+  - [増量版はこちら](http://denshoch.github.io/LandingPages/narrative/theme-huge.txt)
   - [通常版はこちら](http://denshoch.github.io/LandingPages/narrative/theme.txt)
   - [軽量版はこちら](http://denshoch.github.io/LandingPages/narrative/theme-tiny.txt)
 
-### 通常版と軽量版・重量版の違いについて
+### 通常版と軽量版・増量版の違いについて
 
-軽量版 ＜ 通常版 ＜ 重量版の順で設定できる項目の数が増えていきます。
+軽量版 ＜ 通常版 ＜ 増量版の順で設定できる項目の数が増えていきます。
 
 通常版の中から必要最低限と思われる項目だけを取り出したものが軽量版です。軽量版のほうが設定項目が少なく、初心者におすすめです。
 
-重量版は通常版よりもキャラクターや購入リンクの数が増えています。
+増量版は通常版よりもキャラクターや購入リンクなどの数が増えています。
 
 下位の版から上位の版への移行は簡単で、HTMLコードを貼り付けなおすだけで完了します。反対に上位の版から下位の版に移行する場合は、下位の版にない項目が失われてしまうので注意してください。
 
 <table>
 <tr>
-<th>項目</th><th>重量版</th><th>通常版</th><th>軽量版</th>
+<th>項目</th><th>増量版</th><th>通常版</th><th>軽量版</th>
 </tr>
 <tr>
 <td>内容紹介セクション</td><td>あり</td><td>あり</td><td>あり</td>
@@ -88,7 +88,7 @@
 <td>自由記述セクション</td><td>あり</td><td>あり</td><td>あり</td>
 </tr>
 <tr>
-<td>レビューセクション</td><td>3件</td><td>3件</td><td>3件</td>
+<td>レビューセクション</td><td>6件</td><td>3件</td><td>3件</td>
 </tr>
 <tr>
 <td>電子書籍とのつきあい方セクション</td><td>あり</td><td>あり</td><td>あり</td>
@@ -97,10 +97,10 @@
 <td>購入リンクセクション</td><td>10</td><td>6</td><td>3</td>
 </tr>
 <tr>
-<td>関連作品紹介セクション</td><td>4</td><td>4</td><td>3</td>
+<td>関連作品紹介セクション</td><td>8</td><td>4</td><td>3</td>
 </tr>
 <tr>
-<td>著者紹介セクション</td><td>著者2名<br/>協力者2名</td><td>著者2名<br/>協力者2名</td><td>著者1名<br/>協力者1名</td>
+<td>著者紹介セクション</td><td>著者4名<br/>協力者4名</td><td>著者2名<br/>協力者2名</td><td>著者1名<br/>協力者1名</td>
 </tr>
 <tr>
 <td>コンタクトフォームセクション</td><td>あり</td><td>あり</td><td>なし</td>
@@ -459,25 +459,25 @@
   <td>リード文</td><td>SectionReviews Lead</td><td>リード文です。読者の興味を引く短い文章を入力します。改行には<code>&lt;br&gt;</code>を入力してください。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>レビュータイトル</td><td>ReviewTitle 01〜03</td><td>レビューのタイトルです。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>レビュータイトル</td><td>ReviewTitle 01〜06</td><td>レビューのタイトルです。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>レビューコメント</td><td>ReviewComment 01〜03</td><td>レビューまたは推薦文です。改行には<code>&lt;br&gt;</code>を入力してください。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>レビューコメント</td><td>ReviewComment 01〜06</td><td>レビューまたは推薦文です。改行には<code>&lt;br&gt;</code>を入力してください。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>レビュー掲載元タイトル</td><td>ReviewAttributionTitle 01〜03</td><td>レビューが掲載されている記事やサイトのタイトルを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>レビュー掲載元タイトル</td><td>ReviewAttributionTitle 01〜06</td><td>レビューが掲載されている記事やサイトのタイトルを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>レビュー掲載元URL</td><td>ReviewAttributionURL 01〜03</td><td>レビューが掲載されている記事やサイトのURLを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>レビュー掲載元URL</td><td>ReviewAttributionURL 01〜06</td><td>レビューが掲載されている記事やサイトのURLを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>レビューアー名</td><td>ReviewerName 01〜03</td><td>レビューまたは推薦文を書いてくれた人の名前です。</td>
+  <td>レビューアー名</td><td>ReviewerName 01〜06</td><td>レビューまたは推薦文を書いてくれた人の名前です。</td>
 </tr>
 <tr>
-  <td>レビューアーURL</td><td>ReviewerURL 01〜03</td><td>レビューアーに関するURLです。レビューアーのウェブサイトやソーシャルアカウントなどのURLを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>レビューアーURL</td><td>ReviewerURL 01〜06</td><td>レビューアーに関するURLです。レビューアーのウェブサイトやソーシャルアカウントなどのURLを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>レビューアーの説明</td><td>ReviewerRole 01〜03</td><td>レビューアーの肩書や短い説明文を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>レビューアーの説明</td><td>ReviewerRole 01〜06</td><td>レビューアーの肩書や短い説明文を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 </table>
 
@@ -563,58 +563,58 @@
   <td>リード文</td><td>SectionBiographies Lead</td><td>リード文です。読者の興味を引く短い文章を入力します。改行には<code>&lt;br&gt;</code>を入力してください。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>著者画像</td><td>AuthorImage 01〜02</td><td>著者の画像です。<strong>128px以上の正方形</strong>の画像を推奨します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>著者画像</td><td>AuthorImage 01〜04</td><td>著者の画像です。<strong>128px以上の正方形</strong>の画像を推奨します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>著者名</td><td>AuthorName 01〜02</td><td>著者の名前です。名前のない著者は他の項目が入力されていてもページには表示されません。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>著者名</td><td>AuthorName 01〜04</td><td>著者の名前です。名前のない著者は他の項目が入力されていてもページには表示されません。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>著者仮名名</td><td>AuthorNameKana 01〜02</td><td>著者の名前の仮名表記です。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>著者仮名名</td><td>AuthorNameKana 01〜04</td><td>著者の名前の仮名表記です。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>著者の役割</td><td>AuthorRole 01〜02</td><td>この人が作品に果たした役割を入力します。初期値は「著者」ですが他の表記にすることもできます。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>著者の役割</td><td>AuthorRole 01〜04</td><td>この人が作品に果たした役割を入力します。初期値は「著者」ですが他の表記にすることもできます。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>著者説明</td><td>AuthorDescription 01〜02</td><td>著者の略歴などの文章を入力します。<strong>HTMLタグは使えません</strong></td>
+  <td>著者説明</td><td>AuthorDescription 01〜04</td><td>著者の略歴などの文章を入力します。<strong>HTMLタグは使えません</strong></td>
 </tr>
 <tr>
-  <td>著者URL</td><td>AuthorURL 01〜02</td><td>著者のウェブサイトやブログなどのURLを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>著者URL</td><td>AuthorURL 01〜04</td><td>著者のウェブサイトやブログなどのURLを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>著者Twitterアカウント</td><td>AuthorTwitter 01〜02</td><td>著者のTwitterアカウント名から<strong>@</strong>を除いた文字列を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>著者Twitterアカウント</td><td>AuthorTwitter 01〜04</td><td>著者のTwitterアカウント名から<strong>@</strong>を除いた文字列を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>著者Facebookアカウント</td><td>AuthorFacebook 01〜02</td><td>著者のFacebookアカウント名を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>著者Facebookアカウント</td><td>AuthorFacebook 01〜04</td><td>著者のFacebookアカウント名を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>著者Google+アカウント</td><td>AuthorGooglePlus 01〜02</td><td>著者のGoogle+アカウント名（<code>http://plus.google.com/</code>より後ろの部分）を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>著者Google+アカウント</td><td>AuthorGooglePlus 01〜04</td><td>著者のGoogle+アカウント名（<code>http://plus.google.com/</code>より後ろの部分）を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>協力者画像</td><td>ContributorImage 01〜02</td><td>協力者の画像です。<strong>128px以上の正方形</strong>の画像を推奨します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>協力者画像</td><td>ContributorImage 01〜04</td><td>協力者の画像です。<strong>128px以上の正方形</strong>の画像を推奨します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>協力者名</td><td>ContributorName 01〜02</td><td>協力者の名前です。名前のない協力者は他の項目が入力されていてもページには表示されません。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>協力者名</td><td>ContributorName 01〜04</td><td>協力者の名前です。名前のない協力者は他の項目が入力されていてもページには表示されません。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>協力者仮名名</td><td>ContributorNameKana 01〜02</td><td>協力者の名前の仮名表記です。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>協力者仮名名</td><td>ContributorNameKana 01〜04</td><td>協力者の名前の仮名表記です。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>協力者の役割</td><td>ContributorRole 01〜02</td><td>協力者が作品に果たした役割を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>協力者の役割</td><td>ContributorRole 01〜04</td><td>協力者が作品に果たした役割を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>協力者説明</td><td>ContributorDescription 01〜02</td><td>協力者の略歴などの文章を入力します。<strong>HTMLタグは使えません</strong></td>
+  <td>協力者説明</td><td>ContributorDescription 01〜04</td><td>協力者の略歴などの文章を入力します。<strong>HTMLタグは使えません</strong></td>
 </tr>
 <tr>
-  <td>協力者URL</td><td>ContributorURL 01〜02</td><td>協力者のウェブサイトやブログなどのURLを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>協力者URL</td><td>ContributorURL 01〜04</td><td>協力者のウェブサイトやブログなどのURLを入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>協力者Twitterアカウント</td><td>ContributorTwitter 01〜02</td><td>協力者のTwitterアカウント名から<strong>@</strong>を除いた文字列を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>協力者Twitterアカウント</td><td>ContributorTwitter 01〜04</td><td>協力者のTwitterアカウント名から<strong>@</strong>を除いた文字列を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>協力者Facebookアカウント</td><td>ContributorFacebook 01〜02</td><td>協力者のFacebookアカウント名を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>協力者Facebookアカウント</td><td>ContributorFacebook 01〜04</td><td>協力者のFacebookアカウント名を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 <tr>
-  <td>協力者Google+アカウント</td><td>ContributorGooglePlus 01〜02</td><td>協力者のGoogle+アカウント名（<code>http://plus.google.com/</code>より後ろの部分）を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
+  <td>協力者Google+アカウント</td><td>ContributorGooglePlus 01〜04</td><td>協力者のGoogle+アカウント名（<code>http://plus.google.com/</code>より後ろの部分）を入力します。<strong>必要ない場合は空欄にしてください。</strong></td>
 </tr>
 </table>
 
@@ -692,10 +692,13 @@ head要素とbody要素の中に直接HTMLを記述するためのオプショ�
 
 ## History 変更履歴
 
+- 1.0.22
+  - 2014.12.16
+    - 増量版のレビュー数、関連作品数、著者数を増加。
 - 1.0.21
   - 2014.12.15
-    - 重量版の導入
-    - キャラクターのグリッドに関するレイアウト修正
+    - 増量版の導入
+    - キャラクターのグリッドに関するレイアウト修正。
 - 1.0.20
   - 2014.12.04
     - 「試し読み」ボタンのリンクが開かない問題を修正。
