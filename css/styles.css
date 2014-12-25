@@ -5600,6 +5600,9 @@ span.bibi-holder > iframe {
       font-weight: bold;
       color: #428bca; }
 
+#logo {
+  font-weight: normal; }
+
 #cover-image {
   margin-top: -400px;
   max-width: 100%;

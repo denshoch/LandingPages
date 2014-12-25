@@ -145,6 +145,10 @@ $cover-image-height: 400px;
   }
 }
 
+#logo {
+  font-weight: normal;
+}
+
 #cover-image {
   margin-top: -$header-height-lg + 40px;
   max-width: 100%;
