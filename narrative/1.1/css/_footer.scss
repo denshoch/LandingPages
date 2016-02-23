@@ -1,0 +1,13 @@
+#footer {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  background-color: #ECF0F1;
+  font-size: 12px;
+  color: $gray-light;
+  .dd-container {
+    margin: 0 auto;
+    padding-top: $line-height-computed * 2;
+    padding-bottom: $line-height-computed * 2;
+  }
+}

@@ -3,7 +3,7 @@
   <head>
     <!--
     Theme Narrative Huge(Den-Den Landing Page)
-    version: 1.0.22
+    version: 1.1.0
     by @lost_and_found from Densho Channel
     mail: <info@denshochan.com>
     Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
@@ -399,7 +399,7 @@
     <link rel="shortcut icon" href="{Favicon}">
     <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
     <link rel="alternate" type="application/rss+xml" href="{RSS}">
-    <link rel="stylesheet" media="screen" href="//denshoch.github.io/LandingPages/narrative/1.0/css/styles.css">
+    <link rel="stylesheet" media="screen" href="//denshoch.github.io/LandingPages/narrative/1.1/css/styles.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="canonical" href="{BlogURL}">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -434,7 +434,7 @@
       background-color: rgba(0,0,0,0.2);
       {/block:IfHeaderImageEffectDarken}
       }
-      #catchprase-container-inner {
+      #catchphrase-container-inner {
       {block:IfHeaderTextEffectShadow}
       text-shadow: 2px 2px 10px rgba(0,0,0,0.4), -2px -2px 10px rgba(0,0,0,0.4), 2px -2px 10px rgba(0,0,0,0.4), -2px 2px 10px rgba(0,0,0,0.4);
       {/block:IfHeaderTextEffectShadow}
@@ -522,15 +522,15 @@
           <div class="rows">
              
             {block:IfHeaderColumnLayoutReverse}
-            <div id="catchprase-container" class="col-sm-push-5 col-sm-7 text-right">
+            <div id="catchphrase-container" class="col-sm-push-5 col-sm-7 text-right">
                
               {/block:IfHeaderColumnLayoutReverse}
               {block:IfNotHeaderColumnLayoutReverse}
-              <div id="catchprase-container" class="col-sm-7">
+              <div id="catchphrase-container" class="col-sm-7">
                  
                 {/block:IfNotHeaderColumnLayoutReverse}
-                <div id="catchprase-container-inner">
-                  <p class="catchprase">
+                <div id="catchphrase-container-inner">
+                  <p class="catchphrase">
                      
                     {text:Catchphrase Main}
                   </p>
@@ -1972,7 +1972,7 @@
         <p>{block:IfFooterText}{text:FooterText}{/block:IfFooterText}</p>
         <div><small><a href="http://lp.denshochan.com/">Theme</a> 
             designed by
-             <a href="http://densho.hatenablog.com/">Densho Channel</a>.</small></div>
+             <a href="http://denshochan.com/">Densho Channel</a>.</small></div>
       </div>
     </footer>
     <!-- Google Analytics --> 

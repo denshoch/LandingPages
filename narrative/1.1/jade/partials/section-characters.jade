@@ -1,0 +1,73 @@
+// セクション：登場人物紹介 
+| 
+| {block:IfShowSectionCharacters}
+| {block:IfShowSectionFeatures}
+hr.context-break
+| 
+| {/block:IfShowSectionFeatures}
+section#characters
+  .container.dd-container
+    h2.h4.section-title.text-center {text:SectionCharacters Heading}
+    | 
+    | {block:IfSectionCharactersLead}
+    p.h1.text-center.section-lead {text:SectionCharacters Lead}
+    | 
+    | {/block:IfSectionCharactersLead}
+    .row
+      | 
+      | {block:IfCharacterName01}
+      div(class="character-container {select:ColumnCount Characters} container center-block text-center")
+        | 
+        | {block:IfCharacterImage01Image}
+        img.img-thumbnail(style='width: 128px;', src='{image:CharacterImage 01}', alt='')
+        | {/block:IfCharacterImage01Image}
+        .h5.character-name {text:CharacterName 01}
+        .character-desc
+          | 
+          | {text:CharacterDesc 01}
+      | 
+      | {/block:IfCharacterName01}
+      | 
+      | {block:IfCharacterName02}
+      div(class="character-container {select:ColumnCount Characters} container center-block text-center")
+        | 
+        | {block:IfCharacterImage02Image}
+        img.img-thumbnail(style='width: 128px;', src='{image:CharacterImage 02}', alt='')
+        | {/block:IfCharacterImage02Image}
+        .h5.character-name {text:CharacterName 02}
+        .character-desc
+          | 
+          | {text:CharacterDesc 02}
+      | 
+      | {/block:IfCharacterName02}
+      | 
+      div(class='separator-for-col-sm-6')
+      | 
+      | {block:IfCharacterName03}
+      | 
+      div(class="character-container {select:ColumnCount Characters} container center-block text-center")
+        | 
+        | {block:IfCharacterImage03Image}
+        img.img-thumbnail(style='width: 128px;', src='{image:CharacterImage 03}', alt='')
+        | {/block:IfCharacterImage03Image}
+        .h5.character-name {text:CharacterName 03}
+        .character-desc
+          | 
+          | {text:CharacterDesc 03}
+      | 
+      | {/block:IfCharacterName03}
+      | 
+      | {block:IfCharacterName04}
+      div(class="character-container {select:ColumnCount Characters} container center-block text-center")
+        | 
+        | {block:IfCharacterImage04Image}
+        img.img-thumbnail(style='width: 128px;', src='{image:CharacterImage 04}', alt='')
+        | {block:IfCharacterImage04Image}
+        .h5.character-name {text:CharacterName 04}
+        .character-desc
+          | 
+          | {text:CharacterDesc 04}
+      | 
+      | {/block:IfCharacterName04}
+| 
+| {/block:IfShowSectionCharacters}

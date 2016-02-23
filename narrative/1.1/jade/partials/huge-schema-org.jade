@@ -1,0 +1,40 @@
+// Schema.org JSON-LD 
+| 
+| {block:IfEnableSchemaOrg}
+script(type='application/ld+json').
+  {
+  "@context": "http://schema.org",
+  "@type": "Book",
+  {block:IfSectionDetailsISBN}
+  "isbn": "{text:SectionDetails ISBN}",
+  {/block:IfSectionDetailsISBN}
+  {block:IfFormatEbook}
+  "bookFormat": "http://schema.org/EBook",
+  {/block:IfFormatEbook}
+  "inLanguage": "{select:BookLanguage}",
+  {block:IfSectionDetailsDatePublished}"datePublished": "{text:SectionDetails DatePublished}",{/block:IfSectionDetailsDatePublished}
+  {block:IfSectionDetailsPublisherName}"publisher": {"name": "{text:SectionDetails PublisherName}"{block:IfSectionDetailsPublisherURL}, "url": "{text:SectionDetails PublisherURL}"{/block:IfSectionDetailsPublisherURL}},{/block:IfSectionDetailsPublisherName}
+  "author": [
+  { "name": "{text:AuthorName 01}", "description": "{text:AuthorDescription 01}"{block:IfAuthorImage01Image}, "image": "{image:AuthorImage 01}"{/block:IfAuthorImage01Image}{block:IfAuthorURL01}, "url": "{text:AuthorURL 01}"{/block:IfAuthorURL01} }
+  {block:IfAuthorName02},{ "name": "{text:AuthorName 02}", "description": "{text:AuthorDescription 02}"{block:IfAuthorImage02Image}, "image": "{image:AuthorImage 02}"{/block:IfAuthorImage02Image}{block:IfAuthorURL02}, "url": "{text:AuthorURL 02}"{/block:IfAuthorURL02} }{/block:IfAuthorName02}
+  {block:IfAuthorName03},{ "name": "{text:AuthorName 03}", "description": "{text:AuthorDescription 03}"{block:IfAuthorImage03Image}, "image": "{image:AuthorImage 03}"{/block:IfAuthorImage03Image}{block:IfAuthorURL03}, "url": "{text:AuthorURL 03}"{/block:IfAuthorURL03} }{/block:IfAuthorName03}
+  {block:IfAuthorName04},{ "name": "{text:AuthorName 04}", "description": "{text:AuthorDescription 04}"{block:IfAuthorImage04Image}, "image": "{image:AuthorImage 04}"{/block:IfAuthorImage04Image}{block:IfAuthorURL04}, "url": "{text:AuthorURL 04}"{/block:IfAuthorURL04} }{/block:IfAuthorName04} 
+  ],
+  {block:IfContributorName01}
+  "contributor": [
+  { "name": "{text:ContributorName 01}", "description": "{text:ContributorDescription 01}"{block:IfContributorImage01Image}, "image": "{image:ContributorImage 01}"{/block:IfContributorImage01Image}{block:IfContributorURL01}, "url": "{text:ContributorURL 01}"{/block:IfContributorURL01} }
+  {block:IfContributorName02},{ "name": "{text:ContributorName 02}", "description": "{text:ContributorDescription 02}"{block:IfContributorImage02Image}, "image": "{image:ContributorImage 02}"{/block:IfContributorImage02Image}{block:IfContributorURL02}, "url": "{text:ContributorURL 02}"{/block:IfContributorURL02} }{/block:IfContributorName02}
+  {block:IfContributorName03},{ "name": "{text:ContributorName 03}", "description": "{text:ContributorDescription 03}"{block:IfContributorImage03Image}, "image": "{image:ContributorImage 03}"{/block:IfContributorImage03Image}{block:IfContributorURL03}, "url": "{text:ContributorURL 03}"{/block:IfContributorURL03} }{/block:IfContributorName03}
+  {block:IfContributorName04},{ "name": "{text:ContributorName 04}", "description": "{text:ContributorDescription 04}"{block:IfContributorImage04Image}, "image": "{image:ContributorImage 04}"{/block:IfContributorImage04Image}{block:IfContributorURL04}, "url": "{text:ContributorURL 04}"{/block:IfContributorURL04} }{/block:IfContributorName04}
+  ],
+  {/block:IfContributorName01}
+  "url": "{BlogURL}",
+  "image": "{image:CoverImage}",
+  "description": "{MetaDescription}",
+  {block:IfKeywords}
+  "keywords": "{text:Keywords}",
+  {/block:IfKeywords}
+  "name": "{Title} {text:BookSubtitle}"
+  }
+| 
+| {/block:IfEnableSchemaOrg}

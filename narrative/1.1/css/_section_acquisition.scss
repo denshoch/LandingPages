@@ -1,0 +1,24 @@
+#acquisition {
+  //padding: $line-height-computed * 4 0;
+  .section-lead {
+    margin-bottom: $line-height-computed * 1;
+  }
+}
+.price-bg {
+  display: inline-block;
+  padding: .25em 1em;
+  margin-bottom: $line-height-computed * 2;
+  background: $body-bg;
+  color: $brand-primary;
+}
+
+.price {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 .25em;
+  //color: $brand-danger;
+}
+.note {
+  margin-bottom: $line-height-computed * 2;
+}
