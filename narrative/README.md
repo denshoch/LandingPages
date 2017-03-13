@@ -22,7 +22,7 @@
 - スマートフォンでも読みやすい（レスポンシブデザイン）
 - TwitterやFacebookで共有されやすい（OGP/Twitter Card対応）
 - 検索エンジンに最適化している（schema.org対応）
-- 電子書籍の試し読みが簡単に埋め込める（[EPUB to Twitter](http://www.iineshoten.com/e2t/)と連携が必要です）
+- 電子書籍の試し読みが簡単に埋め込める（[EPUB to Twitter](https://e2t.hon.jp/)と連携が必要です）
 
 ## Warning <small>注意事項</small>
 
@@ -674,7 +674,7 @@ head要素とbody要素の中に直接HTMLを記述するためのオプショ�
 
 ## Credits <small>謝辞</small>
 
-- [@fujinyo](https://twitter.com/fujinyo)（[言い値書店](http://www.iineshoten.com/), [EPUB to Twitter](http://www.iineshoten.com/e2t/)）
+- [@fujinyo](https://twitter.com/fujinyo)（[言い値書店](http://www.iineshoten.com/), [EPUB to Twitter](https://e2t.hon.jp/)）
 - [@satorumurmur](https://twitter.com/satorumurmur) ([BiB/i](http://sarasa.la/bib/i/))
 - [ヘリベマルヲ](https://plus.google.com/+%E3%83%98%E3%83%AA%E3%83%99%E3%83%9E%E3%83%AB%E3%83%B2)（『[ガラスの泡](http://the-glass-bubble.tumblr.com/)』）
 - @takahashim
