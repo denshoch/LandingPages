@@ -1,0 +1,11 @@
+.character-container {
+  margin-bottom: $line-height-computed;
+}
+
+.character-desc {
+  max-width: 20em;
+  margin: auto;
+  border-top: 1px solid $brand-primary;
+  padding: 9px 1em 0;
+  text-align: justify;
+}

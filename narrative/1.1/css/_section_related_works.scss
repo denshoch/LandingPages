@@ -1,0 +1,27 @@
+.thumbnail {
+  margin-bottom: 10px;
+  .caption {
+    padding-bottom: 0;
+  }
+}
+
+.thumbnail-container {
+  display: inline-block;
+  width:100%;
+  max-width:200px;
+  height:300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.thumbnail-title {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}

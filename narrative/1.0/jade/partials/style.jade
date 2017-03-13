@@ -64,6 +64,22 @@ style.
   #bio a .fa-stack:focus {
   color: {color:PrimaryColor};
   }
+  .separator-for-{select:ColumnCount Characters}:before,
+  .separator-for-{select:ColumnCount Characters}:after {
+    content: " ";
+    display: table;
+  }
+  .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+    clear: both;
+  }
+  .works-separator-for-{select:ColumnCount RelatedWorks}:before,
+  .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+    content: " ";
+    display: table;
+  }
+  .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+    clear: both;
+  }
   {CustomCSS}
   iframe#tumblr_controls {
   display:none;

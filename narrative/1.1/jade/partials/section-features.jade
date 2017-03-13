@@ -1,0 +1,59 @@
+// セクション：特徴紹介 
+| 
+| {block:IfShowSectionFeatures}
+section#features
+  .container.dd-container-wide
+    h2.h4.section-title.text-center {text:SectionFeatures Heading}
+    | 
+    | {block:IfSectionFeaturesLead}
+    p.h1.text-center.section-lead {text:SectionFeatures Lead}
+    | 
+    | {/block:IfSectionFeaturesLead}
+    .row
+      .col-md-4
+        .media
+          .pull-left.text-center
+            | 
+            | {block:IfFeatureImage01Image}
+            img.media-object(style='width: 64px;', src='{image:FeatureImage 01}', alt='')
+            | {/block:IfFeatureImage01Image}
+            | {block:IfNotFeatureImage01Image}
+            .feature-image-placeholder {text:FeaturePlaceholder 01}
+            | 
+            | {/block:IfNotFeatureImage01Image}
+          .media-body
+            h4.media-heading.feature-heading {text:FeatureHeading 01}
+            .feature-description
+              p {text:FeatureDesc 01}
+      .col-md-4
+        .media
+          .pull-left.text-center
+            | 
+            | {block:IfFeatureImage02Image}
+            img.media-object(style='width: 64px;', src='{image:FeatureImage 02}', alt='')
+            | {/block:IfFeatureImage02Image}
+            | {block:IfNotFeatureImage02Image}
+            .feature-image-placeholder {text:FeaturePlaceholder 02}
+            | 
+            | {/block:IfNotFeatureImage02Image}
+          .media-body
+            h4.media-heading.feature-heading {text:FeatureHeading 02}
+            .feature-description
+              p {text:FeatureDesc 02}
+      .col-md-4
+        .media
+          .pull-left.text-center
+            | 
+            | {block:IfFeatureImage03Image}
+            img.media-object(style='width: 64px;', src='{image:FeatureImage 03}', alt='')
+            | {/block:IfFeatureImage03Image}
+            | {block:IfNotFeatureImage03Image}
+            .feature-image-placeholder {text:FeaturePlaceholder 03}
+            | 
+            | {/block:IfNotFeatureImage03Image}
+          .media-body
+            h4.media-heading.feature-heading {text:FeatureHeading 03}
+            .feature-description
+              p {text:FeatureDesc 03}
+| 
+| {/block:IfShowSectionFeatures}

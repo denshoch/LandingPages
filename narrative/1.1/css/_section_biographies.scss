@@ -1,0 +1,46 @@
+.role {
+  @extend .label;
+  @include label-variant($brand-primary);
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: .3em .6em;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.author-image {
+  width: 100px;
+}
+.author-description {
+  margin-bottom: $line-height-computed;
+}
+
+#bio {
+  .media-heading {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.1;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ddd;
+    small,
+    .small {
+      display: inline-block;
+      font-weight: normal;
+      line-height: 1;
+      color: $headings-small-color;
+      font-size: 75%;
+    }
+  }
+  .list-inline>li {
+    padding-right: 0px;
+    padding-left: 3px;
+  }
+  a .fa-stack {
+    color: darken($gray-lighter, 15%);
+
+    &:hover,
+    &:focus {
+      color: $brand-primary;
+    }
+  }
+}

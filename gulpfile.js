@@ -7,14 +7,14 @@ var jade = require('gulp-jade');
 var config = {
     bowerDir: './bower_components',
     versions: {
-      narrative: "1.0"
+      narrative: "1.1"
     }
 };
 
 gulp.task('base', function () {
     return gulp.src('css/styles.scss')
         .pipe(sass({
-          sourcemap: true,
+          //sourcemap: true,
           sourcemapPath: '../css',
           loadPath: [
             config.bowerDir + '/bootstrap-sass-official/assets/stylesheets'
@@ -27,7 +27,7 @@ gulp.task('base', function () {
 gulp.task('narrative', function () {
     gulp.src('narrative/' + config.versions.narrative + '/css/styles.scss')
         .pipe(sass({
-          sourcemap: true,
+          //sourcemap: true,
           sourcemapPath: '../css',
           loadPath: [
             config.bowerDir + '/bootstrap-sass-official/assets/stylesheets'

@@ -1,0 +1,18 @@
+| 
+| {block:IndexPage}
+#fb-root
+script.
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  {block:IfFacebookAppID}
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId={text:FacebookAppID}&version=v2.0";
+  {/block:IfFacebookAppID}
+  {block:IfNotFacebookAppID}
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+  {/block:IfNotFacebookAppID}
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+| 
+| {/block:IndexPage}

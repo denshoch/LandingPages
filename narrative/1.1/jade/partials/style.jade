@@ -1,0 +1,86 @@
+style.
+  a {
+  color: {color:PrimaryColor};
+  }
+  a:hover,
+  a:focus {
+  color: {color:PrimaryColor};
+  }
+  .bubble {
+  background: {color:PrimaryColor};
+  }
+  .bubble:after {
+  border-color: {color:PrimaryColor} transparent;
+  }
+  #header:before {
+  background-image: url({HeaderImage});
+  {block:IfHeaderImageEffectBlur}
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  {/block:IfHeaderImageEffectBlur}
+  }
+  #header #header-inner {
+  {block:IfHeaderImageEffectDarken}
+  background-color: rgba(0,0,0,0.2);
+  {/block:IfHeaderImageEffectDarken}
+  }
+  #catchphrase-container-inner {
+  {block:IfHeaderTextEffectShadow}
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.4), -2px -2px 10px rgba(0,0,0,0.4), 2px -2px 10px rgba(0,0,0,0.4), -2px 2px 10px rgba(0,0,0,0.4);
+  {/block:IfHeaderTextEffectShadow}
+  }
+  #header-bottom .creators-list > li {
+  color: {color:PrimaryColor};
+  }
+  .section-lead {
+  color: {color:PrimaryColor};
+  }
+  .section-inverse {
+  background: {color:PrimaryColor};
+  }
+  .feature-image-placeholder {
+  color: {color:PrimaryColor};
+  }
+  .character-desc {
+  border-color: {color:PrimaryColor};
+  }
+  .review-container .review-title {
+  color: {color:PrimaryColor};
+  }
+  .review-container .reviewer-icon-placeholder {
+  color: {color:PrimaryColor};
+  }
+  .review-container .reviewer-name {
+  color: {color:PrimaryColor};
+  }
+  .review-container .reviewer-name a:hover,
+  .review-container .reviewer-name a:active {
+  color: {color:PrimaryColor};
+  }
+  .role {
+  background-color: {color:PrimaryColor};
+  }
+  #bio a .fa-stack:hover,
+  #bio a .fa-stack:focus {
+  color: {color:PrimaryColor};
+  }
+  .separator-for-{select:ColumnCount Characters}:before,
+  .separator-for-{select:ColumnCount Characters}:after {
+    content: " ";
+    display: table;
+  }
+  .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+    clear: both;
+  }
+  .works-separator-for-{select:ColumnCount RelatedWorks}:before,
+  .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+    content: " ";
+    display: table;
+  }
+  .works-separator-for-{select:ColumnCount RelatedWorks}:after {
+    clear: both;
+  }
+  {CustomCSS}
+  iframe#tumblr_controls {
+  display:none;
+  }

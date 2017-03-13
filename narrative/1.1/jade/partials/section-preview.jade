@@ -1,0 +1,35 @@
+// セクション：試し読み 
+| 
+| {block:IfShowSectionPreview}
+|   {block:IfShowSectionCharacters}
+hr.context-break
+| 
+|   {/block:IfShowSectionCharacters}
+|   {block:IfNotShowSectionCharacters}
+|     {block:IfShowSectionFeatures}
+hr.context-break
+| 
+|     {/block:IfShowSectionFeatures}
+|   {/block:IfNotShowSectionCharacters}
+section#preview
+  .container.dd-container
+    h2.h4.section-title.text-center {text:SectionPreview Heading}
+    | 
+    | {block:IfSectionPreviewLead}
+    p.h1.text-center.section-lead {text:SectionPreview Lead}
+    | 
+    | {/block:IfSectionPreviewLead}
+    | {block:IfPreviewEmbedCode}
+    .preview-container.center-block.text-center
+      | 
+      | {text:PreviewEmbedCode}
+    | 
+    | {/block:IfPreviewEmbedCode}
+    | {block:IfPreviewLink}
+    .btn-container
+      p.text-center
+        a.btn.btn-success.btn-lg(href='{text:PreviewLink}') 試し読みを開く
+    | 
+    | {/block:IfPreviewLink}
+| 
+| {/block:IfShowSectionPreview}

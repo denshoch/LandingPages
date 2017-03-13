@@ -1,0 +1,448 @@
+// セクション：著者紹介 
+| 
+| {block:IfShowSectionBiographies}
+section#bio
+  .container.dd-container
+    h2.h4.section-title.text-center {text:SectionBiographies Heading}
+    | 
+    | {block:IfSectionBiographiesLead}
+    p.h1.text-center.section-lead {text:SectionBiographies Lead}
+    | 
+    | {/block:IfSectionBiographiesLead}
+    .panel.panel-default
+      .panel-body
+        ul.media-list
+          | 
+          | {block:IfAuthorName01}
+          li.media
+            .pull-left(style='margin-right: 20px;')
+              img.media-object.img-circle(style='width: 64px;', src='{image:AuthorImage 01}', alt='')
+            .media-body
+              .media-heading
+                | 
+                | {block:IfAuthorRole01}
+                span.role {text:AuthorRole 01}
+                | 
+                | {/block:IfAuthorRole01}
+                | 
+                | {text:AuthorName 01}
+                | 
+                small {text:AuthorNameKana 01}
+              ul.list-inline
+                | 
+                | {block:IfAuthorURL01}
+                li
+                  a(href='{text:AuthorURL 01}', title='Web site')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-home.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorURL01}
+                | {block:IfAuthorTwitter01}
+                li
+                  a(href='http://twitter.com/{text:AuthorTwitter 01}', title='Twitter')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorTwitter01}
+                | {block:IfAuthorFacebook01}
+                li
+                  a(href='http://facebook.com/{text:AuthorFacebook 01}', title='Facebook')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorFacebook01}
+                | {block:IfAuthorGooglePlus01}
+                li
+                  a(href='http://plus.google.com/{text:AuthorGooglePlus 01}', title='Google Plus')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorGooglePlus01}
+              .author-description
+                | 
+                | {text:AuthorDescription 01}
+          | 
+          | {/block:IfAuthorName01}
+          | {block:IfAuthorName02}
+          li.media
+            .pull-left(style='margin-right: 20px;')
+              img.media-object.img-circle(style='width: 64px;', src='{image:AuthorImage 02}', alt='')
+            .media-body
+              .media-heading
+                | 
+                | {block:IfAuthorRole02}
+                span.role {text:AuthorRole 02}
+                | 
+                | {/block:IfAuthorRole02}
+                | 
+                | {text:AuthorName 02}
+                | 
+                small {text:AuthorNameKana 02}
+              ul.list-inline
+                | 
+                | {block:IfAuthorURL02}
+                li
+                  a(href='{text:AuthorURL 02}', title='Web site')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-home.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorURL02}
+                | {block:IfAuthorTwitter02}
+                li
+                  a(href='http://twitter.com/{text:AuthorTwitter 02}', title='Twitter')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorTwitter02}
+                | {block:IfAuthorFacebook02}
+                li
+                  a(href='http://facebook.com/{text:AuthorFacebook 02}', title='Facebook')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorFacebook02}
+                | {block:IfAuthorGooglePlus02}
+                li
+                  a(href='http://plus.google.com/{text:AuthorGooglePlus 02}', title='Google Plus')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorGooglePlus02}
+              .author-description
+                | 
+                | {text:AuthorDescription 02}
+          | 
+          | {/block:IfAuthorName02}
+          | {block:IfAuthorName03}
+          li.media
+            .pull-left(style='margin-right: 20px;')
+              img.media-object.img-circle(style='width: 64px;', src='{image:AuthorImage 03}', alt='')
+            .media-body
+              .media-heading
+                | 
+                | {block:IfAuthorRole03}
+                span.role {text:AuthorRole 03}
+                | 
+                | {/block:IfAuthorRole03}
+                | 
+                | {text:AuthorName 03}
+                | 
+                small {text:AuthorNameKana 03}
+              ul.list-inline
+                | 
+                | {block:IfAuthorURL03}
+                li
+                  a(href='{text:AuthorURL 03}', title='Web site')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-home.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorURL03}
+                | {block:IfAuthorTwitter03}
+                li
+                  a(href='http://twitter.com/{text:AuthorTwitter 03}', title='Twitter')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorTwitter03}
+                | {block:IfAuthorFacebook03}
+                li
+                  a(href='http://facebook.com/{text:AuthorFacebook 03}', title='Facebook')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorFacebook03}
+                | {block:IfAuthorGooglePlus03}
+                li
+                  a(href='http://plus.google.com/{text:AuthorGooglePlus 03}', title='Google Plus')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorGooglePlus03}
+              .author-description
+                | 
+                | {text:AuthorDescription 03}
+          | 
+          | {/block:IfAuthorName03}
+          | {block:IfAuthorName04}
+          li.media
+            .pull-left(style='margin-right: 20px;')
+              img.media-object.img-circle(style='width: 64px;', src='{image:AuthorImage 04}', alt='')
+            .media-body
+              .media-heading
+                | 
+                | {block:IfAuthorRole04}
+                span.role {text:AuthorRole 04}
+                | 
+                | {/block:IfAuthorRole04}
+                | 
+                | {text:AuthorName 04}
+                | 
+                small {text:AuthorNameKana 04}
+              ul.list-inline
+                | 
+                | {block:IfAuthorURL04}
+                li
+                  a(href='{text:AuthorURL 04}', title='Web site')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-home.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorURL04}
+                | {block:IfAuthorTwitter04}
+                li
+                  a(href='http://twitter.com/{text:AuthorTwitter 04}', title='Twitter')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorTwitter04}
+                | {block:IfAuthorFacebook04}
+                li
+                  a(href='http://facebook.com/{text:AuthorFacebook 04}', title='Facebook')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorFacebook04}
+                | {block:IfAuthorGooglePlus04}
+                li
+                  a(href='http://plus.google.com/{text:AuthorGooglePlus 04}', title='Google Plus')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfAuthorGooglePlus04}
+              .author-description
+                | 
+                | {text:AuthorDescription 04}
+          | 
+          | {/block:IfAuthorName04}
+          | {block:IfContributorName01}
+          li.media
+            .pull-left(style='margin-right: 20px;')
+              img.media-object.img-circle(style='width: 64px;', src='{image:ContributorImage 01}', alt='')
+            .media-body
+              .media-heading
+                | 
+                | {block:IfContributorRole01}
+                span.role {text:ContributorRole 01}
+                | 
+                | {/block:IfContributorRole01}
+                | {text:ContributorName 01}
+                | 
+                small {text:ContributorNameKana 01}
+              ul.list-inline
+                | 
+                | {block:IfContributorURL01}
+                li
+                  a(href='{text:ContributorURL 01}', title='Web site')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-home.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorURL01}
+                | {block:IfContributorTwitter01}
+                li
+                  a(href='http://twitter.com/{text:ContributorTwitter 01}', title='Twitter')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorTwitter01}
+                | {block:IfContributorFacebook01}
+                li
+                  a(href='http://facebook.com/{text:ContributorFacebook 01}', title='Facebook')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorFacebook01}
+                | {block:IfContributorGooglePlus01}
+                li
+                  a(href='http://plus.google.com/{text:ContributorGooglePlus 01}', title='Google Plus')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorGooglePlus01}
+              .author-description
+                | 
+                | {text:ContributorDescription 01}
+          | 
+          | {/block:IfContributorName01}
+          | {block:IfContributorName02}
+          li.media
+            .pull-left(style='margin-right: 20px;')
+              img.media-object.img-circle(style='width: 64px;', src='{image:ContributorImage 02}', alt='')
+            .media-body
+              .media-heading
+                | 
+                | {block:IfContributorRole02}
+                | 
+                span.role {text:ContributorRole 02}
+                | 
+                | {/block:IfContributorRole02}
+                | {text:ContributorName 02}
+                | 
+                small {text:ContributorNameKana 02}
+              ul.list-inline
+                | 
+                | {block:IfContributorURL02}
+                li
+                  a(href='{text:ContributorURL 02}', title='Web site')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-home.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorURL02}
+                | {block:IfContributorTwitter02}
+                li
+                  a(href='http://twitter.com/{text:ContributorTwitter 02}', title='Twitter')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorTwitter02}
+                | {block:IfContributorFacebook02}
+                li
+                  a(href='http://facebook.com/{text:ContributorFacebook 02}', title='Facebook')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorFacebook02}
+                | {block:IfContributorGooglePlus02}
+                li
+                  a(href='http://plus.google.com/{text:ContributorGooglePlus 02}', title='Google Plus')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorGooglePlus02}
+              .author-description
+                | 
+                | {text:ContributorDescription 02}
+          | 
+          | {/block:IfContributorName02}
+          | {block:IfContributorName03}
+          li.media
+            .pull-left(style='margin-right: 20px;')
+              img.media-object.img-circle(style='width: 64px;', src='{image:ContributorImage 03}', alt='')
+            .media-body
+              .media-heading
+                | 
+                | {block:IfContributorRole03}
+                | 
+                span.role {text:ContributorRole 03}
+                | 
+                | {/block:IfContributorRole03}
+                | {text:ContributorName 03}
+                | 
+                small {text:ContributorNameKana 03}
+              ul.list-inline
+                | 
+                | {block:IfContributorURL03}
+                li
+                  a(href='{text:ContributorURL 03}', title='Web site')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-home.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorURL03}
+                | {block:IfContributorTwitter03}
+                li
+                  a(href='http://twitter.com/{text:ContributorTwitter 03}', title='Twitter')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorTwitter03}
+                | {block:IfContributorFacebook03}
+                li
+                  a(href='http://facebook.com/{text:ContributorFacebook 03}', title='Facebook')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorFacebook03}
+                | {block:IfContributorGooglePlus03}
+                li
+                  a(href='http://plus.google.com/{text:ContributorGooglePlus 03}', title='Google Plus')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorGooglePlus03}
+              .author-description
+                | 
+                | {text:ContributorDescription 03}
+          | 
+          | {/block:IfContributorName03}
+          | {block:IfContributorName04}
+          li.media
+            .pull-left(style='margin-right: 20px;')
+              img.media-object.img-circle(style='width: 64px;', src='{image:ContributorImage 04}', alt='')
+            .media-body
+              .media-heading
+                | 
+                | {block:IfContributorRole04}
+                | 
+                span.role {text:ContributorRole 04}
+                | 
+                | {/block:IfContributorRole04}
+                | {text:ContributorName 04}
+                | 
+                small {text:ContributorNameKana 04}
+              ul.list-inline
+                | 
+                | {block:IfContributorURL04}
+                li
+                  a(href='{text:ContributorURL 04}', title='Web site')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-home.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorURL04}
+                | {block:IfContributorTwitter04}
+                li
+                  a(href='http://twitter.com/{text:ContributorTwitter 04}', title='Twitter')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorTwitter04}
+                | {block:IfContributorFacebook04}
+                li
+                  a(href='http://facebook.com/{text:ContributorFacebook 04}', title='Facebook')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorFacebook04}
+                | {block:IfContributorGooglePlus04}
+                li
+                  a(href='http://plus.google.com/{text:ContributorGooglePlus 04}', title='Google Plus')
+                    span.fa-stack
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+                | 
+                | {/block:IfContributorGooglePlus04}
+              .author-description
+                | 
+                | {text:ContributorDescription 04}
+          | 
+          | {/block:IfContributorName04}
+| 
+| {/block:IfShowSectionBiographies}
