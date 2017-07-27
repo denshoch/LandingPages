@@ -965,7 +965,7 @@
             <li>何に気をつければいいの？</li>
           </ul>
           <p>はじめて電子書籍に触れる人の、よくある疑問に答えます。</p>
-          <p class="text-center"><a href="http://lp.denshochan.com/how-to-read-ebooks.html" target="_blank" class="btn btn-info btn-lg"><i class="fa fa-external-link"></i>電子書籍とのつきあい方</a></p>
+          <p class="text-center"><a href="https://lp.denshochan.com/how-to-read-ebooks.html" target="_blank" class="btn btn-info btn-lg"><i class="fa fa-external-link"></i>電子書籍とのつきあい方</a></p>
         </div>
       </div>
     </section> 
@@ -1176,9 +1176,9 @@
         <p>Copyright © {CopyrightYears} {text:CopyrightHolder}</p> 
         {/block:IfCopyrightHolder}
         <p>{block:IfFooterText}{text:FooterText}{/block:IfFooterText}</p>
-        <div><small><a href="http://lp.denshochan.com/">Theme</a> 
+        <div><small><a href="https://lp.denshochan.com/">Theme</a> 
             designed by
-             <a href="http://denshochan.com/">Densho Channel</a>.</small></div>
+             <a href="https://denshochan.com/">Densho Channel</a>.</small></div>
       </div>
     </footer>
     <!-- Google Analytics --> 
