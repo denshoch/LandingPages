@@ -190,7 +190,7 @@
     <meta name="text:TwitterPlayerURL" content="">
     <!-- Schema.org JSON-LD -->
     <meta name="if:EnableSchemaOrg" content="1"> 
-    {block:Hidden}
+    {/block:Hidden}
     <title>{Title} {text:BookSubtitle} | {text:SiteSubtitle}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes"> 
@@ -403,7 +403,7 @@
                       <li>
                         <p><a href="#preview" class="btn btn-default btn-lg">試し読みする</a></p>
                       </li> 
-                      {block:IfPreviewLink}
+                      {/block:IfPreviewLink}
                       {/block:IfNotPreviewEmbedCode}
                       {block:IfShowSectionAcquisition}
                       <li>
@@ -477,7 +477,7 @@
                     <li>
                       <p><a href="#preview" class="btn btn-success btn-lg">試し読みする</a></p>
                     </li> 
-                    {block:IfPreviewLink}
+                    {/block:IfPreviewLink}
                     {/block:IfNotPreviewEmbedCode}
                     {block:IfShowSectionAcquisition}
                     <li>
