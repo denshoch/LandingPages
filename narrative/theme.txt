@@ -292,7 +292,7 @@
     <link rel="shortcut icon" href="{Favicon}">
     <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
     <link rel="alternate" type="application/rss+xml" href="{RSS}">
-    <link rel="stylesheet" media="screen" href="//denshoch.github.io/LandingPages/narrative/1.1/css/styles.css">
+    <link rel="stylesheet" media="screen" href="https://lp.denshochan.com/narrative/1.1/css/styles.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="canonical" href="{BlogURL}">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

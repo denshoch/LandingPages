@@ -7,6 +7,6 @@
     "gulp-ruby-sass": "^0.7.1"
   },
   "scripts": {
-    "narrative" : "gulp narrative"
+    "narrative": "gulp narrative"
   }
 }
