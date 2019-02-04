@@ -6,7 +6,7 @@
     version: 1.1.0
     by @lost_and_found from Densho Channel
     mail: <info@denshochan.com>
-    Copyright (c) 2014 Densho Channel <http://densho.hatenablog.com/>
+    Copyright (c) 2014 Densho Channel <https://densho.hatenablog.com/>
     license: MIT
     -->
     <meta charset="utf-8"> 
@@ -399,7 +399,7 @@
     <link rel="shortcut icon" href="{Favicon}">
     <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
     <link rel="alternate" type="application/rss+xml" href="{RSS}">
-    <link rel="stylesheet" media="screen" href="//denshoch.github.io/LandingPages/narrative/1.1/css/styles.css">
+    <link rel="stylesheet" media="screen" href="https://lp.denshochan.com/narrative/1.1/css/styles.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="canonical" href="{BlogURL}">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -722,8 +722,8 @@
                 <li id="fb-like-btn">
                   <div data-url="{BlogURL}" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-share="false" class="fb-like"></div>
                 </li>
-                <li id="hb-btn"><a href="http://b.hatena.ne.jp/entry/" data-hatena-bookmark-layout="standard-balloon" title="このエントリーをはてなブックマークに追加" class="hatena-bookmark-button"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a>
-                  <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+                <li id="hb-btn"><a href="https://b.hatena.ne.jp/entry/" data-hatena-bookmark-layout="standard-balloon" title="このエントリーをはてなブックマークに追加" class="hatena-bookmark-button"><img src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a>
+                  <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
                 </li>
                 <li id="g-plusone-btn">
                   <div data-size="medium" class="g-plusone"></div>
@@ -1644,13 +1644,13 @@
                     <li><a href="{text:AuthorURL 01}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorURL01}
                     {block:IfAuthorTwitter01}
-                    <li><a href="http://twitter.com/{text:AuthorTwitter 01}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://twitter.com/{text:AuthorTwitter 01}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorTwitter01}
                     {block:IfAuthorFacebook01}
-                    <li><a href="http://facebook.com/{text:AuthorFacebook 01}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://facebook.com/{text:AuthorFacebook 01}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorFacebook01}
                     {block:IfAuthorGooglePlus01}
-                    <li><a href="http://plus.google.com/{text:AuthorGooglePlus 01}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://plus.google.com/{text:AuthorGooglePlus 01}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorGooglePlus01}
                   </ul>
                   <div class="author-description">
@@ -1678,13 +1678,13 @@
                     <li><a href="{text:AuthorURL 02}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorURL02}
                     {block:IfAuthorTwitter02}
-                    <li><a href="http://twitter.com/{text:AuthorTwitter 02}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://twitter.com/{text:AuthorTwitter 02}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorTwitter02}
                     {block:IfAuthorFacebook02}
-                    <li><a href="http://facebook.com/{text:AuthorFacebook 02}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://facebook.com/{text:AuthorFacebook 02}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorFacebook02}
                     {block:IfAuthorGooglePlus02}
-                    <li><a href="http://plus.google.com/{text:AuthorGooglePlus 02}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://plus.google.com/{text:AuthorGooglePlus 02}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorGooglePlus02}
                   </ul>
                   <div class="author-description">
@@ -1712,13 +1712,13 @@
                     <li><a href="{text:AuthorURL 03}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorURL03}
                     {block:IfAuthorTwitter03}
-                    <li><a href="http://twitter.com/{text:AuthorTwitter 03}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://twitter.com/{text:AuthorTwitter 03}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorTwitter03}
                     {block:IfAuthorFacebook03}
-                    <li><a href="http://facebook.com/{text:AuthorFacebook 03}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://facebook.com/{text:AuthorFacebook 03}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorFacebook03}
                     {block:IfAuthorGooglePlus03}
-                    <li><a href="http://plus.google.com/{text:AuthorGooglePlus 03}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://plus.google.com/{text:AuthorGooglePlus 03}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorGooglePlus03}
                   </ul>
                   <div class="author-description">
@@ -1746,13 +1746,13 @@
                     <li><a href="{text:AuthorURL 04}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorURL04}
                     {block:IfAuthorTwitter04}
-                    <li><a href="http://twitter.com/{text:AuthorTwitter 04}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://twitter.com/{text:AuthorTwitter 04}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorTwitter04}
                     {block:IfAuthorFacebook04}
-                    <li><a href="http://facebook.com/{text:AuthorFacebook 04}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://facebook.com/{text:AuthorFacebook 04}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorFacebook04}
                     {block:IfAuthorGooglePlus04}
-                    <li><a href="http://plus.google.com/{text:AuthorGooglePlus 04}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://plus.google.com/{text:AuthorGooglePlus 04}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfAuthorGooglePlus04}
                   </ul>
                   <div class="author-description">
@@ -1779,13 +1779,13 @@
                     <li><a href="{text:ContributorURL 01}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorURL01}
                     {block:IfContributorTwitter01}
-                    <li><a href="http://twitter.com/{text:ContributorTwitter 01}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://twitter.com/{text:ContributorTwitter 01}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorTwitter01}
                     {block:IfContributorFacebook01}
-                    <li><a href="http://facebook.com/{text:ContributorFacebook 01}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://facebook.com/{text:ContributorFacebook 01}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorFacebook01}
                     {block:IfContributorGooglePlus01}
-                    <li><a href="http://plus.google.com/{text:ContributorGooglePlus 01}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://plus.google.com/{text:ContributorGooglePlus 01}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorGooglePlus01}
                   </ul>
                   <div class="author-description">
@@ -1813,13 +1813,13 @@
                     <li><a href="{text:ContributorURL 02}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorURL02}
                     {block:IfContributorTwitter02}
-                    <li><a href="http://twitter.com/{text:ContributorTwitter 02}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://twitter.com/{text:ContributorTwitter 02}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorTwitter02}
                     {block:IfContributorFacebook02}
-                    <li><a href="http://facebook.com/{text:ContributorFacebook 02}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://facebook.com/{text:ContributorFacebook 02}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorFacebook02}
                     {block:IfContributorGooglePlus02}
-                    <li><a href="http://plus.google.com/{text:ContributorGooglePlus 02}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://plus.google.com/{text:ContributorGooglePlus 02}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorGooglePlus02}
                   </ul>
                   <div class="author-description">
@@ -1847,13 +1847,13 @@
                     <li><a href="{text:ContributorURL 03}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorURL03}
                     {block:IfContributorTwitter03}
-                    <li><a href="http://twitter.com/{text:ContributorTwitter 03}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://twitter.com/{text:ContributorTwitter 03}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorTwitter03}
                     {block:IfContributorFacebook03}
-                    <li><a href="http://facebook.com/{text:ContributorFacebook 03}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://facebook.com/{text:ContributorFacebook 03}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorFacebook03}
                     {block:IfContributorGooglePlus03}
-                    <li><a href="http://plus.google.com/{text:ContributorGooglePlus 03}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://plus.google.com/{text:ContributorGooglePlus 03}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorGooglePlus03}
                   </ul>
                   <div class="author-description">
@@ -1881,13 +1881,13 @@
                     <li><a href="{text:ContributorURL 04}" title="Web site"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-home fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorURL04}
                     {block:IfContributorTwitter04}
-                    <li><a href="http://twitter.com/{text:ContributorTwitter 04}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://twitter.com/{text:ContributorTwitter 04}" title="Twitter"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorTwitter04}
                     {block:IfContributorFacebook04}
-                    <li><a href="http://facebook.com/{text:ContributorFacebook 04}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://facebook.com/{text:ContributorFacebook 04}" title="Facebook"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorFacebook04}
                     {block:IfContributorGooglePlus04}
-                    <li><a href="http://plus.google.com/{text:ContributorGooglePlus 04}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
+                    <li><a href="https://plus.google.com/{text:ContributorGooglePlus 04}" title="Google Plus"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li> 
                     {/block:IfContributorGooglePlus04}
                   </ul>
                   <div class="author-description">

@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
+var scss = require('gulp-sass');
 var rename = require("gulp-rename");
 var jade = require('gulp-jade');
 
@@ -23,6 +24,13 @@ gulp.task('base', function () {
         .on('error', function (err) { console.log(err.message); })
         .pipe(gulp.dest('css'));
 });
+
+gulp.task('sass', function () {
+    gulp.src('narrative/' + config.versions.narrative + '/css/styles.scss')
+        .pipe(scss({outputStyle: 'expanded'}))
+        .pipe(gulp.dest('narrative/' + config.versions.narrative + '/css'));
+});
+
 
 gulp.task('narrative', function () {
     gulp.src('narrative/' + config.versions.narrative + '/css/styles.scss')
