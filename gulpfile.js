@@ -33,7 +33,7 @@ gulp.task('sass', function () {
 
 
 gulp.task('narrative', function () {
-    gulp.src('narrative/' + config.versions.narrative + '/css/styles.scss')
+    /*gulp.src('narrative/' + config.versions.narrative + '/css/styles.scss')
         .pipe(sass({
           //sourcemap: true,
           sourcemapPath: '../css',
@@ -42,7 +42,7 @@ gulp.task('narrative', function () {
           ]
         }))
         .on('error', function (err) { console.log(err.message); })
-        .pipe(gulp.dest('narrative/' + config.versions.narrative + '/css'));
+        .pipe(gulp.dest('narrative/' + config.versions.narrative + '/css'));*/
     gulp.src('narrative/' + config.versions.narrative + '/jade/*.jade')
         .pipe(jade({
           pretty: true,
