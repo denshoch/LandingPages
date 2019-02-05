@@ -14,12 +14,15 @@ var config = {
 
 gulp.task('base', function () {
     return gulp.src('css/styles.scss')
-        .pipe(sass({
+        /*.pipe(sass({
           //sourcemap: true,
           sourcemapPath: '../css',
           loadPath: [
             config.bowerDir + '/bootstrap-sass-official/assets/stylesheets'
           ]
+        }))*/
+        .pipe(scss({
+          outputStyle: 'expanded'
         }))
         .on('error', function (err) { console.log(err.message); })
         .pipe(gulp.dest('css'));
