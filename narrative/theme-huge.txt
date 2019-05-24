@@ -355,7 +355,7 @@
     <!-- Custom Code-->
     <meta name="text:CustomCode Head" content="">
     <meta name="text:CustomCode Body" content=""> 
-    {block:Hidden}
+    {/block:Hidden}
     <title>{Title} {text:BookSubtitle} | {text:SiteSubtitle}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes"> 
@@ -595,7 +595,7 @@
                       <li>
                         <p><a href="#preview" class="btn btn-default btn-lg">試し読みする</a></p>
                       </li> 
-                      {block:IfPreviewLink}
+                      {/block:IfPreviewLink}
                       {/block:IfNotPreviewEmbedCode}
                       {block:IfShowSectionAcquisition}
                       <li>
@@ -687,7 +687,7 @@
                     <li>
                       <p><a href="#preview" class="btn btn-success btn-lg">試し読みする</a></p>
                     </li> 
-                    {block:IfPreviewLink}
+                    {/block:IfPreviewLink}
                     {/block:IfNotPreviewEmbedCode}
                     {block:IfShowSectionAcquisition}
                     <li>
@@ -908,7 +908,7 @@
           {block:IfCharacterName04}
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              
-            {block:IfCharacterImage04Image}<img style="width: 128px;" src="{image:CharacterImage 04}" alt="" class="img-thumbnail">{block:IfCharacterImage04Image}
+            {block:IfCharacterImage04Image}<img style="width: 128px;" src="{image:CharacterImage 04}" alt="" class="img-thumbnail">{/block:IfCharacterImage04Image}
             <div class="h5 character-name">{text:CharacterName 04}</div>
             <div class="character-desc">
                
@@ -921,7 +921,7 @@
           {block:IfCharacterName05}
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              
-            {block:IfCharacterImage05Image}<img style="width: 128px;" src="{image:CharacterImage 05}" alt="" class="img-thumbnail">{block:IfCharacterImage05Image}
+            {block:IfCharacterImage05Image}<img style="width: 128px;" src="{image:CharacterImage 05}" alt="" class="img-thumbnail">{/block:IfCharacterImage05Image}
             <div class="h5 character-name">{text:CharacterName 05}</div>
             <div class="character-desc">
                
@@ -933,7 +933,7 @@
           {block:IfCharacterName06}
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              
-            {block:IfCharacterImage06Image}<img style="width: 128px;" src="{image:CharacterImage 06}" alt="" class="img-thumbnail">{block:IfCharacterImage06Image}
+            {block:IfCharacterImage06Image}<img style="width: 128px;" src="{image:CharacterImage 06}" alt="" class="img-thumbnail">{/block:IfCharacterImage06Image}
             <div class="h5 character-name">{text:CharacterName 06}</div>
             <div class="character-desc">
                
@@ -947,7 +947,7 @@
           {block:IfCharacterName07}
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              
-            {block:IfCharacterImage07Image}<img style="width: 128px;" src="{image:CharacterImage 07}" alt="" class="img-thumbnail">{block:IfCharacterImage07Image}
+            {block:IfCharacterImage07Image}<img style="width: 128px;" src="{image:CharacterImage 07}" alt="" class="img-thumbnail">{/block:IfCharacterImage07Image}
             <div class="h5 character-name">{text:CharacterName 07}</div>
             <div class="character-desc">
                
@@ -960,7 +960,7 @@
            
           <div class="character-container {select:ColumnCount Characters} container center-block text-center">
              
-            {block:IfCharacterImage08Image}<img style="width: 128px;" src="{image:CharacterImage 08}" alt="" class="img-thumbnail">{block:IfCharacterImage08Image}
+            {block:IfCharacterImage08Image}<img style="width: 128px;" src="{image:CharacterImage 08}" alt="" class="img-thumbnail">{/block:IfCharacterImage08Image}
             <div class="h5 character-name">{text:CharacterName 08}</div>
             <div class="character-desc">
                
